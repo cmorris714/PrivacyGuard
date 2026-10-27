@@ -1,0 +1,11 @@
+{
+  "os": "Windows-11-10.0.26300-SP0",
+  "cpu": "13th Gen Intel(R) Core(TM) i7-13700KF",
+  "physical_cores": 16,
+  "logical_processors": 24,
+  "ram_gb": 31.8,
+  "gpu": "AMD Radeon RX 7900 XTX",
+  "gpu_driver": "32.0.32015.7029",
+  "python_modeling": "3.12 (.venv-m3 CPU, .venv-m3-rocm GPU)",
+  "python_detector": "3.11.3 (.venv-presidio-m3)"
+}

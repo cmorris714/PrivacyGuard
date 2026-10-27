@@ -5,3 +5,14 @@ __pycache__/
 venv/
 .env
 .DS_Store
+.venv-m3/
+.venv-m3-rocm/
+.venv-presidio-m3/
+.venv-presidio-trf/
+artifacts/
+*.pt
+*.bin
+*.safetensors
+.cache/
+hf_cache/
+~$*.pptx

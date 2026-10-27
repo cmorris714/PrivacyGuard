@@ -1,0 +1,18 @@
+# M3 modeling environment (Python 3.12). PyTorch is installed separately:
+#   CPU:            pip install torch==2.14.1 --index-url https://download.pytorch.org/whl/cpu
+#   AMD GPU (ROCm): torch 2.9.1+rocm7.2.1 and the ROCm 7.2.1 SDK wheels from
+#                   https://repo.radeon.com/rocm/windows/rocm-rel-7.2.1/ (see results/m3/env/device_decision.md)
+transformers==5.21.0
+tokenizers==0.23.3
+accelerate==1.15.0
+huggingface_hub==2.3.0
+sentence-transformers==6.2.0
+scikit-learn==1.9.1
+scipy==1.18.1
+numpy==2.5.4
+pandas==3.1.0
+matplotlib==3.11.2
+pillow==13.0.0
+PyYAML==6.0.3
+tqdm==4.70.1
+pytest==9.1.1

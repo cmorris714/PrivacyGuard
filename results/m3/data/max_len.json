@@ -1,0 +1,11 @@
+{
+  "rule": "smallest of 64/96/128 covering >= 99.9% of train+val inputs in every condition",
+  "distilbert-base-uncased": {
+    "max_len": 96,
+    "test_inputs_truncated_all_conditions": 0
+  },
+  "sentence-transformers/all-MiniLM-L6-v2": {
+    "max_len": 96,
+    "test_inputs_truncated_all_conditions": 0
+  }
+}

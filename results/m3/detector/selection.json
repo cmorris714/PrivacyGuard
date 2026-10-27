@@ -1,0 +1,35 @@
+{
+  "selected": "V2",
+  "eligible": [
+    "V1",
+    "V2",
+    "V3"
+  ],
+  "tied_on_leak_rate": [
+    "V2",
+    "V3"
+  ],
+  "checks": {
+    "V0": {
+      "over_redaction_ok": true,
+      "latency_ok": true,
+      "challenge_ok": false
+    },
+    "V1": {
+      "over_redaction_ok": true,
+      "latency_ok": true,
+      "challenge_ok": true
+    },
+    "V2": {
+      "over_redaction_ok": true,
+      "latency_ok": true,
+      "challenge_ok": true
+    },
+    "V3": {
+      "over_redaction_ok": true,
+      "latency_ok": true,
+      "challenge_ok": true
+    }
+  },
+  "rule": "results/m3/detector/selection_rule.md"
+}
