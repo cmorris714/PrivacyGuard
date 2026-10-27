@@ -1,0 +1,22 @@
+# Frozen classifier configuration (selected on the C1 validation split; see results/m3/selection.md)
+frozen_utc: '2026-10-27T22:07:56+00:00'
+source_run: e1_minilm_clf_c1_s553
+selection: results/m3/selection.md
+model:
+  family: embed_clf
+  encoder: sentence-transformers/all-MiniLM-L6-v2
+  params:
+    head: logreg
+    C: 10
+seed: 553
+model_revision: 1110a243fdf4706b3f48f1d95db1a4f5529b4d41
+cross_check_model:
+  family: tfidf_svm
+  params:
+    analyzer: word
+    ngram:
+    - 1
+    - 2
+    C: 10
+    min_df: 1
+    class_weight: balanced

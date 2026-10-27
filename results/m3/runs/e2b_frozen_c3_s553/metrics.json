@@ -1,0 +1,38 @@
+{
+  "run_id": "e2b_frozen_c3_s553",
+  "config_hash": "dfbc536ff98a",
+  "val": {
+    "C3": {
+      "n": 1999,
+      "accuracy": 0.918959,
+      "macro_precision": 0.927183,
+      "macro_recall": 0.917061,
+      "macro_f1": 0.919834
+    }
+  },
+  "test": {
+    "C3": {
+      "n": 3080,
+      "accuracy": 0.916558,
+      "macro_precision": 0.919606,
+      "macro_recall": 0.916558,
+      "macro_f1": 0.916384,
+      "predict_seconds": 0.94
+    },
+    "D3": {
+      "n": 3080,
+      "accuracy": 0.904221,
+      "macro_precision": 0.910016,
+      "macro_recall": 0.904221,
+      "macro_f1": 0.903831,
+      "predict_seconds": 0.95
+    }
+  },
+  "selected_params": {
+    "head": "logreg",
+    "C": 10
+  },
+  "train_seconds": 7.8,
+  "n_train": 7993,
+  "n_val": 1999
+}

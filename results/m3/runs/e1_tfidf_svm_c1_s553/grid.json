@@ -1,0 +1,662 @@
+[
+  {
+    "analyzer": "word",
+    "ngram": [
+      1,
+      1
+    ],
+    "C": 0.1,
+    "min_df": 1,
+    "class_weight": null,
+    "val_macro_f1": 0.814053
+  },
+  {
+    "analyzer": "word",
+    "ngram": [
+      1,
+      1
+    ],
+    "C": 0.1,
+    "min_df": 1,
+    "class_weight": "balanced",
+    "val_macro_f1": 0.824904
+  },
+  {
+    "analyzer": "word",
+    "ngram": [
+      1,
+      1
+    ],
+    "C": 0.1,
+    "min_df": 2,
+    "class_weight": null,
+    "val_macro_f1": 0.819848
+  },
+  {
+    "analyzer": "word",
+    "ngram": [
+      1,
+      1
+    ],
+    "C": 0.1,
+    "min_df": 2,
+    "class_weight": "balanced",
+    "val_macro_f1": 0.830257
+  },
+  {
+    "analyzer": "word",
+    "ngram": [
+      1,
+      1
+    ],
+    "C": 0.3,
+    "min_df": 1,
+    "class_weight": null,
+    "val_macro_f1": 0.83472
+  },
+  {
+    "analyzer": "word",
+    "ngram": [
+      1,
+      1
+    ],
+    "C": 0.3,
+    "min_df": 1,
+    "class_weight": "balanced",
+    "val_macro_f1": 0.850208
+  },
+  {
+    "analyzer": "word",
+    "ngram": [
+      1,
+      1
+    ],
+    "C": 0.3,
+    "min_df": 2,
+    "class_weight": null,
+    "val_macro_f1": 0.851611
+  },
+  {
+    "analyzer": "word",
+    "ngram": [
+      1,
+      1
+    ],
+    "C": 0.3,
+    "min_df": 2,
+    "class_weight": "balanced",
+    "val_macro_f1": 0.862025
+  },
+  {
+    "analyzer": "word",
+    "ngram": [
+      1,
+      1
+    ],
+    "C": 1,
+    "min_df": 1,
+    "class_weight": null,
+    "val_macro_f1": 0.859206
+  },
+  {
+    "analyzer": "word",
+    "ngram": [
+      1,
+      1
+    ],
+    "C": 1,
+    "min_df": 1,
+    "class_weight": "balanced",
+    "val_macro_f1": 0.865208
+  },
+  {
+    "analyzer": "word",
+    "ngram": [
+      1,
+      1
+    ],
+    "C": 1,
+    "min_df": 2,
+    "class_weight": null,
+    "val_macro_f1": 0.867873
+  },
+  {
+    "analyzer": "word",
+    "ngram": [
+      1,
+      1
+    ],
+    "C": 1,
+    "min_df": 2,
+    "class_weight": "balanced",
+    "val_macro_f1": 0.868238
+  },
+  {
+    "analyzer": "word",
+    "ngram": [
+      1,
+      1
+    ],
+    "C": 3,
+    "min_df": 1,
+    "class_weight": null,
+    "val_macro_f1": 0.863733
+  },
+  {
+    "analyzer": "word",
+    "ngram": [
+      1,
+      1
+    ],
+    "C": 3,
+    "min_df": 1,
+    "class_weight": "balanced",
+    "val_macro_f1": 0.869104
+  },
+  {
+    "analyzer": "word",
+    "ngram": [
+      1,
+      1
+    ],
+    "C": 3,
+    "min_df": 2,
+    "class_weight": null,
+    "val_macro_f1": 0.869977
+  },
+  {
+    "analyzer": "word",
+    "ngram": [
+      1,
+      1
+    ],
+    "C": 3,
+    "min_df": 2,
+    "class_weight": "balanced",
+    "val_macro_f1": 0.86878
+  },
+  {
+    "analyzer": "word",
+    "ngram": [
+      1,
+      1
+    ],
+    "C": 10,
+    "min_df": 1,
+    "class_weight": null,
+    "val_macro_f1": 0.865198
+  },
+  {
+    "analyzer": "word",
+    "ngram": [
+      1,
+      1
+    ],
+    "C": 10,
+    "min_df": 1,
+    "class_weight": "balanced",
+    "val_macro_f1": 0.864861
+  },
+  {
+    "analyzer": "word",
+    "ngram": [
+      1,
+      1
+    ],
+    "C": 10,
+    "min_df": 2,
+    "class_weight": null,
+    "val_macro_f1": 0.857616
+  },
+  {
+    "analyzer": "word",
+    "ngram": [
+      1,
+      1
+    ],
+    "C": 10,
+    "min_df": 2,
+    "class_weight": "balanced",
+    "val_macro_f1": 0.859869
+  },
+  {
+    "analyzer": "word",
+    "ngram": [
+      1,
+      2
+    ],
+    "C": 0.1,
+    "min_df": 1,
+    "class_weight": null,
+    "val_macro_f1": 0.819019
+  },
+  {
+    "analyzer": "word",
+    "ngram": [
+      1,
+      2
+    ],
+    "C": 0.1,
+    "min_df": 1,
+    "class_weight": "balanced",
+    "val_macro_f1": 0.8198
+  },
+  {
+    "analyzer": "word",
+    "ngram": [
+      1,
+      2
+    ],
+    "C": 0.1,
+    "min_df": 2,
+    "class_weight": null,
+    "val_macro_f1": 0.82581
+  },
+  {
+    "analyzer": "word",
+    "ngram": [
+      1,
+      2
+    ],
+    "C": 0.1,
+    "min_df": 2,
+    "class_weight": "balanced",
+    "val_macro_f1": 0.82804
+  },
+  {
+    "analyzer": "word",
+    "ngram": [
+      1,
+      2
+    ],
+    "C": 0.3,
+    "min_df": 1,
+    "class_weight": null,
+    "val_macro_f1": 0.847967
+  },
+  {
+    "analyzer": "word",
+    "ngram": [
+      1,
+      2
+    ],
+    "C": 0.3,
+    "min_df": 1,
+    "class_weight": "balanced",
+    "val_macro_f1": 0.846398
+  },
+  {
+    "analyzer": "word",
+    "ngram": [
+      1,
+      2
+    ],
+    "C": 0.3,
+    "min_df": 2,
+    "class_weight": null,
+    "val_macro_f1": 0.855934
+  },
+  {
+    "analyzer": "word",
+    "ngram": [
+      1,
+      2
+    ],
+    "C": 0.3,
+    "min_df": 2,
+    "class_weight": "balanced",
+    "val_macro_f1": 0.858328
+  },
+  {
+    "analyzer": "word",
+    "ngram": [
+      1,
+      2
+    ],
+    "C": 1,
+    "min_df": 1,
+    "class_weight": null,
+    "val_macro_f1": 0.86769
+  },
+  {
+    "analyzer": "word",
+    "ngram": [
+      1,
+      2
+    ],
+    "C": 1,
+    "min_df": 1,
+    "class_weight": "balanced",
+    "val_macro_f1": 0.868858
+  },
+  {
+    "analyzer": "word",
+    "ngram": [
+      1,
+      2
+    ],
+    "C": 1,
+    "min_df": 2,
+    "class_weight": null,
+    "val_macro_f1": 0.874467
+  },
+  {
+    "analyzer": "word",
+    "ngram": [
+      1,
+      2
+    ],
+    "C": 1,
+    "min_df": 2,
+    "class_weight": "balanced",
+    "val_macro_f1": 0.875161
+  },
+  {
+    "analyzer": "word",
+    "ngram": [
+      1,
+      2
+    ],
+    "C": 3,
+    "min_df": 1,
+    "class_weight": null,
+    "val_macro_f1": 0.87454
+  },
+  {
+    "analyzer": "word",
+    "ngram": [
+      1,
+      2
+    ],
+    "C": 3,
+    "min_df": 1,
+    "class_weight": "balanced",
+    "val_macro_f1": 0.874774
+  },
+  {
+    "analyzer": "word",
+    "ngram": [
+      1,
+      2
+    ],
+    "C": 3,
+    "min_df": 2,
+    "class_weight": null,
+    "val_macro_f1": 0.876002
+  },
+  {
+    "analyzer": "word",
+    "ngram": [
+      1,
+      2
+    ],
+    "C": 3,
+    "min_df": 2,
+    "class_weight": "balanced",
+    "val_macro_f1": 0.87591
+  },
+  {
+    "analyzer": "word",
+    "ngram": [
+      1,
+      2
+    ],
+    "C": 10,
+    "min_df": 1,
+    "class_weight": null,
+    "val_macro_f1": 0.877715
+  },
+  {
+    "analyzer": "word",
+    "ngram": [
+      1,
+      2
+    ],
+    "C": 10,
+    "min_df": 1,
+    "class_weight": "balanced",
+    "val_macro_f1": 0.878547
+  },
+  {
+    "analyzer": "word",
+    "ngram": [
+      1,
+      2
+    ],
+    "C": 10,
+    "min_df": 2,
+    "class_weight": null,
+    "val_macro_f1": 0.873652
+  },
+  {
+    "analyzer": "word",
+    "ngram": [
+      1,
+      2
+    ],
+    "C": 10,
+    "min_df": 2,
+    "class_weight": "balanced",
+    "val_macro_f1": 0.872342
+  },
+  {
+    "analyzer": "char_wb",
+    "ngram": [
+      2,
+      5
+    ],
+    "C": 0.1,
+    "min_df": 1,
+    "class_weight": null,
+    "val_macro_f1": 0.808226
+  },
+  {
+    "analyzer": "char_wb",
+    "ngram": [
+      2,
+      5
+    ],
+    "C": 0.1,
+    "min_df": 1,
+    "class_weight": "balanced",
+    "val_macro_f1": 0.822045
+  },
+  {
+    "analyzer": "char_wb",
+    "ngram": [
+      2,
+      5
+    ],
+    "C": 0.1,
+    "min_df": 2,
+    "class_weight": null,
+    "val_macro_f1": 0.810068
+  },
+  {
+    "analyzer": "char_wb",
+    "ngram": [
+      2,
+      5
+    ],
+    "C": 0.1,
+    "min_df": 2,
+    "class_weight": "balanced",
+    "val_macro_f1": 0.825227
+  },
+  {
+    "analyzer": "char_wb",
+    "ngram": [
+      2,
+      5
+    ],
+    "C": 0.3,
+    "min_df": 1,
+    "class_weight": null,
+    "val_macro_f1": 0.841239
+  },
+  {
+    "analyzer": "char_wb",
+    "ngram": [
+      2,
+      5
+    ],
+    "C": 0.3,
+    "min_df": 1,
+    "class_weight": "balanced",
+    "val_macro_f1": 0.851872
+  },
+  {
+    "analyzer": "char_wb",
+    "ngram": [
+      2,
+      5
+    ],
+    "C": 0.3,
+    "min_df": 2,
+    "class_weight": null,
+    "val_macro_f1": 0.846801
+  },
+  {
+    "analyzer": "char_wb",
+    "ngram": [
+      2,
+      5
+    ],
+    "C": 0.3,
+    "min_df": 2,
+    "class_weight": "balanced",
+    "val_macro_f1": 0.852838
+  },
+  {
+    "analyzer": "char_wb",
+    "ngram": [
+      2,
+      5
+    ],
+    "C": 1,
+    "min_df": 1,
+    "class_weight": null,
+    "val_macro_f1": 0.864492
+  },
+  {
+    "analyzer": "char_wb",
+    "ngram": [
+      2,
+      5
+    ],
+    "C": 1,
+    "min_df": 1,
+    "class_weight": "balanced",
+    "val_macro_f1": 0.866696
+  },
+  {
+    "analyzer": "char_wb",
+    "ngram": [
+      2,
+      5
+    ],
+    "C": 1,
+    "min_df": 2,
+    "class_weight": null,
+    "val_macro_f1": 0.866195
+  },
+  {
+    "analyzer": "char_wb",
+    "ngram": [
+      2,
+      5
+    ],
+    "C": 1,
+    "min_df": 2,
+    "class_weight": "balanced",
+    "val_macro_f1": 0.868782
+  },
+  {
+    "analyzer": "char_wb",
+    "ngram": [
+      2,
+      5
+    ],
+    "C": 3,
+    "min_df": 1,
+    "class_weight": null,
+    "val_macro_f1": 0.873494
+  },
+  {
+    "analyzer": "char_wb",
+    "ngram": [
+      2,
+      5
+    ],
+    "C": 3,
+    "min_df": 1,
+    "class_weight": "balanced",
+    "val_macro_f1": 0.874422
+  },
+  {
+    "analyzer": "char_wb",
+    "ngram": [
+      2,
+      5
+    ],
+    "C": 3,
+    "min_df": 2,
+    "class_weight": null,
+    "val_macro_f1": 0.867853
+  },
+  {
+    "analyzer": "char_wb",
+    "ngram": [
+      2,
+      5
+    ],
+    "C": 3,
+    "min_df": 2,
+    "class_weight": "balanced",
+    "val_macro_f1": 0.870031
+  },
+  {
+    "analyzer": "char_wb",
+    "ngram": [
+      2,
+      5
+    ],
+    "C": 10,
+    "min_df": 1,
+    "class_weight": null,
+    "val_macro_f1": 0.869425
+  },
+  {
+    "analyzer": "char_wb",
+    "ngram": [
+      2,
+      5
+    ],
+    "C": 10,
+    "min_df": 1,
+    "class_weight": "balanced",
+    "val_macro_f1": 0.868417
+  },
+  {
+    "analyzer": "char_wb",
+    "ngram": [
+      2,
+      5
+    ],
+    "C": 10,
+    "min_df": 2,
+    "class_weight": null,
+    "val_macro_f1": 0.867389
+  },
+  {
+    "analyzer": "char_wb",
+    "ngram": [
+      2,
+      5
+    ],
+    "C": 10,
+    "min_df": 2,
+    "class_weight": "balanced",
+    "val_macro_f1": 0.865775
+  }
+]

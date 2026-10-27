@@ -1,0 +1,30 @@
+{
+  "run_id": "e3c_frozen_dbest_s553",
+  "config_hash": "a3426acacf5f",
+  "val": {
+    "D3": {
+      "n": 1999,
+      "accuracy": 0.917459,
+      "macro_precision": 0.924706,
+      "macro_recall": 0.915642,
+      "macro_f1": 0.918262
+    }
+  },
+  "test": {
+    "D3": {
+      "n": 3080,
+      "accuracy": 0.914286,
+      "macro_precision": 0.91772,
+      "macro_recall": 0.914286,
+      "macro_f1": 0.914155,
+      "predict_seconds": 0.93
+    }
+  },
+  "selected_params": {
+    "head": "logreg",
+    "C": 10
+  },
+  "train_seconds": 6.2,
+  "n_train": 7993,
+  "n_val": 1999
+}

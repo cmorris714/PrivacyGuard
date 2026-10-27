@@ -1,0 +1,47 @@
+{
+  "run_id": "e2c_tfidf_svm_c4_s553",
+  "stage": "e2c",
+  "config": {
+    "id": "e2c_tfidf_svm_c4_s553",
+    "stage": "e2c",
+    "model": "b1_frozen",
+    "train": "C4",
+    "test": [
+      "C4",
+      "D4"
+    ],
+    "seed": 553,
+    "frozen_config_sha256": "f8da789dac479ca3dc9fa067c63f30bc695add30facf567ee014b152f4652ec8",
+    "model_cfg": {
+      "family": "tfidf_svm",
+      "params": {
+        "analyzer": "word",
+        "ngram": [
+          1,
+          2
+        ],
+        "C": 10,
+        "min_df": 1,
+        "class_weight": "balanced"
+      },
+      "seed": 553
+    },
+    "hash": "ce596c2abb40"
+  },
+  "config_hash": "ce596c2abb40",
+  "seed": 553,
+  "device": "cuda",
+  "device_name": "AMD Radeon RX 7900 XTX",
+  "versions": {
+    "python": "3.12.16",
+    "numpy": "2.5.4",
+    "scikit-learn": "1.9.1",
+    "torch": "2.9.1+rocm7.2.1",
+    "transformers": "5.21.0",
+    "sentence-transformers": "6.2.0"
+  },
+  "git_commit": "9a0e46cea1571bb5796c8d0811edf5702afbe3b0",
+  "start_utc": "2026-10-27T22:09:40+00:00",
+  "end_utc": "2026-10-27T22:09:41+00:00",
+  "wall_seconds": 0.9
+}

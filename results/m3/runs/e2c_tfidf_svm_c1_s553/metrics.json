@@ -1,0 +1,92 @@
+{
+  "run_id": "e2c_tfidf_svm_c1_s553",
+  "config_hash": "6ba2334f920f",
+  "val": {
+    "C1": {
+      "n": 1999,
+      "accuracy": 0.87944,
+      "macro_precision": 0.88379,
+      "macro_recall": 0.877288,
+      "macro_f1": 0.878547
+    }
+  },
+  "test": {
+    "C0": {
+      "n": 3080,
+      "accuracy": 0.875649,
+      "macro_precision": 0.881108,
+      "macro_recall": 0.875649,
+      "macro_f1": 0.875826,
+      "predict_seconds": 0.03
+    },
+    "C1": {
+      "n": 3080,
+      "accuracy": 0.879545,
+      "macro_precision": 0.884261,
+      "macro_recall": 0.879545,
+      "macro_f1": 0.879774,
+      "predict_seconds": 0.05
+    },
+    "C2": {
+      "n": 3080,
+      "accuracy": 0.877273,
+      "macro_precision": 0.882709,
+      "macro_recall": 0.877273,
+      "macro_f1": 0.877746,
+      "predict_seconds": 0.04
+    },
+    "C3": {
+      "n": 3080,
+      "accuracy": 0.878571,
+      "macro_precision": 0.883947,
+      "macro_recall": 0.878571,
+      "macro_f1": 0.879045,
+      "predict_seconds": 0.04
+    },
+    "C4": {
+      "n": 3080,
+      "accuracy": 0.869805,
+      "macro_precision": 0.881335,
+      "macro_recall": 0.869805,
+      "macro_f1": 0.872186,
+      "predict_seconds": 0.04
+    },
+    "D2": {
+      "n": 3080,
+      "accuracy": 0.874675,
+      "macro_precision": 0.880502,
+      "macro_recall": 0.874675,
+      "macro_f1": 0.875203,
+      "predict_seconds": 0.04
+    },
+    "D3": {
+      "n": 3080,
+      "accuracy": 0.875325,
+      "macro_precision": 0.88107,
+      "macro_recall": 0.875325,
+      "macro_f1": 0.875839,
+      "predict_seconds": 0.04
+    },
+    "D4": {
+      "n": 3080,
+      "accuracy": 0.866234,
+      "macro_precision": 0.878472,
+      "macro_recall": 0.866234,
+      "macro_f1": 0.868788,
+      "predict_seconds": 0.04
+    }
+  },
+  "selected_params": {
+    "analyzer": "word",
+    "ngram": [
+      1,
+      2
+    ],
+    "C": 10,
+    "min_df": 1,
+    "class_weight": "balanced"
+  },
+  "train_seconds": 0.6,
+  "n_train": 7993,
+  "n_val": 1999
+}
