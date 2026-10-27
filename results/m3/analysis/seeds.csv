@@ -1,0 +1,10 @@
+run,train_condition,seed,test_macro_f1,test_accuracy
+e2d_frozen_c1_s554,C1,554,0.894374,0.894156
+e2d_frozen_c1_s555,C1,555,0.894374,0.894156
+e2d_frozen_cbest_s554,C3,554,0.916384,0.916558
+e2d_frozen_cbest_s555,C3,555,0.916384,0.916558
+e2a_frozen_c1_s553,C1,553,0.894374,0.894156
+e2b_frozen_c0_s553,C0,553,0.92676,0.926948
+e2b_frozen_c2_s553,C2,553,0.918781,0.918831
+e2b_frozen_c3_s553,C3,553,0.916384,0.916558
+e2b_frozen_c4_s553,C4,553,0.913867,0.913961

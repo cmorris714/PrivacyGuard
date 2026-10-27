@@ -1,0 +1,3564 @@
+{
+  "m2_source_rows": {
+    "value": 13083,
+    "display": "13,083",
+    "source": "data/evidence_summary.json:source_rows",
+    "note": ""
+  },
+  "m2_train_rows": {
+    "value": 10003,
+    "display": "10,003",
+    "source": "data/evidence_summary.json:train_rows",
+    "note": ""
+  },
+  "m2_test_rows": {
+    "value": 3080,
+    "display": "3,080",
+    "source": "data/evidence_summary.json:test_rows",
+    "note": ""
+  },
+  "m2_injection_rows": {
+    "value": 13083,
+    "display": "13,083",
+    "source": "data/evidence_summary.json:injection_rows",
+    "note": ""
+  },
+  "m2_variant_rows": {
+    "value": 52332,
+    "display": "52,332",
+    "source": "data/evidence_summary.json:variant_rows",
+    "note": ""
+  },
+  "m2_sanitized_rows": {
+    "value": 39249,
+    "display": "39,249",
+    "source": "data/evidence_summary.json:sanitized_rows",
+    "note": ""
+  },
+  "m2_eligible_train_rows": {
+    "value": 9992,
+    "display": "9,992",
+    "source": "data/evidence_summary.json:eligible_train_rows",
+    "note": ""
+  },
+  "m2_modeling_version_rows": {
+    "value": 52288,
+    "display": "52,288",
+    "source": "data/evidence_summary.json:modeling_version_rows",
+    "note": ""
+  },
+  "m2_human_review_records": {
+    "value": 24,
+    "display": "24",
+    "source": "data/evidence_summary.json:human_review_records",
+    "note": ""
+  },
+  "m2_intents": {
+    "value": 77,
+    "display": "77",
+    "source": "data/evidence_summary.json:intent_classes",
+    "note": ""
+  },
+  "m2_type_ADDRESS": {
+    "value": 3351,
+    "display": "3,351",
+    "source": "data/profile.json:type_counts.ADDRESS",
+    "note": ""
+  },
+  "m2_type_EMAIL": {
+    "value": 3161,
+    "display": "3,161",
+    "source": "data/profile.json:type_counts.EMAIL",
+    "note": ""
+  },
+  "m2_type_PERSON": {
+    "value": 3235,
+    "display": "3,235",
+    "source": "data/profile.json:type_counts.PERSON",
+    "note": ""
+  },
+  "m2_type_PHONE": {
+    "value": 3336,
+    "display": "3,336",
+    "source": "data/profile.json:type_counts.PHONE",
+    "note": ""
+  },
+  "faker_version": {
+    "value": "37.12.0",
+    "display": "37.12.0",
+    "source": "data/profile.json:faker_version",
+    "note": ""
+  },
+  "b77_train_bytes": {
+    "value": 839073,
+    "display": "839,073",
+    "source": "data/source_manifest.json:banking77.train.bytes",
+    "note": ""
+  },
+  "b77_train_sha_prefix": {
+    "value": "b06e26ac6755",
+    "display": "b06e26ac6755",
+    "source": "data/source_manifest.json:banking77.train.sha256",
+    "note": "first 12 hex characters"
+  },
+  "b77_test_bytes": {
+    "value": 239961,
+    "display": "239,961",
+    "source": "data/source_manifest.json:banking77.test.bytes",
+    "note": ""
+  },
+  "b77_test_sha_prefix": {
+    "value": "d12d6e3bc4c3",
+    "display": "d12d6e3bc4c3",
+    "source": "data/source_manifest.json:banking77.test.sha256",
+    "note": "first 12 hex characters"
+  },
+  "hash_example_id": {
+    "value": "B77_train_00000",
+    "display": "B77_train_00000",
+    "source": "data/banking_records.jsonl",
+    "note": ""
+  },
+  "hash_example_text": {
+    "value": "I am still waiting on my card?",
+    "display": "I am still waiting on my card?",
+    "source": "data/banking_records.jsonl",
+    "note": ""
+  },
+  "hash_example_sha256": {
+    "value": "7d46f1aa7c0a83b4fe386b6c72b132fd3650942a23d0110451cf3c3f6b85b8aa",
+    "display": "7d46f1aa7c0a83b4fe386b6c72b132fd3650942a23d0110451cf3c3f6b85b8aa",
+    "source": "recomputed: sha256(casefold(NFC + whitespace-normalized text))",
+    "note": ""
+  },
+  "excluded_rows": {
+    "value": 11,
+    "display": "11",
+    "source": "data/profile.json:exclusion_reasons",
+    "note": ""
+  },
+  "n_train": {
+    "value": 7993,
+    "display": "7,993",
+    "source": "data/m3/splits.json:counts.train",
+    "note": ""
+  },
+  "n_val": {
+    "value": 1999,
+    "display": "1,999",
+    "source": "data/m3/splits.json:counts.val",
+    "note": ""
+  },
+  "n_test": {
+    "value": 3080,
+    "display": "3,080",
+    "source": "data/m3/splits.json:counts.test",
+    "note": ""
+  },
+  "share_train_ADDRESS": {
+    "value": 0.2543475541098461,
+    "display": "25.4%",
+    "source": "data/m3/splits.json:balance.train.pii_type.ADDRESS",
+    "note": ""
+  },
+  "share_train_EMAIL": {
+    "value": 0.24133616914800451,
+    "display": "24.1%",
+    "source": "data/m3/splits.json:balance.train.pii_type.EMAIL",
+    "note": ""
+  },
+  "share_train_PERSON": {
+    "value": 0.25059426998623796,
+    "display": "25.1%",
+    "source": "data/m3/splits.json:balance.train.pii_type.PERSON",
+    "note": ""
+  },
+  "share_train_PHONE": {
+    "value": 0.25372200675591144,
+    "display": "25.4%",
+    "source": "data/m3/splits.json:balance.train.pii_type.PHONE",
+    "note": ""
+  },
+  "share_train_prefix": {
+    "value": 0.5014387589140498,
+    "display": "50.1%",
+    "source": "data/m3/splits.json:balance.train.placement",
+    "note": ""
+  },
+  "train_min_per_intent": {
+    "value": 28,
+    "display": "28",
+    "source": "data/m3/splits.json:balance.train.min_per_intent",
+    "note": ""
+  },
+  "train_max_per_intent": {
+    "value": 149,
+    "display": "149",
+    "source": "data/m3/splits.json:balance.train.max_per_intent",
+    "note": ""
+  },
+  "share_val_ADDRESS": {
+    "value": 0.2541270635317659,
+    "display": "25.4%",
+    "source": "data/m3/splits.json:balance.val.pii_type.ADDRESS",
+    "note": ""
+  },
+  "share_val_EMAIL": {
+    "value": 0.2466233116558279,
+    "display": "24.7%",
+    "source": "data/m3/splits.json:balance.val.pii_type.EMAIL",
+    "note": ""
+  },
+  "share_val_PERSON": {
+    "value": 0.25162581290645325,
+    "display": "25.2%",
+    "source": "data/m3/splits.json:balance.val.pii_type.PERSON",
+    "note": ""
+  },
+  "share_val_PHONE": {
+    "value": 0.24762381190595298,
+    "display": "24.8%",
+    "source": "data/m3/splits.json:balance.val.pii_type.PHONE",
+    "note": ""
+  },
+  "share_val_prefix": {
+    "value": 0.4992496248124062,
+    "display": "49.9%",
+    "source": "data/m3/splits.json:balance.val.placement",
+    "note": ""
+  },
+  "val_min_per_intent": {
+    "value": 7,
+    "display": "7",
+    "source": "data/m3/splits.json:balance.val.min_per_intent",
+    "note": ""
+  },
+  "val_max_per_intent": {
+    "value": 38,
+    "display": "38",
+    "source": "data/m3/splits.json:balance.val.max_per_intent",
+    "note": ""
+  },
+  "share_test_ADDRESS": {
+    "value": 0.2623376623376623,
+    "display": "26.2%",
+    "source": "data/m3/splits.json:balance.test.pii_type.ADDRESS",
+    "note": ""
+  },
+  "share_test_EMAIL": {
+    "value": 0.23896103896103896,
+    "display": "23.9%",
+    "source": "data/m3/splits.json:balance.test.pii_type.EMAIL",
+    "note": ""
+  },
+  "share_test_PERSON": {
+    "value": 0.23603896103896105,
+    "display": "23.6%",
+    "source": "data/m3/splits.json:balance.test.pii_type.PERSON",
+    "note": ""
+  },
+  "share_test_PHONE": {
+    "value": 0.26266233766233765,
+    "display": "26.3%",
+    "source": "data/m3/splits.json:balance.test.pii_type.PHONE",
+    "note": ""
+  },
+  "share_test_prefix": {
+    "value": 0.4883116883116883,
+    "display": "48.8%",
+    "source": "data/m3/splits.json:balance.test.placement",
+    "note": ""
+  },
+  "test_min_per_intent": {
+    "value": 40,
+    "display": "40",
+    "source": "data/m3/splits.json:balance.test.min_per_intent",
+    "note": ""
+  },
+  "test_max_per_intent": {
+    "value": 40,
+    "display": "40",
+    "source": "data/m3/splits.json:balance.test.max_per_intent",
+    "note": ""
+  },
+  "max_len": {
+    "value": 96,
+    "display": "96",
+    "source": "results/m3/data/max_len.json",
+    "note": ""
+  },
+  "test_truncated": {
+    "value": 0,
+    "display": "0",
+    "source": "results/m3/data/max_len.json",
+    "note": ""
+  },
+  "tokens_p999_max": {
+    "value": 88.0,
+    "display": "88",
+    "source": "results/m3/data/token_lengths.csv",
+    "note": "largest p99.9 token count over conditions"
+  },
+  "tokens_max": {
+    "value": 117,
+    "display": "117",
+    "source": "results/m3/data/token_lengths.csv",
+    "note": "longest input in tokens, any condition/split"
+  },
+  "challenge_n": {
+    "value": 376,
+    "display": "376",
+    "source": "data/m3/challenge_set.jsonl",
+    "note": ""
+  },
+  "challenge_pos": {
+    "value": 312,
+    "display": "312",
+    "source": "data/m3/challenge_set.jsonl",
+    "note": ""
+  },
+  "challenge_neg": {
+    "value": 64,
+    "display": "64",
+    "source": "data/m3/challenge_set.jsonl",
+    "note": ""
+  },
+  "challenge_formats": {
+    "value": 39,
+    "display": "39",
+    "source": "data/m3/challenge_set.jsonl",
+    "note": "positive format groups"
+  },
+  "challenge_neg_groups": {
+    "value": 8,
+    "display": "8",
+    "source": "data/m3/challenge_set.jsonl",
+    "note": ""
+  },
+  "n_challenge_dev": {
+    "value": 188,
+    "display": "188",
+    "source": "data/m3/challenge_set.jsonl:subset",
+    "note": ""
+  },
+  "n_challenge_heldout": {
+    "value": 188,
+    "display": "188",
+    "source": "data/m3/challenge_set.jsonl:subset",
+    "note": ""
+  },
+  "challenge_PERSON": {
+    "value": 96,
+    "display": "96",
+    "source": "data/m3/challenge_set.jsonl:category",
+    "note": ""
+  },
+  "challenge_EMAIL": {
+    "value": 64,
+    "display": "64",
+    "source": "data/m3/challenge_set.jsonl:category",
+    "note": ""
+  },
+  "challenge_PHONE": {
+    "value": 64,
+    "display": "64",
+    "source": "data/m3/challenge_set.jsonl:category",
+    "note": ""
+  },
+  "challenge_ADDRESS": {
+    "value": 88,
+    "display": "88",
+    "source": "data/m3/challenge_set.jsonl:category",
+    "note": ""
+  },
+  "n_condition_rows": {
+    "value": 104664,
+    "display": "104,664",
+    "source": "data/m3/conditions.jsonl.gz",
+    "note": ""
+  },
+  "n_condition_rows_modeled": {
+    "value": 104576,
+    "display": "104,576",
+    "source": "data/m3/conditions.jsonl.gz",
+    "note": ""
+  },
+  "review24_pass": {
+    "value": 24,
+    "display": "24",
+    "source": "data/m3/detector_review_24.csv",
+    "note": ""
+  },
+  "detector_variant": {
+    "value": "V2",
+    "display": "V2",
+    "source": "results/m3/detector/selection.json",
+    "note": ""
+  },
+  "m2_found_total": {
+    "value": 13039,
+    "display": "13,039",
+    "source": "results/m3/detector/m2_reproduction.json:result.ALL.found",
+    "note": ""
+  },
+  "person_found": {
+    "value": 3191,
+    "display": "3,191",
+    "source": "results/m3/detector/m2_reproduction.json",
+    "note": ""
+  },
+  "person_full": {
+    "value": 3101,
+    "display": "3,101",
+    "source": "results/m3/detector/m2_reproduction.json",
+    "note": ""
+  },
+  "person_left_m2": {
+    "value": 32,
+    "display": "32",
+    "source": "results/m3/detector/m2_reproduction.json",
+    "note": ""
+  },
+  "person_partial_90": {
+    "value": 90,
+    "display": "90",
+    "source": "results/m3/detector/m2_reproduction.json",
+    "note": "found but only partly covered"
+  },
+  "person_missed": {
+    "value": 44,
+    "display": "44",
+    "source": "results/m3/detector/person_44_breakdown.csv",
+    "note": ""
+  },
+  "person_missed_left": {
+    "value": 32,
+    "display": "32",
+    "source": "results/m3/detector/person_44_breakdown.csv",
+    "note": ""
+  },
+  "person_missed_other_type": {
+    "value": 12,
+    "display": "12",
+    "source": "results/m3/detector/person_44_breakdown.csv",
+    "note": ""
+  },
+  "V0_sel_recall": {
+    "value": 0.8287,
+    "display": "82.9%",
+    "source": "results/m3/detector/V0.json:ledger.ALL",
+    "note": ""
+  },
+  "V0_sel_full": {
+    "value": 0.7349,
+    "display": "73.5%",
+    "source": "results/m3/detector/V0.json:ledger.ALL",
+    "note": ""
+  },
+  "V0_sel_leak": {
+    "value": 0.0957,
+    "display": "9.57%",
+    "source": "results/m3/detector/V0.json:ledger.ALL",
+    "note": ""
+  },
+  "V0_sel_leaks": {
+    "value": 956,
+    "display": "956",
+    "source": "results/m3/detector/V0.json:ledger.ALL",
+    "note": ""
+  },
+  "V0_sel_over": {
+    "value": 0.0323,
+    "display": "3.2%",
+    "source": "results/m3/detector/V0.json:over_redaction",
+    "note": ""
+  },
+  "V0_dev_recall": {
+    "value": 0.8718,
+    "display": "87.2%",
+    "source": "results/m3/detector/V0.json:challenge_dev",
+    "note": ""
+  },
+  "V0_median_ms": {
+    "value": 5.89,
+    "display": "5.9 ms",
+    "source": "results/m3/detector/V0.json:latency",
+    "note": ""
+  },
+  "V1_sel_recall": {
+    "value": 0.9965,
+    "display": "99.7%",
+    "source": "results/m3/detector/V1.json:ledger.ALL",
+    "note": ""
+  },
+  "V1_sel_full": {
+    "value": 0.9892,
+    "display": "98.9%",
+    "source": "results/m3/detector/V1.json:ledger.ALL",
+    "note": ""
+  },
+  "V1_sel_leak": {
+    "value": 0.0024,
+    "display": "0.24%",
+    "source": "results/m3/detector/V1.json:ledger.ALL",
+    "note": ""
+  },
+  "V1_sel_leaks": {
+    "value": 24,
+    "display": "24",
+    "source": "results/m3/detector/V1.json:ledger.ALL",
+    "note": ""
+  },
+  "V1_sel_over": {
+    "value": 0.0323,
+    "display": "3.2%",
+    "source": "results/m3/detector/V1.json:over_redaction",
+    "note": ""
+  },
+  "V1_dev_recall": {
+    "value": 0.891,
+    "display": "89.1%",
+    "source": "results/m3/detector/V1.json:challenge_dev",
+    "note": ""
+  },
+  "V1_median_ms": {
+    "value": 5.89,
+    "display": "5.9 ms",
+    "source": "results/m3/detector/V1.json:latency",
+    "note": ""
+  },
+  "V2_sel_recall": {
+    "value": 1.0,
+    "display": "100.0%",
+    "source": "results/m3/detector/V2.json:ledger.ALL",
+    "note": ""
+  },
+  "V2_sel_full": {
+    "value": 0.9935,
+    "display": "99.4%",
+    "source": "results/m3/detector/V2.json:ledger.ALL",
+    "note": ""
+  },
+  "V2_sel_leak": {
+    "value": 0.0,
+    "display": "0.00%",
+    "source": "results/m3/detector/V2.json:ledger.ALL",
+    "note": ""
+  },
+  "V2_sel_leaks": {
+    "value": 0,
+    "display": "0",
+    "source": "results/m3/detector/V2.json:ledger.ALL",
+    "note": ""
+  },
+  "V2_sel_over": {
+    "value": 0.0308,
+    "display": "3.1%",
+    "source": "results/m3/detector/V2.json:over_redaction",
+    "note": ""
+  },
+  "V2_dev_recall": {
+    "value": 0.9936,
+    "display": "99.4%",
+    "source": "results/m3/detector/V2.json:challenge_dev",
+    "note": ""
+  },
+  "V2_median_ms": {
+    "value": 17.59,
+    "display": "17.6 ms",
+    "source": "results/m3/detector/V2.json:latency",
+    "note": ""
+  },
+  "V3_sel_recall": {
+    "value": 1.0,
+    "display": "100.0%",
+    "source": "results/m3/detector/V3.json:ledger.ALL",
+    "note": ""
+  },
+  "V3_sel_full": {
+    "value": 0.9935,
+    "display": "99.4%",
+    "source": "results/m3/detector/V3.json:ledger.ALL",
+    "note": ""
+  },
+  "V3_sel_leak": {
+    "value": 0.0,
+    "display": "0.00%",
+    "source": "results/m3/detector/V3.json:ledger.ALL",
+    "note": ""
+  },
+  "V3_sel_leaks": {
+    "value": 0,
+    "display": "0",
+    "source": "results/m3/detector/V3.json:ledger.ALL",
+    "note": ""
+  },
+  "V3_sel_over": {
+    "value": 0.0332,
+    "display": "3.3%",
+    "source": "results/m3/detector/V3.json:over_redaction",
+    "note": ""
+  },
+  "V3_dev_recall": {
+    "value": 0.9295,
+    "display": "93.0%",
+    "source": "results/m3/detector/V3.json:challenge_dev",
+    "note": ""
+  },
+  "V3_median_ms": {
+    "value": 20.62,
+    "display": "20.6 ms",
+    "source": "results/m3/detector/V3.json:latency",
+    "note": ""
+  },
+  "n_trainval_ledger": {
+    "value": 9992,
+    "display": "9,992",
+    "source": "results/m3/detector/V1.json",
+    "note": ""
+  },
+  "V1_test_recall": {
+    "value": 0.9971,
+    "display": "99.7%",
+    "source": "results/m3/detector/final_V1.json:ledger_test.ALL",
+    "note": ""
+  },
+  "V1_test_full": {
+    "value": 0.9916,
+    "display": "99.2%",
+    "source": "results/m3/detector/final_V1.json:ledger_test.ALL",
+    "note": ""
+  },
+  "V1_test_leaks": {
+    "value": 8,
+    "display": "8",
+    "source": "results/m3/detector/final_V1.json:ledger_test.ALL",
+    "note": ""
+  },
+  "V1_test_leak_rate": {
+    "value": 0.0026,
+    "display": "0.26%",
+    "source": "results/m3/detector/final_V1.json:ledger_test.ALL",
+    "note": ""
+  },
+  "V1_test_partial": {
+    "value": 3,
+    "display": "3",
+    "source": "results/m3/detector/final_V1.json:ledger_test.ALL",
+    "note": ""
+  },
+  "V1_test_leaks_EMAIL": {
+    "value": 0,
+    "display": "0",
+    "source": "results/m3/detector/final_V1.json:ledger_test.EMAIL",
+    "note": ""
+  },
+  "V1_test_recall_EMAIL": {
+    "value": 1.0,
+    "display": "100.0%",
+    "source": "results/m3/detector/final_V1.json:ledger_test.EMAIL",
+    "note": ""
+  },
+  "V1_test_leaks_PHONE": {
+    "value": 0,
+    "display": "0",
+    "source": "results/m3/detector/final_V1.json:ledger_test.PHONE",
+    "note": ""
+  },
+  "V1_test_recall_PHONE": {
+    "value": 1.0,
+    "display": "100.0%",
+    "source": "results/m3/detector/final_V1.json:ledger_test.PHONE",
+    "note": ""
+  },
+  "V1_test_leaks_PERSON": {
+    "value": 8,
+    "display": "8",
+    "source": "results/m3/detector/final_V1.json:ledger_test.PERSON",
+    "note": ""
+  },
+  "V1_test_recall_PERSON": {
+    "value": 0.9876,
+    "display": "98.8%",
+    "source": "results/m3/detector/final_V1.json:ledger_test.PERSON",
+    "note": ""
+  },
+  "V1_test_leaks_ADDRESS": {
+    "value": 0,
+    "display": "0",
+    "source": "results/m3/detector/final_V1.json:ledger_test.ADDRESS",
+    "note": ""
+  },
+  "V1_test_recall_ADDRESS": {
+    "value": 1.0,
+    "display": "100.0%",
+    "source": "results/m3/detector/final_V1.json:ledger_test.ADDRESS",
+    "note": ""
+  },
+  "V1_all_leaks": {
+    "value": 32,
+    "display": "32",
+    "source": "results/m3/detector/final_V1.json:ledger_all_13083.ALL",
+    "note": ""
+  },
+  "V1_all_recall": {
+    "value": 0.9966,
+    "display": "99.7%",
+    "source": "results/m3/detector/final_V1.json:ledger_all_13083.ALL",
+    "note": ""
+  },
+  "V1_test_over": {
+    "value": 0.0299,
+    "display": "3.0%",
+    "source": "results/m3/detector/final_V1.json:over_redaction_test",
+    "note": ""
+  },
+  "V1_held_recall": {
+    "value": 0.891,
+    "display": "89.1%",
+    "source": "results/m3/detector/final_V1.json:challenge_heldout.by_type.ALL",
+    "note": ""
+  },
+  "V1_held_leak": {
+    "value": 0.0577,
+    "display": "5.8%",
+    "source": "results/m3/detector/final_V1.json:challenge_heldout.by_type.ALL",
+    "note": ""
+  },
+  "V1_held_neg_fp": {
+    "value": 0.2812,
+    "display": "28.1%",
+    "source": "results/m3/detector/final_V1.json:challenge_heldout.negatives",
+    "note": ""
+  },
+  "V1_held_recall_PERSON": {
+    "value": 0.8542,
+    "display": "85.4%",
+    "source": "results/m3/detector/final_V1.json:challenge_heldout.by_type.PERSON",
+    "note": ""
+  },
+  "V1_held_recall_EMAIL": {
+    "value": 1.0,
+    "display": "100.0%",
+    "source": "results/m3/detector/final_V1.json:challenge_heldout.by_type.EMAIL",
+    "note": ""
+  },
+  "V1_held_recall_PHONE": {
+    "value": 1.0,
+    "display": "100.0%",
+    "source": "results/m3/detector/final_V1.json:challenge_heldout.by_type.PHONE",
+    "note": ""
+  },
+  "V1_held_recall_ADDRESS": {
+    "value": 0.7727,
+    "display": "77.3%",
+    "source": "results/m3/detector/final_V1.json:challenge_heldout.by_type.ADDRESS",
+    "note": ""
+  },
+  "V1_all_median_ms": {
+    "value": 5.83,
+    "display": "5.8 ms",
+    "source": "results/m3/detector/final_V1.json:latency_all",
+    "note": ""
+  },
+  "V2_test_recall": {
+    "value": 1.0,
+    "display": "100.0%",
+    "source": "results/m3/detector/final_V2.json:ledger_test.ALL",
+    "note": ""
+  },
+  "V2_test_full": {
+    "value": 0.9968,
+    "display": "99.7%",
+    "source": "results/m3/detector/final_V2.json:ledger_test.ALL",
+    "note": ""
+  },
+  "V2_test_leaks": {
+    "value": 0,
+    "display": "0",
+    "source": "results/m3/detector/final_V2.json:ledger_test.ALL",
+    "note": ""
+  },
+  "V2_test_leak_rate": {
+    "value": 0.0,
+    "display": "0.00%",
+    "source": "results/m3/detector/final_V2.json:ledger_test.ALL",
+    "note": ""
+  },
+  "V2_test_partial": {
+    "value": 0,
+    "display": "0",
+    "source": "results/m3/detector/final_V2.json:ledger_test.ALL",
+    "note": ""
+  },
+  "V2_test_leaks_EMAIL": {
+    "value": 0,
+    "display": "0",
+    "source": "results/m3/detector/final_V2.json:ledger_test.EMAIL",
+    "note": ""
+  },
+  "V2_test_recall_EMAIL": {
+    "value": 1.0,
+    "display": "100.0%",
+    "source": "results/m3/detector/final_V2.json:ledger_test.EMAIL",
+    "note": ""
+  },
+  "V2_test_leaks_PHONE": {
+    "value": 0,
+    "display": "0",
+    "source": "results/m3/detector/final_V2.json:ledger_test.PHONE",
+    "note": ""
+  },
+  "V2_test_recall_PHONE": {
+    "value": 1.0,
+    "display": "100.0%",
+    "source": "results/m3/detector/final_V2.json:ledger_test.PHONE",
+    "note": ""
+  },
+  "V2_test_leaks_PERSON": {
+    "value": 0,
+    "display": "0",
+    "source": "results/m3/detector/final_V2.json:ledger_test.PERSON",
+    "note": ""
+  },
+  "V2_test_recall_PERSON": {
+    "value": 1.0,
+    "display": "100.0%",
+    "source": "results/m3/detector/final_V2.json:ledger_test.PERSON",
+    "note": ""
+  },
+  "V2_test_leaks_ADDRESS": {
+    "value": 0,
+    "display": "0",
+    "source": "results/m3/detector/final_V2.json:ledger_test.ADDRESS",
+    "note": ""
+  },
+  "V2_test_recall_ADDRESS": {
+    "value": 1.0,
+    "display": "100.0%",
+    "source": "results/m3/detector/final_V2.json:ledger_test.ADDRESS",
+    "note": ""
+  },
+  "V2_all_leaks": {
+    "value": 0,
+    "display": "0",
+    "source": "results/m3/detector/final_V2.json:ledger_all_13083.ALL",
+    "note": ""
+  },
+  "V2_all_recall": {
+    "value": 1.0,
+    "display": "100.0%",
+    "source": "results/m3/detector/final_V2.json:ledger_all_13083.ALL",
+    "note": ""
+  },
+  "V2_test_over": {
+    "value": 0.0295,
+    "display": "2.9%",
+    "source": "results/m3/detector/final_V2.json:over_redaction_test",
+    "note": ""
+  },
+  "V2_held_recall": {
+    "value": 0.9808,
+    "display": "98.1%",
+    "source": "results/m3/detector/final_V2.json:challenge_heldout.by_type.ALL",
+    "note": ""
+  },
+  "V2_held_leak": {
+    "value": 0.0192,
+    "display": "1.9%",
+    "source": "results/m3/detector/final_V2.json:challenge_heldout.by_type.ALL",
+    "note": ""
+  },
+  "V2_held_neg_fp": {
+    "value": 0.2188,
+    "display": "21.9%",
+    "source": "results/m3/detector/final_V2.json:challenge_heldout.negatives",
+    "note": ""
+  },
+  "V2_held_recall_PERSON": {
+    "value": 0.9583,
+    "display": "95.8%",
+    "source": "results/m3/detector/final_V2.json:challenge_heldout.by_type.PERSON",
+    "note": ""
+  },
+  "V2_held_recall_EMAIL": {
+    "value": 1.0,
+    "display": "100.0%",
+    "source": "results/m3/detector/final_V2.json:challenge_heldout.by_type.EMAIL",
+    "note": ""
+  },
+  "V2_held_recall_PHONE": {
+    "value": 1.0,
+    "display": "100.0%",
+    "source": "results/m3/detector/final_V2.json:challenge_heldout.by_type.PHONE",
+    "note": ""
+  },
+  "V2_held_recall_ADDRESS": {
+    "value": 0.9773,
+    "display": "97.7%",
+    "source": "results/m3/detector/final_V2.json:challenge_heldout.by_type.ADDRESS",
+    "note": ""
+  },
+  "V2_all_median_ms": {
+    "value": 17.52,
+    "display": "17.5 ms",
+    "source": "results/m3/detector/final_V2.json:latency_all",
+    "note": ""
+  },
+  "over_example_entities": {
+    "value": [
+      "LOCATION",
+      "PERSON"
+    ],
+    "display": "LOCATION, PERSON",
+    "source": "results/m3/detector/over_redaction_examples.json",
+    "note": ""
+  },
+  "model_name": {
+    "value": "MiniLM embeddings + logistic regression",
+    "display": "MiniLM embeddings + logistic regression",
+    "source": "configs/frozen_model.yaml:model.family",
+    "note": ""
+  },
+  "e1_t1_accuracy": {
+    "value": 0.801901,
+    "display": "0.802",
+    "source": "results/m3/runs/e1_distilbert_lr2e-05_c1_s553/metrics.json:val.C1.accuracy",
+    "note": ""
+  },
+  "e1_t1_macro_precision": {
+    "value": 0.785328,
+    "display": "0.785",
+    "source": "results/m3/runs/e1_distilbert_lr2e-05_c1_s553/metrics.json:val.C1.macro_precision",
+    "note": ""
+  },
+  "e1_t1_macro_recall": {
+    "value": 0.760861,
+    "display": "0.761",
+    "source": "results/m3/runs/e1_distilbert_lr2e-05_c1_s553/metrics.json:val.C1.macro_recall",
+    "note": ""
+  },
+  "e1_t1_macro_f1": {
+    "value": 0.749492,
+    "display": "0.749",
+    "source": "results/m3/runs/e1_distilbert_lr2e-05_c1_s553/metrics.json:val.C1.macro_f1",
+    "note": ""
+  },
+  "e1_t1_ms": {
+    "value": 7.739,
+    "display": "7.7 ms",
+    "source": "results/m3/latency.json:classifiers.e1_distilbert_lr2e-05_c1_s553",
+    "note": ""
+  },
+  "e1_t1_p95": {
+    "value": 11.002,
+    "display": "11.0 ms",
+    "source": "results/m3/latency.json:classifiers.e1_distilbert_lr2e-05_c1_s553",
+    "note": ""
+  },
+  "e1_t1_params": {
+    "value": 67012685,
+    "display": "67.0M",
+    "source": "results/m3/latency.json:n_parameters",
+    "note": ""
+  },
+  "e1_t1_train_s": {
+    "value": 88,
+    "display": "88",
+    "source": "results/m3/runs/e1_distilbert_lr2e-05_c1_s553/metrics.json:train_seconds",
+    "note": ""
+  },
+  "e1_t1_selected": {
+    "value": {
+      "lr": 2e-05,
+      "best_epoch": 4
+    },
+    "display": "{\"lr\": 2e-05, \"best_epoch\": 4}",
+    "source": "results/m3/runs/e1_distilbert_lr2e-05_c1_s553/metrics.json",
+    "note": ""
+  },
+  "t1_epochs": {
+    "value": 4,
+    "display": "4",
+    "source": "results/m3/runs/e1_distilbert_lr2e-05_c1_s553/train_curve.csv",
+    "note": ""
+  },
+  "t1_epoch1_f1": {
+    "value": 0.387616,
+    "display": "0.388",
+    "source": "results/m3/runs/e1_distilbert_lr2e-05_c1_s553/train_curve.csv",
+    "note": ""
+  },
+  "t1_last_epoch_gain": {
+    "value": 0.03154200000000007,
+    "display": "+3.2 pp",
+    "source": "results/m3/runs/e1_distilbert_lr2e-05_c1_s553/train_curve.csv",
+    "note": "val Macro-F1 gain in the last epoch"
+  },
+  "e1_b2_accuracy": {
+    "value": 0.901951,
+    "display": "0.902",
+    "source": "results/m3/runs/e1_minilm_clf_c1_s553/metrics.json:val.C1.accuracy",
+    "note": ""
+  },
+  "e1_b2_macro_precision": {
+    "value": 0.911768,
+    "display": "0.912",
+    "source": "results/m3/runs/e1_minilm_clf_c1_s553/metrics.json:val.C1.macro_precision",
+    "note": ""
+  },
+  "e1_b2_macro_recall": {
+    "value": 0.900737,
+    "display": "0.901",
+    "source": "results/m3/runs/e1_minilm_clf_c1_s553/metrics.json:val.C1.macro_recall",
+    "note": ""
+  },
+  "e1_b2_macro_f1": {
+    "value": 0.903627,
+    "display": "0.904",
+    "source": "results/m3/runs/e1_minilm_clf_c1_s553/metrics.json:val.C1.macro_f1",
+    "note": ""
+  },
+  "e1_b2_ms": {
+    "value": 4.09,
+    "display": "4.1 ms",
+    "source": "results/m3/latency.json:classifiers.e1_minilm_clf_c1_s553",
+    "note": ""
+  },
+  "e1_b2_p95": {
+    "value": 6.164,
+    "display": "6.2 ms",
+    "source": "results/m3/latency.json:classifiers.e1_minilm_clf_c1_s553",
+    "note": ""
+  },
+  "e1_b2_params": {
+    "value": 22742861,
+    "display": "22.7M",
+    "source": "results/m3/latency.json:n_parameters",
+    "note": ""
+  },
+  "e1_b2_train_s": {
+    "value": 131,
+    "display": "131",
+    "source": "results/m3/runs/e1_minilm_clf_c1_s553/metrics.json:train_seconds",
+    "note": ""
+  },
+  "e1_b2_selected": {
+    "value": {
+      "head": "logreg",
+      "C": 10
+    },
+    "display": "{\"head\": \"logreg\", \"C\": 10}",
+    "source": "results/m3/runs/e1_minilm_clf_c1_s553/metrics.json",
+    "note": ""
+  },
+  "e1_b1_accuracy": {
+    "value": 0.87944,
+    "display": "0.879",
+    "source": "results/m3/runs/e1_tfidf_svm_c1_s553/metrics.json:val.C1.accuracy",
+    "note": ""
+  },
+  "e1_b1_macro_precision": {
+    "value": 0.88379,
+    "display": "0.884",
+    "source": "results/m3/runs/e1_tfidf_svm_c1_s553/metrics.json:val.C1.macro_precision",
+    "note": ""
+  },
+  "e1_b1_macro_recall": {
+    "value": 0.877288,
+    "display": "0.877",
+    "source": "results/m3/runs/e1_tfidf_svm_c1_s553/metrics.json:val.C1.macro_recall",
+    "note": ""
+  },
+  "e1_b1_macro_f1": {
+    "value": 0.878547,
+    "display": "0.879",
+    "source": "results/m3/runs/e1_tfidf_svm_c1_s553/metrics.json:val.C1.macro_f1",
+    "note": ""
+  },
+  "e1_b1_ms": {
+    "value": 0.37,
+    "display": "0.37 ms",
+    "source": "results/m3/latency.json:classifiers.e1_tfidf_svm_c1_s553",
+    "note": ""
+  },
+  "e1_b1_p95": {
+    "value": 0.52,
+    "display": "0.52 ms",
+    "source": "results/m3/latency.json:classifiers.e1_tfidf_svm_c1_s553",
+    "note": ""
+  },
+  "e1_b1_params": {
+    "value": 4088315,
+    "display": "4.1M",
+    "source": "results/m3/latency.json:n_parameters",
+    "note": ""
+  },
+  "e1_b1_train_s": {
+    "value": 83,
+    "display": "83",
+    "source": "results/m3/runs/e1_tfidf_svm_c1_s553/metrics.json:train_seconds",
+    "note": ""
+  },
+  "e1_b1_selected": {
+    "value": {
+      "analyzer": "word",
+      "ngram": [
+        1,
+        2
+      ],
+      "C": 10,
+      "min_df": 1,
+      "class_weight": "balanced"
+    },
+    "display": "{\"analyzer\": \"word\", \"ngram\": [1, 2], \"C\": 10, \"min_df\": 1, \"class_weight\": \"balanced\"}",
+    "source": "results/m3/runs/e1_tfidf_svm_c1_s553/metrics.json",
+    "note": ""
+  },
+  "gap_b2_b1": {
+    "value": 0.02507999999999999,
+    "display": "2.5 pp",
+    "source": "derived: e1_b2_macro_f1 - e1_b1_macro_f1",
+    "note": "unsigned gap in validation Macro-F1"
+  },
+  "gap_b2_t1": {
+    "value": 0.1541349999999999,
+    "display": "15.4 pp",
+    "source": "derived: e1_b2_macro_f1 - e1_t1_macro_f1",
+    "note": "unsigned gap in validation Macro-F1"
+  },
+  "speedup_b1_vs_b2": {
+    "value": 11.054054054054054,
+    "display": "11x",
+    "source": "derived: median ms b2 / b1",
+    "note": ""
+  },
+  "frozen_C": {
+    "value": 10,
+    "display": "10",
+    "source": "configs/frozen_model.yaml",
+    "note": ""
+  },
+  "b1_params_C": {
+    "value": 10,
+    "display": "10",
+    "source": "configs/frozen_model.yaml",
+    "note": ""
+  },
+  "n_test_evals": {
+    "value": 15,
+    "display": "15",
+    "source": "results/m3/test_eval_log.csv",
+    "note": ""
+  },
+  "n_runs": {
+    "value": 18,
+    "display": "18",
+    "source": "results/m3/runs/*/metrics.json",
+    "note": ""
+  },
+  "e2e_median_ms": {
+    "value": 21.202,
+    "display": "21.2 ms",
+    "source": "results/m3/latency.json:pipeline",
+    "note": ""
+  },
+  "e2e_p95_ms": {
+    "value": 30.181,
+    "display": "30.2 ms",
+    "source": "results/m3/latency.json:pipeline",
+    "note": ""
+  },
+  "e2e_records_per_hour": {
+    "value": 160929,
+    "display": "160,929",
+    "source": "results/m3/latency.json:pipeline",
+    "note": ""
+  },
+  "det_median_ms_lat": {
+    "value": 16.868,
+    "display": "16.9 ms",
+    "source": "results/m3/latency.json:detector.batch1",
+    "note": ""
+  },
+  "det_p95_ms_lat": {
+    "value": 24.075,
+    "display": "24.1 ms",
+    "source": "results/m3/latency.json:detector.batch1",
+    "note": ""
+  },
+  "det_records_per_hour": {
+    "value": 208964,
+    "display": "208,964",
+    "source": "results/m3/latency.json:detector",
+    "note": ""
+  },
+  "cls_median_ms_lat": {
+    "value": 4.09,
+    "display": "4.1 ms",
+    "source": "results/m3/latency.json:classifiers",
+    "note": ""
+  },
+  "cls_p95_ms_lat": {
+    "value": 6.164,
+    "display": "6.2 ms",
+    "source": "results/m3/latency.json:classifiers",
+    "note": ""
+  },
+  "cls_records_per_hour_b64": {
+    "value": 1275977,
+    "display": "1,275,977",
+    "source": "results/m3/latency.json:classifiers",
+    "note": ""
+  },
+  "cpu_name": {
+    "value": "13th Gen Intel(R) Core(TM) i7-13700KF",
+    "display": "13th Gen Intel(R) Core(TM) i7-13700KF",
+    "source": "results/m3/latency.json:cpu",
+    "note": ""
+  },
+  "frozen_C0_f1": {
+    "value": 0.916339,
+    "display": "0.916",
+    "source": "results/m3/analysis/main_table.csv:frozen,C0",
+    "note": ""
+  },
+  "frozen_C0_f1_ci": {
+    "value": [
+      0.905122,
+      0.925334
+    ],
+    "display": "0.905-0.925",
+    "source": "results/m3/analysis/main_table.csv:frozen,C0",
+    "note": ""
+  },
+  "frozen_C0_acc": {
+    "value": 0.916558,
+    "display": "91.7%",
+    "source": "results/m3/analysis/main_table.csv:frozen,C0",
+    "note": ""
+  },
+  "frozen_C0_d": {
+    "value": 0.021965,
+    "display": "+2.2 pp",
+    "source": "results/m3/analysis/main_table.csv:frozen,C0",
+    "note": "Macro-F1 difference vs C1 raw"
+  },
+  "frozen_C0_d_ci": {
+    "value": [
+      0.014404,
+      0.029962
+    ],
+    "display": "+1.4 to +3.0",
+    "source": "results/m3/analysis/main_table.csv:frozen,C0",
+    "note": ""
+  },
+  "frozen_C0_p": {
+    "value": 0.0,
+    "display": "< 0.001",
+    "source": "results/m3/analysis/main_table.csv:frozen,C0",
+    "note": "exact McNemar vs C1 (Holm within method family)"
+  },
+  "frozen_C1_f1": {
+    "value": 0.894374,
+    "display": "0.894",
+    "source": "results/m3/analysis/main_table.csv:frozen,C1",
+    "note": ""
+  },
+  "frozen_C1_f1_ci": {
+    "value": [
+      0.882231,
+      0.90377
+    ],
+    "display": "0.882-0.904",
+    "source": "results/m3/analysis/main_table.csv:frozen,C1",
+    "note": ""
+  },
+  "frozen_C1_acc": {
+    "value": 0.894156,
+    "display": "89.4%",
+    "source": "results/m3/analysis/main_table.csv:frozen,C1",
+    "note": ""
+  },
+  "frozen_C2_f1": {
+    "value": 0.90348,
+    "display": "0.903",
+    "source": "results/m3/analysis/main_table.csv:frozen,C2",
+    "note": ""
+  },
+  "frozen_C2_f1_ci": {
+    "value": [
+      0.892574,
+      0.912807
+    ],
+    "display": "0.893-0.913",
+    "source": "results/m3/analysis/main_table.csv:frozen,C2",
+    "note": ""
+  },
+  "frozen_C2_acc": {
+    "value": 0.903247,
+    "display": "90.3%",
+    "source": "results/m3/analysis/main_table.csv:frozen,C2",
+    "note": ""
+  },
+  "frozen_C2_d": {
+    "value": 0.009106,
+    "display": "+0.9 pp",
+    "source": "results/m3/analysis/main_table.csv:frozen,C2",
+    "note": "Macro-F1 difference vs C1 raw"
+  },
+  "frozen_C2_d_ci": {
+    "value": [
+      0.001144,
+      0.017104
+    ],
+    "display": "+0.1 to +1.7",
+    "source": "results/m3/analysis/main_table.csv:frozen,C2",
+    "note": ""
+  },
+  "frozen_C2_p": {
+    "value": 0.062773,
+    "display": "0.06",
+    "source": "results/m3/analysis/main_table.csv:frozen,C2",
+    "note": "exact McNemar vs C1 (Holm within method family)"
+  },
+  "frozen_C3_f1": {
+    "value": 0.857243,
+    "display": "0.857",
+    "source": "results/m3/analysis/main_table.csv:frozen,C3",
+    "note": ""
+  },
+  "frozen_C3_f1_ci": {
+    "value": [
+      0.843837,
+      0.867291
+    ],
+    "display": "0.844-0.867",
+    "source": "results/m3/analysis/main_table.csv:frozen,C3",
+    "note": ""
+  },
+  "frozen_C3_acc": {
+    "value": 0.852273,
+    "display": "85.2%",
+    "source": "results/m3/analysis/main_table.csv:frozen,C3",
+    "note": ""
+  },
+  "frozen_C3_d": {
+    "value": -0.037131,
+    "display": "-3.7 pp",
+    "source": "results/m3/analysis/main_table.csv:frozen,C3",
+    "note": "Macro-F1 difference vs C1 raw"
+  },
+  "frozen_C3_d_ci": {
+    "value": [
+      -0.0481,
+      -0.027113
+    ],
+    "display": "-4.8 to -2.7",
+    "source": "results/m3/analysis/main_table.csv:frozen,C3",
+    "note": ""
+  },
+  "frozen_C3_p": {
+    "value": 0.0,
+    "display": "< 0.001",
+    "source": "results/m3/analysis/main_table.csv:frozen,C3",
+    "note": "exact McNemar vs C1 (Holm within method family)"
+  },
+  "frozen_C4_f1": {
+    "value": 0.900784,
+    "display": "0.901",
+    "source": "results/m3/analysis/main_table.csv:frozen,C4",
+    "note": ""
+  },
+  "frozen_C4_f1_ci": {
+    "value": [
+      0.889084,
+      0.910022
+    ],
+    "display": "0.889-0.910",
+    "source": "results/m3/analysis/main_table.csv:frozen,C4",
+    "note": ""
+  },
+  "frozen_C4_acc": {
+    "value": 0.900325,
+    "display": "90.0%",
+    "source": "results/m3/analysis/main_table.csv:frozen,C4",
+    "note": ""
+  },
+  "frozen_C4_d": {
+    "value": 0.00641,
+    "display": "+0.6 pp",
+    "source": "results/m3/analysis/main_table.csv:frozen,C4",
+    "note": "Macro-F1 difference vs C1 raw"
+  },
+  "frozen_C4_d_ci": {
+    "value": [
+      -0.001438,
+      0.014599
+    ],
+    "display": "-0.1 to +1.5",
+    "source": "results/m3/analysis/main_table.csv:frozen,C4",
+    "note": ""
+  },
+  "frozen_C4_p": {
+    "value": 0.150614,
+    "display": "0.15",
+    "source": "results/m3/analysis/main_table.csv:frozen,C4",
+    "note": "exact McNemar vs C1 (Holm within method family)"
+  },
+  "frozen_D2_f1": {
+    "value": 0.895407,
+    "display": "0.895",
+    "source": "results/m3/analysis/main_table.csv:frozen,D2",
+    "note": ""
+  },
+  "frozen_D2_f1_ci": {
+    "value": [
+      0.883827,
+      0.904648
+    ],
+    "display": "0.884-0.905",
+    "source": "results/m3/analysis/main_table.csv:frozen,D2",
+    "note": ""
+  },
+  "frozen_D2_acc": {
+    "value": 0.89513,
+    "display": "89.5%",
+    "source": "results/m3/analysis/main_table.csv:frozen,D2",
+    "note": ""
+  },
+  "frozen_D2_d": {
+    "value": 0.001033,
+    "display": "+0.1 pp",
+    "source": "results/m3/analysis/main_table.csv:frozen,D2",
+    "note": "Macro-F1 difference vs C1 raw"
+  },
+  "frozen_D2_d_ci": {
+    "value": [
+      -0.007655,
+      0.00946
+    ],
+    "display": "-0.8 to +0.9",
+    "source": "results/m3/analysis/main_table.csv:frozen,D2",
+    "note": ""
+  },
+  "frozen_D2_p": {
+    "value": 0.881876,
+    "display": "0.88",
+    "source": "results/m3/analysis/main_table.csv:frozen,D2",
+    "note": "exact McNemar vs C1 (Holm within method family)"
+  },
+  "frozen_D3_f1": {
+    "value": 0.84595,
+    "display": "0.846",
+    "source": "results/m3/analysis/main_table.csv:frozen,D3",
+    "note": ""
+  },
+  "frozen_D3_f1_ci": {
+    "value": [
+      0.832179,
+      0.856002
+    ],
+    "display": "0.832-0.856",
+    "source": "results/m3/analysis/main_table.csv:frozen,D3",
+    "note": ""
+  },
+  "frozen_D3_acc": {
+    "value": 0.838961,
+    "display": "83.9%",
+    "source": "results/m3/analysis/main_table.csv:frozen,D3",
+    "note": ""
+  },
+  "frozen_D3_d": {
+    "value": -0.048424,
+    "display": "-4.8 pp",
+    "source": "results/m3/analysis/main_table.csv:frozen,D3",
+    "note": "Macro-F1 difference vs C1 raw"
+  },
+  "frozen_D3_d_ci": {
+    "value": [
+      -0.059817,
+      -0.038503
+    ],
+    "display": "-6.0 to -3.9",
+    "source": "results/m3/analysis/main_table.csv:frozen,D3",
+    "note": ""
+  },
+  "frozen_D3_p": {
+    "value": 0.0,
+    "display": "< 0.001",
+    "source": "results/m3/analysis/main_table.csv:frozen,D3",
+    "note": "exact McNemar vs C1 (Holm within method family)"
+  },
+  "frozen_D4_f1": {
+    "value": 0.889096,
+    "display": "0.889",
+    "source": "results/m3/analysis/main_table.csv:frozen,D4",
+    "note": ""
+  },
+  "frozen_D4_f1_ci": {
+    "value": [
+      0.876964,
+      0.89855
+    ],
+    "display": "0.877-0.899",
+    "source": "results/m3/analysis/main_table.csv:frozen,D4",
+    "note": ""
+  },
+  "frozen_D4_acc": {
+    "value": 0.888636,
+    "display": "88.9%",
+    "source": "results/m3/analysis/main_table.csv:frozen,D4",
+    "note": ""
+  },
+  "frozen_D4_d": {
+    "value": -0.005278,
+    "display": "-0.5 pp",
+    "source": "results/m3/analysis/main_table.csv:frozen,D4",
+    "note": "Macro-F1 difference vs C1 raw"
+  },
+  "frozen_D4_d_ci": {
+    "value": [
+      -0.014025,
+      0.003687
+    ],
+    "display": "-1.4 to +0.4",
+    "source": "results/m3/analysis/main_table.csv:frozen,D4",
+    "note": ""
+  },
+  "frozen_D4_p": {
+    "value": 0.493819,
+    "display": "0.49",
+    "source": "results/m3/analysis/main_table.csv:frozen,D4",
+    "note": "exact McNemar vs C1 (Holm within method family)"
+  },
+  "retrained_C0_f1": {
+    "value": 0.92676,
+    "display": "0.927",
+    "source": "results/m3/analysis/main_table.csv:retrained,C0",
+    "note": ""
+  },
+  "retrained_C0_f1_ci": {
+    "value": [
+      0.916772,
+      0.934874
+    ],
+    "display": "0.917-0.935",
+    "source": "results/m3/analysis/main_table.csv:retrained,C0",
+    "note": ""
+  },
+  "retrained_C0_acc": {
+    "value": 0.926948,
+    "display": "92.7%",
+    "source": "results/m3/analysis/main_table.csv:retrained,C0",
+    "note": ""
+  },
+  "retrained_C0_d": {
+    "value": 0.032386,
+    "display": "+3.2 pp",
+    "source": "results/m3/analysis/main_table.csv:retrained,C0",
+    "note": "Macro-F1 difference vs C1 raw"
+  },
+  "retrained_C0_d_ci": {
+    "value": [
+      0.024492,
+      0.041153
+    ],
+    "display": "+2.4 to +4.1",
+    "source": "results/m3/analysis/main_table.csv:retrained,C0",
+    "note": ""
+  },
+  "retrained_C0_p": {
+    "value": 0.0,
+    "display": "< 0.001",
+    "source": "results/m3/analysis/main_table.csv:retrained,C0",
+    "note": "exact McNemar vs C1 (Holm within method family)"
+  },
+  "retrained_C1_f1": {
+    "value": 0.894374,
+    "display": "0.894",
+    "source": "results/m3/analysis/main_table.csv:retrained,C1",
+    "note": ""
+  },
+  "retrained_C1_f1_ci": {
+    "value": [
+      0.882231,
+      0.90377
+    ],
+    "display": "0.882-0.904",
+    "source": "results/m3/analysis/main_table.csv:retrained,C1",
+    "note": ""
+  },
+  "retrained_C1_acc": {
+    "value": 0.894156,
+    "display": "89.4%",
+    "source": "results/m3/analysis/main_table.csv:retrained,C1",
+    "note": ""
+  },
+  "retrained_C2_f1": {
+    "value": 0.918781,
+    "display": "0.919",
+    "source": "results/m3/analysis/main_table.csv:retrained,C2",
+    "note": ""
+  },
+  "retrained_C2_f1_ci": {
+    "value": [
+      0.908241,
+      0.927393
+    ],
+    "display": "0.908-0.927",
+    "source": "results/m3/analysis/main_table.csv:retrained,C2",
+    "note": ""
+  },
+  "retrained_C2_acc": {
+    "value": 0.918831,
+    "display": "91.9%",
+    "source": "results/m3/analysis/main_table.csv:retrained,C2",
+    "note": ""
+  },
+  "retrained_C2_d": {
+    "value": 0.024407,
+    "display": "+2.4 pp",
+    "source": "results/m3/analysis/main_table.csv:retrained,C2",
+    "note": "Macro-F1 difference vs C1 raw"
+  },
+  "retrained_C2_d_ci": {
+    "value": [
+      0.01653,
+      0.032375
+    ],
+    "display": "+1.7 to +3.2",
+    "source": "results/m3/analysis/main_table.csv:retrained,C2",
+    "note": ""
+  },
+  "retrained_C2_p": {
+    "value": 0.0,
+    "display": "< 0.001",
+    "source": "results/m3/analysis/main_table.csv:retrained,C2",
+    "note": "exact McNemar vs C1 (Holm within method family)"
+  },
+  "retrained_C3_f1": {
+    "value": 0.916384,
+    "display": "0.916",
+    "source": "results/m3/analysis/main_table.csv:retrained,C3",
+    "note": ""
+  },
+  "retrained_C3_f1_ci": {
+    "value": [
+      0.906251,
+      0.925123
+    ],
+    "display": "0.906-0.925",
+    "source": "results/m3/analysis/main_table.csv:retrained,C3",
+    "note": ""
+  },
+  "retrained_C3_acc": {
+    "value": 0.916558,
+    "display": "91.7%",
+    "source": "results/m3/analysis/main_table.csv:retrained,C3",
+    "note": ""
+  },
+  "retrained_C3_d": {
+    "value": 0.02201,
+    "display": "+2.2 pp",
+    "source": "results/m3/analysis/main_table.csv:retrained,C3",
+    "note": "Macro-F1 difference vs C1 raw"
+  },
+  "retrained_C3_d_ci": {
+    "value": [
+      0.0148,
+      0.029896
+    ],
+    "display": "+1.5 to +3.0",
+    "source": "results/m3/analysis/main_table.csv:retrained,C3",
+    "note": ""
+  },
+  "retrained_C3_p": {
+    "value": 0.0,
+    "display": "< 0.001",
+    "source": "results/m3/analysis/main_table.csv:retrained,C3",
+    "note": "exact McNemar vs C1 (Holm within method family)"
+  },
+  "retrained_C4_f1": {
+    "value": 0.913867,
+    "display": "0.914",
+    "source": "results/m3/analysis/main_table.csv:retrained,C4",
+    "note": ""
+  },
+  "retrained_C4_f1_ci": {
+    "value": [
+      0.903607,
+      0.922898
+    ],
+    "display": "0.904-0.923",
+    "source": "results/m3/analysis/main_table.csv:retrained,C4",
+    "note": ""
+  },
+  "retrained_C4_acc": {
+    "value": 0.913961,
+    "display": "91.4%",
+    "source": "results/m3/analysis/main_table.csv:retrained,C4",
+    "note": ""
+  },
+  "retrained_C4_d": {
+    "value": 0.019492,
+    "display": "+1.9 pp",
+    "source": "results/m3/analysis/main_table.csv:retrained,C4",
+    "note": "Macro-F1 difference vs C1 raw"
+  },
+  "retrained_C4_d_ci": {
+    "value": [
+      0.012859,
+      0.027055
+    ],
+    "display": "+1.3 to +2.7",
+    "source": "results/m3/analysis/main_table.csv:retrained,C4",
+    "note": ""
+  },
+  "retrained_C4_p": {
+    "value": 0.0,
+    "display": "< 0.001",
+    "source": "results/m3/analysis/main_table.csv:retrained,C4",
+    "note": "exact McNemar vs C1 (Holm within method family)"
+  },
+  "retrained_D2_f1": {
+    "value": 0.910033,
+    "display": "0.910",
+    "source": "results/m3/analysis/main_table.csv:retrained,D2",
+    "note": ""
+  },
+  "retrained_D2_f1_ci": {
+    "value": [
+      0.898967,
+      0.919135
+    ],
+    "display": "0.899-0.919",
+    "source": "results/m3/analysis/main_table.csv:retrained,D2",
+    "note": ""
+  },
+  "retrained_D2_acc": {
+    "value": 0.910065,
+    "display": "91.0%",
+    "source": "results/m3/analysis/main_table.csv:retrained,D2",
+    "note": ""
+  },
+  "retrained_D2_d": {
+    "value": 0.015659,
+    "display": "+1.6 pp",
+    "source": "results/m3/analysis/main_table.csv:retrained,D2",
+    "note": "Macro-F1 difference vs C1 raw"
+  },
+  "retrained_D2_d_ci": {
+    "value": [
+      0.0076,
+      0.024043
+    ],
+    "display": "+0.8 to +2.4",
+    "source": "results/m3/analysis/main_table.csv:retrained,D2",
+    "note": ""
+  },
+  "retrained_D2_p": {
+    "value": 0.000723,
+    "display": "< 0.001",
+    "source": "results/m3/analysis/main_table.csv:retrained,D2",
+    "note": "exact McNemar vs C1 (Holm within method family)"
+  },
+  "retrained_D3_f1": {
+    "value": 0.903831,
+    "display": "0.904",
+    "source": "results/m3/analysis/main_table.csv:retrained,D3",
+    "note": ""
+  },
+  "retrained_D3_f1_ci": {
+    "value": [
+      0.892621,
+      0.912694
+    ],
+    "display": "0.893-0.913",
+    "source": "results/m3/analysis/main_table.csv:retrained,D3",
+    "note": ""
+  },
+  "retrained_D3_acc": {
+    "value": 0.904221,
+    "display": "90.4%",
+    "source": "results/m3/analysis/main_table.csv:retrained,D3",
+    "note": ""
+  },
+  "retrained_D3_d": {
+    "value": 0.009457,
+    "display": "+0.9 pp",
+    "source": "results/m3/analysis/main_table.csv:retrained,D3",
+    "note": "Macro-F1 difference vs C1 raw"
+  },
+  "retrained_D3_d_ci": {
+    "value": [
+      0.001631,
+      0.018092
+    ],
+    "display": "+0.2 to +1.8",
+    "source": "results/m3/analysis/main_table.csv:retrained,D3",
+    "note": ""
+  },
+  "retrained_D3_p": {
+    "value": 0.044565,
+    "display": "0.04",
+    "source": "results/m3/analysis/main_table.csv:retrained,D3",
+    "note": "exact McNemar vs C1 (Holm within method family)"
+  },
+  "retrained_D4_f1": {
+    "value": 0.902061,
+    "display": "0.902",
+    "source": "results/m3/analysis/main_table.csv:retrained,D4",
+    "note": ""
+  },
+  "retrained_D4_f1_ci": {
+    "value": [
+      0.890794,
+      0.911422
+    ],
+    "display": "0.891-0.911",
+    "source": "results/m3/analysis/main_table.csv:retrained,D4",
+    "note": ""
+  },
+  "retrained_D4_acc": {
+    "value": 0.902273,
+    "display": "90.2%",
+    "source": "results/m3/analysis/main_table.csv:retrained,D4",
+    "note": ""
+  },
+  "retrained_D4_d": {
+    "value": 0.007687,
+    "display": "+0.8 pp",
+    "source": "results/m3/analysis/main_table.csv:retrained,D4",
+    "note": "Macro-F1 difference vs C1 raw"
+  },
+  "retrained_D4_d_ci": {
+    "value": [
+      7.4e-05,
+      0.015954
+    ],
+    "display": "+0.0 to +1.6",
+    "source": "results/m3/analysis/main_table.csv:retrained,D4",
+    "note": ""
+  },
+  "retrained_D4_p": {
+    "value": 0.058225,
+    "display": "0.06",
+    "source": "results/m3/analysis/main_table.csv:retrained,D4",
+    "note": "exact McNemar vs C1 (Holm within method family)"
+  },
+  "frozen_tfidf_C0_f1": {
+    "value": 0.875826,
+    "display": "0.876",
+    "source": "results/m3/analysis/main_table.csv:frozen_tfidf,C0",
+    "note": ""
+  },
+  "frozen_tfidf_C0_f1_ci": {
+    "value": [
+      0.862721,
+      0.885954
+    ],
+    "display": "0.863-0.886",
+    "source": "results/m3/analysis/main_table.csv:frozen_tfidf,C0",
+    "note": ""
+  },
+  "frozen_tfidf_C0_acc": {
+    "value": 0.875649,
+    "display": "87.6%",
+    "source": "results/m3/analysis/main_table.csv:frozen_tfidf,C0",
+    "note": ""
+  },
+  "frozen_tfidf_C0_d": {
+    "value": -0.003947,
+    "display": "-0.4 pp",
+    "source": "results/m3/analysis/main_table.csv:frozen_tfidf,C0",
+    "note": "Macro-F1 difference vs C1 raw"
+  },
+  "frozen_tfidf_C0_d_ci": {
+    "value": [
+      -0.010022,
+      0.00177
+    ],
+    "display": "-1.0 to +0.2",
+    "source": "results/m3/analysis/main_table.csv:frozen_tfidf,C0",
+    "note": ""
+  },
+  "frozen_tfidf_C0_p": {
+    "value": 0.240793,
+    "display": "0.24",
+    "source": "results/m3/analysis/main_table.csv:frozen_tfidf,C0",
+    "note": "exact McNemar vs C1 (Holm within method family)"
+  },
+  "frozen_tfidf_C1_f1": {
+    "value": 0.879774,
+    "display": "0.880",
+    "source": "results/m3/analysis/main_table.csv:frozen_tfidf,C1",
+    "note": ""
+  },
+  "frozen_tfidf_C1_f1_ci": {
+    "value": [
+      0.86646,
+      0.889804
+    ],
+    "display": "0.866-0.890",
+    "source": "results/m3/analysis/main_table.csv:frozen_tfidf,C1",
+    "note": ""
+  },
+  "frozen_tfidf_C1_acc": {
+    "value": 0.879545,
+    "display": "88.0%",
+    "source": "results/m3/analysis/main_table.csv:frozen_tfidf,C1",
+    "note": ""
+  },
+  "frozen_tfidf_C2_f1": {
+    "value": 0.877746,
+    "display": "0.878",
+    "source": "results/m3/analysis/main_table.csv:frozen_tfidf,C2",
+    "note": ""
+  },
+  "frozen_tfidf_C2_f1_ci": {
+    "value": [
+      0.864703,
+      0.887594
+    ],
+    "display": "0.865-0.888",
+    "source": "results/m3/analysis/main_table.csv:frozen_tfidf,C2",
+    "note": ""
+  },
+  "frozen_tfidf_C2_acc": {
+    "value": 0.877273,
+    "display": "87.7%",
+    "source": "results/m3/analysis/main_table.csv:frozen_tfidf,C2",
+    "note": ""
+  },
+  "frozen_tfidf_C2_d": {
+    "value": -0.002027,
+    "display": "-0.2 pp",
+    "source": "results/m3/analysis/main_table.csv:frozen_tfidf,C2",
+    "note": "Macro-F1 difference vs C1 raw"
+  },
+  "frozen_tfidf_C2_d_ci": {
+    "value": [
+      -0.007003,
+      0.002924
+    ],
+    "display": "-0.7 to +0.3",
+    "source": "results/m3/analysis/main_table.csv:frozen_tfidf,C2",
+    "note": ""
+  },
+  "frozen_tfidf_C2_p": {
+    "value": 0.899925,
+    "display": "0.90",
+    "source": "results/m3/analysis/main_table.csv:frozen_tfidf,C2",
+    "note": "exact McNemar vs C1 (Holm within method family)"
+  },
+  "frozen_tfidf_C3_f1": {
+    "value": 0.879045,
+    "display": "0.879",
+    "source": "results/m3/analysis/main_table.csv:frozen_tfidf,C3",
+    "note": ""
+  },
+  "frozen_tfidf_C3_f1_ci": {
+    "value": [
+      0.866042,
+      0.889075
+    ],
+    "display": "0.866-0.889",
+    "source": "results/m3/analysis/main_table.csv:frozen_tfidf,C3",
+    "note": ""
+  },
+  "frozen_tfidf_C3_acc": {
+    "value": 0.878571,
+    "display": "87.9%",
+    "source": "results/m3/analysis/main_table.csv:frozen_tfidf,C3",
+    "note": ""
+  },
+  "frozen_tfidf_C3_d": {
+    "value": -0.000729,
+    "display": "-0.1 pp",
+    "source": "results/m3/analysis/main_table.csv:frozen_tfidf,C3",
+    "note": "Macro-F1 difference vs C1 raw"
+  },
+  "frozen_tfidf_C3_d_ci": {
+    "value": [
+      -0.005597,
+      0.004263
+    ],
+    "display": "-0.6 to +0.4",
+    "source": "results/m3/analysis/main_table.csv:frozen_tfidf,C3",
+    "note": ""
+  },
+  "frozen_tfidf_C3_p": {
+    "value": 0.899925,
+    "display": "0.90",
+    "source": "results/m3/analysis/main_table.csv:frozen_tfidf,C3",
+    "note": "exact McNemar vs C1 (Holm within method family)"
+  },
+  "frozen_tfidf_C4_f1": {
+    "value": 0.872186,
+    "display": "0.872",
+    "source": "results/m3/analysis/main_table.csv:frozen_tfidf,C4",
+    "note": ""
+  },
+  "frozen_tfidf_C4_f1_ci": {
+    "value": [
+      0.859006,
+      0.882065
+    ],
+    "display": "0.859-0.882",
+    "source": "results/m3/analysis/main_table.csv:frozen_tfidf,C4",
+    "note": ""
+  },
+  "frozen_tfidf_C4_acc": {
+    "value": 0.869805,
+    "display": "87.0%",
+    "source": "results/m3/analysis/main_table.csv:frozen_tfidf,C4",
+    "note": ""
+  },
+  "frozen_tfidf_C4_d": {
+    "value": -0.007588,
+    "display": "-0.8 pp",
+    "source": "results/m3/analysis/main_table.csv:frozen_tfidf,C4",
+    "note": "Macro-F1 difference vs C1 raw"
+  },
+  "frozen_tfidf_C4_d_ci": {
+    "value": [
+      -0.012548,
+      -0.002321
+    ],
+    "display": "-1.3 to -0.2",
+    "source": "results/m3/analysis/main_table.csv:frozen_tfidf,C4",
+    "note": ""
+  },
+  "frozen_tfidf_C4_p": {
+    "value": 0.002294,
+    "display": "0.002",
+    "source": "results/m3/analysis/main_table.csv:frozen_tfidf,C4",
+    "note": "exact McNemar vs C1 (Holm within method family)"
+  },
+  "frozen_tfidf_D2_f1": {
+    "value": 0.875203,
+    "display": "0.875",
+    "source": "results/m3/analysis/main_table.csv:frozen_tfidf,D2",
+    "note": ""
+  },
+  "frozen_tfidf_D2_f1_ci": {
+    "value": [
+      0.861903,
+      0.885071
+    ],
+    "display": "0.862-0.885",
+    "source": "results/m3/analysis/main_table.csv:frozen_tfidf,D2",
+    "note": ""
+  },
+  "frozen_tfidf_D2_acc": {
+    "value": 0.874675,
+    "display": "87.5%",
+    "source": "results/m3/analysis/main_table.csv:frozen_tfidf,D2",
+    "note": ""
+  },
+  "frozen_tfidf_D2_d": {
+    "value": -0.004571,
+    "display": "-0.5 pp",
+    "source": "results/m3/analysis/main_table.csv:frozen_tfidf,D2",
+    "note": "Macro-F1 difference vs C1 raw"
+  },
+  "frozen_tfidf_D2_d_ci": {
+    "value": [
+      -0.009935,
+      0.00066
+    ],
+    "display": "-1.0 to +0.1",
+    "source": "results/m3/analysis/main_table.csv:frozen_tfidf,D2",
+    "note": ""
+  },
+  "frozen_tfidf_D2_p": {
+    "value": 0.201287,
+    "display": "0.20",
+    "source": "results/m3/analysis/main_table.csv:frozen_tfidf,D2",
+    "note": "exact McNemar vs C1 (Holm within method family)"
+  },
+  "frozen_tfidf_D3_f1": {
+    "value": 0.875839,
+    "display": "0.876",
+    "source": "results/m3/analysis/main_table.csv:frozen_tfidf,D3",
+    "note": ""
+  },
+  "frozen_tfidf_D3_f1_ci": {
+    "value": [
+      0.862714,
+      0.885822
+    ],
+    "display": "0.863-0.886",
+    "source": "results/m3/analysis/main_table.csv:frozen_tfidf,D3",
+    "note": ""
+  },
+  "frozen_tfidf_D3_acc": {
+    "value": 0.875325,
+    "display": "87.5%",
+    "source": "results/m3/analysis/main_table.csv:frozen_tfidf,D3",
+    "note": ""
+  },
+  "frozen_tfidf_D3_d": {
+    "value": -0.003935,
+    "display": "-0.4 pp",
+    "source": "results/m3/analysis/main_table.csv:frozen_tfidf,D3",
+    "note": "Macro-F1 difference vs C1 raw"
+  },
+  "frozen_tfidf_D3_d_ci": {
+    "value": [
+      -0.009265,
+      0.001478
+    ],
+    "display": "-0.9 to +0.1",
+    "source": "results/m3/analysis/main_table.csv:frozen_tfidf,D3",
+    "note": ""
+  },
+  "frozen_tfidf_D3_p": {
+    "value": 0.201287,
+    "display": "0.20",
+    "source": "results/m3/analysis/main_table.csv:frozen_tfidf,D3",
+    "note": "exact McNemar vs C1 (Holm within method family)"
+  },
+  "frozen_tfidf_D4_f1": {
+    "value": 0.868788,
+    "display": "0.869",
+    "source": "results/m3/analysis/main_table.csv:frozen_tfidf,D4",
+    "note": ""
+  },
+  "frozen_tfidf_D4_f1_ci": {
+    "value": [
+      0.855397,
+      0.878774
+    ],
+    "display": "0.855-0.879",
+    "source": "results/m3/analysis/main_table.csv:frozen_tfidf,D4",
+    "note": ""
+  },
+  "frozen_tfidf_D4_acc": {
+    "value": 0.866234,
+    "display": "86.6%",
+    "source": "results/m3/analysis/main_table.csv:frozen_tfidf,D4",
+    "note": ""
+  },
+  "frozen_tfidf_D4_d": {
+    "value": -0.010986,
+    "display": "-1.1 pp",
+    "source": "results/m3/analysis/main_table.csv:frozen_tfidf,D4",
+    "note": "Macro-F1 difference vs C1 raw"
+  },
+  "frozen_tfidf_D4_d_ci": {
+    "value": [
+      -0.016485,
+      -0.005434
+    ],
+    "display": "-1.6 to -0.5",
+    "source": "results/m3/analysis/main_table.csv:frozen_tfidf,D4",
+    "note": ""
+  },
+  "frozen_tfidf_D4_p": {
+    "value": 4.8e-05,
+    "display": "< 0.001",
+    "source": "results/m3/analysis/main_table.csv:frozen_tfidf,D4",
+    "note": "exact McNemar vs C1 (Holm within method family)"
+  },
+  "retrained_tfidf_C0_f1": {
+    "value": 0.877822,
+    "display": "0.878",
+    "source": "results/m3/analysis/main_table.csv:retrained_tfidf,C0",
+    "note": ""
+  },
+  "retrained_tfidf_C0_f1_ci": {
+    "value": [
+      0.865065,
+      0.888144
+    ],
+    "display": "0.865-0.888",
+    "source": "results/m3/analysis/main_table.csv:retrained_tfidf,C0",
+    "note": ""
+  },
+  "retrained_tfidf_C0_acc": {
+    "value": 0.877597,
+    "display": "87.8%",
+    "source": "results/m3/analysis/main_table.csv:retrained_tfidf,C0",
+    "note": ""
+  },
+  "retrained_tfidf_C0_d": {
+    "value": -0.001951,
+    "display": "-0.2 pp",
+    "source": "results/m3/analysis/main_table.csv:retrained_tfidf,C0",
+    "note": "Macro-F1 difference vs C1 raw"
+  },
+  "retrained_tfidf_C0_d_ci": {
+    "value": [
+      -0.009051,
+      0.005415
+    ],
+    "display": "-0.9 to +0.5",
+    "source": "results/m3/analysis/main_table.csv:retrained_tfidf,C0",
+    "note": ""
+  },
+  "retrained_tfidf_C0_p": {
+    "value": 0.663585,
+    "display": "0.66",
+    "source": "results/m3/analysis/main_table.csv:retrained_tfidf,C0",
+    "note": "exact McNemar vs C1 (Holm within method family)"
+  },
+  "retrained_tfidf_C1_f1": {
+    "value": 0.879774,
+    "display": "0.880",
+    "source": "results/m3/analysis/main_table.csv:retrained_tfidf,C1",
+    "note": ""
+  },
+  "retrained_tfidf_C1_f1_ci": {
+    "value": [
+      0.86646,
+      0.889804
+    ],
+    "display": "0.866-0.890",
+    "source": "results/m3/analysis/main_table.csv:retrained_tfidf,C1",
+    "note": ""
+  },
+  "retrained_tfidf_C1_acc": {
+    "value": 0.879545,
+    "display": "88.0%",
+    "source": "results/m3/analysis/main_table.csv:retrained_tfidf,C1",
+    "note": ""
+  },
+  "retrained_tfidf_C2_f1": {
+    "value": 0.882527,
+    "display": "0.883",
+    "source": "results/m3/analysis/main_table.csv:retrained_tfidf,C2",
+    "note": ""
+  },
+  "retrained_tfidf_C2_f1_ci": {
+    "value": [
+      0.869827,
+      0.892052
+    ],
+    "display": "0.870-0.892",
+    "source": "results/m3/analysis/main_table.csv:retrained_tfidf,C2",
+    "note": ""
+  },
+  "retrained_tfidf_C2_acc": {
+    "value": 0.882143,
+    "display": "88.2%",
+    "source": "results/m3/analysis/main_table.csv:retrained_tfidf,C2",
+    "note": ""
+  },
+  "retrained_tfidf_C2_d": {
+    "value": 0.002753,
+    "display": "+0.3 pp",
+    "source": "results/m3/analysis/main_table.csv:retrained_tfidf,C2",
+    "note": "Macro-F1 difference vs C1 raw"
+  },
+  "retrained_tfidf_C2_d_ci": {
+    "value": [
+      -0.004335,
+      0.009967
+    ],
+    "display": "-0.4 to +1.0",
+    "source": "results/m3/analysis/main_table.csv:retrained_tfidf,C2",
+    "note": ""
+  },
+  "retrained_tfidf_C2_p": {
+    "value": 1.0,
+    "display": "1.00",
+    "source": "results/m3/analysis/main_table.csv:retrained_tfidf,C2",
+    "note": "exact McNemar vs C1 (Holm within method family)"
+  },
+  "retrained_tfidf_C3_f1": {
+    "value": 0.881876,
+    "display": "0.882",
+    "source": "results/m3/analysis/main_table.csv:retrained_tfidf,C3",
+    "note": ""
+  },
+  "retrained_tfidf_C3_f1_ci": {
+    "value": [
+      0.868809,
+      0.891278
+    ],
+    "display": "0.869-0.891",
+    "source": "results/m3/analysis/main_table.csv:retrained_tfidf,C3",
+    "note": ""
+  },
+  "retrained_tfidf_C3_acc": {
+    "value": 0.881494,
+    "display": "88.1%",
+    "source": "results/m3/analysis/main_table.csv:retrained_tfidf,C3",
+    "note": ""
+  },
+  "retrained_tfidf_C3_d": {
+    "value": 0.002102,
+    "display": "+0.2 pp",
+    "source": "results/m3/analysis/main_table.csv:retrained_tfidf,C3",
+    "note": "Macro-F1 difference vs C1 raw"
+  },
+  "retrained_tfidf_C3_d_ci": {
+    "value": [
+      -0.005002,
+      0.008974
+    ],
+    "display": "-0.5 to +0.9",
+    "source": "results/m3/analysis/main_table.csv:retrained_tfidf,C3",
+    "note": ""
+  },
+  "retrained_tfidf_C3_p": {
+    "value": 1.0,
+    "display": "1.00",
+    "source": "results/m3/analysis/main_table.csv:retrained_tfidf,C3",
+    "note": "exact McNemar vs C1 (Holm within method family)"
+  },
+  "retrained_tfidf_C4_f1": {
+    "value": 0.881718,
+    "display": "0.882",
+    "source": "results/m3/analysis/main_table.csv:retrained_tfidf,C4",
+    "note": ""
+  },
+  "retrained_tfidf_C4_f1_ci": {
+    "value": [
+      0.868938,
+      0.891138
+    ],
+    "display": "0.869-0.891",
+    "source": "results/m3/analysis/main_table.csv:retrained_tfidf,C4",
+    "note": ""
+  },
+  "retrained_tfidf_C4_acc": {
+    "value": 0.881494,
+    "display": "88.1%",
+    "source": "results/m3/analysis/main_table.csv:retrained_tfidf,C4",
+    "note": ""
+  },
+  "retrained_tfidf_C4_d": {
+    "value": 0.001944,
+    "display": "+0.2 pp",
+    "source": "results/m3/analysis/main_table.csv:retrained_tfidf,C4",
+    "note": "Macro-F1 difference vs C1 raw"
+  },
+  "retrained_tfidf_C4_d_ci": {
+    "value": [
+      -0.004785,
+      0.008823
+    ],
+    "display": "-0.5 to +0.9",
+    "source": "results/m3/analysis/main_table.csv:retrained_tfidf,C4",
+    "note": ""
+  },
+  "retrained_tfidf_C4_p": {
+    "value": 1.0,
+    "display": "1.00",
+    "source": "results/m3/analysis/main_table.csv:retrained_tfidf,C4",
+    "note": "exact McNemar vs C1 (Holm within method family)"
+  },
+  "retrained_tfidf_D2_f1": {
+    "value": 0.878702,
+    "display": "0.879",
+    "source": "results/m3/analysis/main_table.csv:retrained_tfidf,D2",
+    "note": ""
+  },
+  "retrained_tfidf_D2_f1_ci": {
+    "value": [
+      0.865916,
+      0.888385
+    ],
+    "display": "0.866-0.888",
+    "source": "results/m3/analysis/main_table.csv:retrained_tfidf,D2",
+    "note": ""
+  },
+  "retrained_tfidf_D2_acc": {
+    "value": 0.878247,
+    "display": "87.8%",
+    "source": "results/m3/analysis/main_table.csv:retrained_tfidf,D2",
+    "note": ""
+  },
+  "retrained_tfidf_D2_d": {
+    "value": -0.001072,
+    "display": "-0.1 pp",
+    "source": "results/m3/analysis/main_table.csv:retrained_tfidf,D2",
+    "note": "Macro-F1 difference vs C1 raw"
+  },
+  "retrained_tfidf_D2_d_ci": {
+    "value": [
+      -0.008738,
+      0.006427
+    ],
+    "display": "-0.9 to +0.6",
+    "source": "results/m3/analysis/main_table.csv:retrained_tfidf,D2",
+    "note": ""
+  },
+  "retrained_tfidf_D2_p": {
+    "value": 1.0,
+    "display": "1.00",
+    "source": "results/m3/analysis/main_table.csv:retrained_tfidf,D2",
+    "note": "exact McNemar vs C1 (Holm within method family)"
+  },
+  "retrained_tfidf_D3_f1": {
+    "value": 0.878324,
+    "display": "0.878",
+    "source": "results/m3/analysis/main_table.csv:retrained_tfidf,D3",
+    "note": ""
+  },
+  "retrained_tfidf_D3_f1_ci": {
+    "value": [
+      0.864701,
+      0.887646
+    ],
+    "display": "0.865-0.888",
+    "source": "results/m3/analysis/main_table.csv:retrained_tfidf,D3",
+    "note": ""
+  },
+  "retrained_tfidf_D3_acc": {
+    "value": 0.877922,
+    "display": "87.8%",
+    "source": "results/m3/analysis/main_table.csv:retrained_tfidf,D3",
+    "note": ""
+  },
+  "retrained_tfidf_D3_d": {
+    "value": -0.00145,
+    "display": "-0.1 pp",
+    "source": "results/m3/analysis/main_table.csv:retrained_tfidf,D3",
+    "note": "Macro-F1 difference vs C1 raw"
+  },
+  "retrained_tfidf_D3_d_ci": {
+    "value": [
+      -0.009182,
+      0.005804
+    ],
+    "display": "-0.9 to +0.6",
+    "source": "results/m3/analysis/main_table.csv:retrained_tfidf,D3",
+    "note": ""
+  },
+  "retrained_tfidf_D3_p": {
+    "value": 1.0,
+    "display": "1.00",
+    "source": "results/m3/analysis/main_table.csv:retrained_tfidf,D3",
+    "note": "exact McNemar vs C1 (Holm within method family)"
+  },
+  "retrained_tfidf_D4_f1": {
+    "value": 0.87814,
+    "display": "0.878",
+    "source": "results/m3/analysis/main_table.csv:retrained_tfidf,D4",
+    "note": ""
+  },
+  "retrained_tfidf_D4_f1_ci": {
+    "value": [
+      0.864788,
+      0.887456
+    ],
+    "display": "0.865-0.887",
+    "source": "results/m3/analysis/main_table.csv:retrained_tfidf,D4",
+    "note": ""
+  },
+  "retrained_tfidf_D4_acc": {
+    "value": 0.877922,
+    "display": "87.8%",
+    "source": "results/m3/analysis/main_table.csv:retrained_tfidf,D4",
+    "note": ""
+  },
+  "retrained_tfidf_D4_d": {
+    "value": -0.001633,
+    "display": "-0.2 pp",
+    "source": "results/m3/analysis/main_table.csv:retrained_tfidf,D4",
+    "note": "Macro-F1 difference vs C1 raw"
+  },
+  "retrained_tfidf_D4_d_ci": {
+    "value": [
+      -0.008889,
+      0.005494
+    ],
+    "display": "-0.9 to +0.5",
+    "source": "results/m3/analysis/main_table.csv:retrained_tfidf,D4",
+    "note": ""
+  },
+  "retrained_tfidf_D4_p": {
+    "value": 1.0,
+    "display": "1.00",
+    "source": "results/m3/analysis/main_table.csv:retrained_tfidf,D4",
+    "note": "exact McNemar vs C1 (Holm within method family)"
+  },
+  "best_method": {
+    "value": "generic",
+    "display": "generic",
+    "source": "results/m3/analysis/analysis.json:best_method_retrained",
+    "note": ""
+  },
+  "best_cond": {
+    "value": "C3",
+    "display": "C3",
+    "source": "results/m3/analysis/analysis.json",
+    "note": ""
+  },
+  "best_method_frozen": {
+    "value": "delete",
+    "display": "delete",
+    "source": "results/m3/analysis/main_table.csv (frozen, highest Macro-F1)",
+    "note": ""
+  },
+  "worst_method_frozen": {
+    "value": "generic",
+    "display": "generic",
+    "source": "results/m3/analysis/main_table.csv (frozen, lowest Macro-F1)",
+    "note": ""
+  },
+  "frozen_detector_cost": {
+    "value": -0.011292999999999997,
+    "display": "-1.1 pp",
+    "source": "derived: Macro-F1 D_k - C_k (frozen)",
+    "note": "cost of detector errors"
+  },
+  "retrained_detector_cost": {
+    "value": -0.012552999999999925,
+    "display": "-1.3 pp",
+    "source": "derived: Macro-F1 D_k - C_k (retrained)",
+    "note": "cost of detector errors"
+  },
+  "ci_halfwidth_acc": {
+    "value": 0.010714000000000001,
+    "display": "1.1",
+    "source": "results/m3/analysis/main_table.csv",
+    "note": "half-width of the 95% bootstrap CI for accuracy, pp"
+  },
+  "wilson_halfwidth_90": {
+    "value": 0.0954691125759739,
+    "display": "10",
+    "source": "m3/analysis/stats.py:wilson(36, 40)",
+    "note": "Wilson 95% half-width at 90% recall with n = 40, pp"
+  },
+  "seed_sd_C1": {
+    "value": 0.0,
+    "display": "0.000",
+    "source": "results/m3/analysis/analysis.json",
+    "note": ""
+  },
+  "seed_sd_C3": {
+    "value": 0.0,
+    "display": "0.000",
+    "source": "results/m3/analysis/analysis.json",
+    "note": ""
+  },
+  "terc_frozen_C1_low": {
+    "value": 0.9038,
+    "display": "90.4%",
+    "source": "results/m3/analysis/terciles.csv",
+    "note": ""
+  },
+  "terc_range_low": {
+    "value": "28-91",
+    "display": "28-91",
+    "source": "results/m3/analysis/terciles.csv",
+    "note": ""
+  },
+  "terc_frozen_C1_mid": {
+    "value": 0.899,
+    "display": "89.9%",
+    "source": "results/m3/analysis/terciles.csv",
+    "note": ""
+  },
+  "terc_range_mid": {
+    "value": "91-118",
+    "display": "91-118",
+    "source": "results/m3/analysis/terciles.csv",
+    "note": ""
+  },
+  "terc_frozen_C1_high": {
+    "value": 0.879,
+    "display": "87.9%",
+    "source": "results/m3/analysis/terciles.csv",
+    "note": ""
+  },
+  "terc_range_high": {
+    "value": "119-149",
+    "display": "119-149",
+    "source": "results/m3/analysis/terciles.csv",
+    "note": ""
+  },
+  "terc_frozen_C3_low": {
+    "value": 0.8385,
+    "display": "83.9%",
+    "source": "results/m3/analysis/terciles.csv",
+    "note": ""
+  },
+  "terc_frozen_C3_mid": {
+    "value": 0.8481,
+    "display": "84.8%",
+    "source": "results/m3/analysis/terciles.csv",
+    "note": ""
+  },
+  "terc_frozen_C3_high": {
+    "value": 0.871,
+    "display": "87.1%",
+    "source": "results/m3/analysis/terciles.csv",
+    "note": ""
+  },
+  "terc_retrained_C1_low": {
+    "value": 0.9038,
+    "display": "90.4%",
+    "source": "results/m3/analysis/terciles.csv",
+    "note": ""
+  },
+  "terc_retrained_C1_mid": {
+    "value": 0.899,
+    "display": "89.9%",
+    "source": "results/m3/analysis/terciles.csv",
+    "note": ""
+  },
+  "terc_retrained_C1_high": {
+    "value": 0.879,
+    "display": "87.9%",
+    "source": "results/m3/analysis/terciles.csv",
+    "note": ""
+  },
+  "terc_retrained_C3_low": {
+    "value": 0.9269,
+    "display": "92.7%",
+    "source": "results/m3/analysis/terciles.csv",
+    "note": ""
+  },
+  "terc_retrained_C3_mid": {
+    "value": 0.9183,
+    "display": "91.8%",
+    "source": "results/m3/analysis/terciles.csv",
+    "note": ""
+  },
+  "terc_retrained_C3_high": {
+    "value": 0.904,
+    "display": "90.4%",
+    "source": "results/m3/analysis/terciles.csv",
+    "note": ""
+  },
+  "small_worst_intent": {
+    "value": "card_acceptance",
+    "display": "card acceptance",
+    "source": "results/m3/analysis/small_intents.csv",
+    "note": ""
+  },
+  "small_worst_recall": {
+    "value": 0.775,
+    "display": "77.5%",
+    "source": "results/m3/analysis/small_intents.csv",
+    "note": ""
+  },
+  "place_frozen_C0_prefix": {
+    "value": 0.9116,
+    "display": "91.2%",
+    "source": "results/m3/analysis/slices.csv",
+    "note": ""
+  },
+  "place_frozen_C0_suffix": {
+    "value": 0.9213,
+    "display": "92.1%",
+    "source": "results/m3/analysis/slices.csv",
+    "note": ""
+  },
+  "place_frozen_C1_prefix": {
+    "value": 0.8883,
+    "display": "88.8%",
+    "source": "results/m3/analysis/slices.csv",
+    "note": ""
+  },
+  "place_frozen_C1_suffix": {
+    "value": 0.8997,
+    "display": "90.0%",
+    "source": "results/m3/analysis/slices.csv",
+    "note": ""
+  },
+  "place_frozen_C2_prefix": {
+    "value": 0.8903,
+    "display": "89.0%",
+    "source": "results/m3/analysis/slices.csv",
+    "note": ""
+  },
+  "place_frozen_C2_suffix": {
+    "value": 0.9156,
+    "display": "91.6%",
+    "source": "results/m3/analysis/slices.csv",
+    "note": ""
+  },
+  "place_frozen_C3_prefix": {
+    "value": 0.8311,
+    "display": "83.1%",
+    "source": "results/m3/analysis/slices.csv",
+    "note": ""
+  },
+  "place_frozen_C3_suffix": {
+    "value": 0.8725,
+    "display": "87.2%",
+    "source": "results/m3/analysis/slices.csv",
+    "note": ""
+  },
+  "place_frozen_C4_prefix": {
+    "value": 0.8936,
+    "display": "89.4%",
+    "source": "results/m3/analysis/slices.csv",
+    "note": ""
+  },
+  "place_frozen_C4_suffix": {
+    "value": 0.9067,
+    "display": "90.7%",
+    "source": "results/m3/analysis/slices.csv",
+    "note": ""
+  },
+  "place_frozen_D2_prefix": {
+    "value": 0.8863,
+    "display": "88.6%",
+    "source": "results/m3/analysis/slices.csv",
+    "note": ""
+  },
+  "place_frozen_D2_suffix": {
+    "value": 0.9036,
+    "display": "90.4%",
+    "source": "results/m3/analysis/slices.csv",
+    "note": ""
+  },
+  "place_frozen_D3_prefix": {
+    "value": 0.8185,
+    "display": "81.8%",
+    "source": "results/m3/analysis/slices.csv",
+    "note": ""
+  },
+  "place_frozen_D3_suffix": {
+    "value": 0.8585,
+    "display": "85.9%",
+    "source": "results/m3/analysis/slices.csv",
+    "note": ""
+  },
+  "place_frozen_D4_prefix": {
+    "value": 0.8856,
+    "display": "88.6%",
+    "source": "results/m3/analysis/slices.csv",
+    "note": ""
+  },
+  "place_frozen_D4_suffix": {
+    "value": 0.8915,
+    "display": "89.1%",
+    "source": "results/m3/analysis/slices.csv",
+    "note": ""
+  },
+  "place_retrained_C1_prefix": {
+    "value": 0.8883,
+    "display": "88.8%",
+    "source": "results/m3/analysis/slices.csv",
+    "note": ""
+  },
+  "place_retrained_C1_suffix": {
+    "value": 0.8997,
+    "display": "90.0%",
+    "source": "results/m3/analysis/slices.csv",
+    "note": ""
+  },
+  "place_retrained_C0_prefix": {
+    "value": 0.9229,
+    "display": "92.3%",
+    "source": "results/m3/analysis/slices.csv",
+    "note": ""
+  },
+  "place_retrained_C0_suffix": {
+    "value": 0.9308,
+    "display": "93.1%",
+    "source": "results/m3/analysis/slices.csv",
+    "note": ""
+  },
+  "place_retrained_C2_prefix": {
+    "value": 0.9169,
+    "display": "91.7%",
+    "source": "results/m3/analysis/slices.csv",
+    "note": ""
+  },
+  "place_retrained_C2_suffix": {
+    "value": 0.9207,
+    "display": "92.1%",
+    "source": "results/m3/analysis/slices.csv",
+    "note": ""
+  },
+  "place_retrained_C3_prefix": {
+    "value": 0.9169,
+    "display": "91.7%",
+    "source": "results/m3/analysis/slices.csv",
+    "note": ""
+  },
+  "place_retrained_C3_suffix": {
+    "value": 0.9162,
+    "display": "91.6%",
+    "source": "results/m3/analysis/slices.csv",
+    "note": ""
+  },
+  "place_retrained_C4_prefix": {
+    "value": 0.9129,
+    "display": "91.3%",
+    "source": "results/m3/analysis/slices.csv",
+    "note": ""
+  },
+  "place_retrained_C4_suffix": {
+    "value": 0.915,
+    "display": "91.5%",
+    "source": "results/m3/analysis/slices.csv",
+    "note": ""
+  },
+  "place_retrained_D2_prefix": {
+    "value": 0.9129,
+    "display": "91.3%",
+    "source": "results/m3/analysis/slices.csv",
+    "note": ""
+  },
+  "place_retrained_D2_suffix": {
+    "value": 0.9074,
+    "display": "90.7%",
+    "source": "results/m3/analysis/slices.csv",
+    "note": ""
+  },
+  "place_retrained_D3_prefix": {
+    "value": 0.9096,
+    "display": "91.0%",
+    "source": "results/m3/analysis/slices.csv",
+    "note": ""
+  },
+  "place_retrained_D3_suffix": {
+    "value": 0.8991,
+    "display": "89.9%",
+    "source": "results/m3/analysis/slices.csv",
+    "note": ""
+  },
+  "place_retrained_D4_prefix": {
+    "value": 0.9049,
+    "display": "90.5%",
+    "source": "results/m3/analysis/slices.csv",
+    "note": ""
+  },
+  "place_retrained_D4_suffix": {
+    "value": 0.8997,
+    "display": "90.0%",
+    "source": "results/m3/analysis/slices.csv",
+    "note": ""
+  },
+  "place_gap_frozen": {
+    "value": -0.011400000000000077,
+    "display": "-1.1 pp",
+    "source": "derived: accuracy prefix - suffix on C1",
+    "note": ""
+  },
+  "place_gap_retrained": {
+    "value": -0.011400000000000077,
+    "display": "-1.1 pp",
+    "source": "derived: accuracy prefix - suffix on C1",
+    "note": ""
+  },
+  "over_slice_acc_False": {
+    "value": 0.8521,
+    "display": "85.2%",
+    "source": "results/m3/analysis/slices.csv",
+    "note": ""
+  },
+  "over_slice_n_False": {
+    "value": 2989,
+    "display": "2,989",
+    "source": "results/m3/analysis/slices.csv",
+    "note": ""
+  },
+  "over_slice_acc_True": {
+    "value": 0.4066,
+    "display": "40.7%",
+    "source": "results/m3/analysis/slices.csv",
+    "note": ""
+  },
+  "over_slice_n_True": {
+    "value": 91,
+    "display": "91",
+    "source": "results/m3/analysis/slices.csv",
+    "note": ""
+  },
+  "tau": {
+    "value": 0.637,
+    "display": "0.64",
+    "source": "results/m3/analysis/risk_coverage.json:tau",
+    "note": ""
+  },
+  "rc_cov_C1": {
+    "value": 0.7698,
+    "display": "77.0%",
+    "source": "results/m3/analysis/risk_coverage.json:test.C1",
+    "note": ""
+  },
+  "rc_prec_C1": {
+    "value": 0.9734,
+    "display": "97.3%",
+    "source": "results/m3/analysis/risk_coverage.json:test.C1",
+    "note": ""
+  },
+  "rc_queue_C1": {
+    "value": 0.2302,
+    "display": "23.0%",
+    "source": "results/m3/analysis/risk_coverage.json:test.C1",
+    "note": ""
+  },
+  "rc_cov_C3": {
+    "value": 0.6786,
+    "display": "67.9%",
+    "source": "results/m3/analysis/risk_coverage.json:test.C3",
+    "note": ""
+  },
+  "rc_prec_C3": {
+    "value": 0.9627,
+    "display": "96.3%",
+    "source": "results/m3/analysis/risk_coverage.json:test.C3",
+    "note": ""
+  },
+  "rc_queue_C3": {
+    "value": 0.3214,
+    "display": "32.1%",
+    "source": "results/m3/analysis/risk_coverage.json:test.C3",
+    "note": ""
+  },
+  "rc_cov_D3": {
+    "value": 0.6656,
+    "display": "66.6%",
+    "source": "results/m3/analysis/risk_coverage.json:test.D3",
+    "note": ""
+  },
+  "rc_prec_D3": {
+    "value": 0.9551,
+    "display": "95.5%",
+    "source": "results/m3/analysis/risk_coverage.json:test.D3",
+    "note": ""
+  },
+  "rc_queue_D3": {
+    "value": 0.3344,
+    "display": "33.4%",
+    "source": "results/m3/analysis/risk_coverage.json:test.D3",
+    "note": ""
+  },
+  "mis_frozen_C0": {
+    "value": 83.4,
+    "display": "83",
+    "source": "results/m3/analysis/business.json:misroutes_per_1000.frozen_C0",
+    "note": ""
+  },
+  "mis_add_frozen_C0": {
+    "value": -22.4,
+    "display": "-22",
+    "source": "results/m3/analysis/business.json",
+    "note": ""
+  },
+  "mis_frozen_C1": {
+    "value": 105.8,
+    "display": "106",
+    "source": "results/m3/analysis/business.json:misroutes_per_1000.frozen_C1",
+    "note": ""
+  },
+  "mis_add_frozen_C1": {
+    "value": 0.0,
+    "display": "+0",
+    "source": "results/m3/analysis/business.json",
+    "note": ""
+  },
+  "mis_frozen_C2": {
+    "value": 96.8,
+    "display": "97",
+    "source": "results/m3/analysis/business.json:misroutes_per_1000.frozen_C2",
+    "note": ""
+  },
+  "mis_add_frozen_C2": {
+    "value": -9.1,
+    "display": "-9",
+    "source": "results/m3/analysis/business.json",
+    "note": ""
+  },
+  "mis_frozen_C3": {
+    "value": 147.7,
+    "display": "148",
+    "source": "results/m3/analysis/business.json:misroutes_per_1000.frozen_C3",
+    "note": ""
+  },
+  "mis_add_frozen_C3": {
+    "value": 41.9,
+    "display": "+42",
+    "source": "results/m3/analysis/business.json",
+    "note": ""
+  },
+  "mis_frozen_C4": {
+    "value": 99.7,
+    "display": "100",
+    "source": "results/m3/analysis/business.json:misroutes_per_1000.frozen_C4",
+    "note": ""
+  },
+  "mis_add_frozen_C4": {
+    "value": -6.2,
+    "display": "-6",
+    "source": "results/m3/analysis/business.json",
+    "note": ""
+  },
+  "mis_frozen_D2": {
+    "value": 104.9,
+    "display": "105",
+    "source": "results/m3/analysis/business.json:misroutes_per_1000.frozen_D2",
+    "note": ""
+  },
+  "mis_add_frozen_D2": {
+    "value": -1.0,
+    "display": "-1",
+    "source": "results/m3/analysis/business.json",
+    "note": ""
+  },
+  "mis_frozen_D3": {
+    "value": 161.0,
+    "display": "161",
+    "source": "results/m3/analysis/business.json:misroutes_per_1000.frozen_D3",
+    "note": ""
+  },
+  "mis_add_frozen_D3": {
+    "value": 55.2,
+    "display": "+55",
+    "source": "results/m3/analysis/business.json",
+    "note": ""
+  },
+  "mis_frozen_D4": {
+    "value": 111.4,
+    "display": "111",
+    "source": "results/m3/analysis/business.json:misroutes_per_1000.frozen_D4",
+    "note": ""
+  },
+  "mis_add_frozen_D4": {
+    "value": 5.5,
+    "display": "+6",
+    "source": "results/m3/analysis/business.json",
+    "note": ""
+  },
+  "mis_retrained_C0": {
+    "value": 73.1,
+    "display": "73",
+    "source": "results/m3/analysis/business.json:misroutes_per_1000.retrained_C0",
+    "note": ""
+  },
+  "mis_add_retrained_C0": {
+    "value": -32.8,
+    "display": "-33",
+    "source": "results/m3/analysis/business.json",
+    "note": ""
+  },
+  "mis_retrained_C1": {
+    "value": 105.8,
+    "display": "106",
+    "source": "results/m3/analysis/business.json:misroutes_per_1000.retrained_C1",
+    "note": ""
+  },
+  "mis_add_retrained_C1": {
+    "value": 0.0,
+    "display": "+0",
+    "source": "results/m3/analysis/business.json",
+    "note": ""
+  },
+  "mis_retrained_C2": {
+    "value": 81.2,
+    "display": "81",
+    "source": "results/m3/analysis/business.json:misroutes_per_1000.retrained_C2",
+    "note": ""
+  },
+  "mis_add_retrained_C2": {
+    "value": -24.7,
+    "display": "-25",
+    "source": "results/m3/analysis/business.json",
+    "note": ""
+  },
+  "mis_retrained_C3": {
+    "value": 83.4,
+    "display": "83",
+    "source": "results/m3/analysis/business.json:misroutes_per_1000.retrained_C3",
+    "note": ""
+  },
+  "mis_add_retrained_C3": {
+    "value": -22.4,
+    "display": "-22",
+    "source": "results/m3/analysis/business.json",
+    "note": ""
+  },
+  "mis_retrained_C4": {
+    "value": 86.0,
+    "display": "86",
+    "source": "results/m3/analysis/business.json:misroutes_per_1000.retrained_C4",
+    "note": ""
+  },
+  "mis_add_retrained_C4": {
+    "value": -19.8,
+    "display": "-20",
+    "source": "results/m3/analysis/business.json",
+    "note": ""
+  },
+  "mis_retrained_D2": {
+    "value": 89.9,
+    "display": "90",
+    "source": "results/m3/analysis/business.json:misroutes_per_1000.retrained_D2",
+    "note": ""
+  },
+  "mis_add_retrained_D2": {
+    "value": -15.9,
+    "display": "-16",
+    "source": "results/m3/analysis/business.json",
+    "note": ""
+  },
+  "mis_retrained_D3": {
+    "value": 95.8,
+    "display": "96",
+    "source": "results/m3/analysis/business.json:misroutes_per_1000.retrained_D3",
+    "note": ""
+  },
+  "mis_add_retrained_D3": {
+    "value": -10.1,
+    "display": "-10",
+    "source": "results/m3/analysis/business.json",
+    "note": ""
+  },
+  "mis_retrained_D4": {
+    "value": 97.7,
+    "display": "98",
+    "source": "results/m3/analysis/business.json:misroutes_per_1000.retrained_D4",
+    "note": ""
+  },
+  "mis_add_retrained_D4": {
+    "value": -8.1,
+    "display": "-8",
+    "source": "results/m3/analysis/business.json",
+    "note": ""
+  },
+  "leaks10k_V1": {
+    "value": 26.0,
+    "display": "26",
+    "source": "results/m3/analysis/business.json",
+    "note": ""
+  },
+  "over1k_V1": {
+    "value": 29.9,
+    "display": "29.9",
+    "source": "results/m3/analysis/business.json",
+    "note": ""
+  },
+  "leaks10k_V2": {
+    "value": 0.0,
+    "display": "0",
+    "source": "results/m3/analysis/business.json",
+    "note": ""
+  },
+  "over1k_V2": {
+    "value": 29.5,
+    "display": "29.5",
+    "source": "results/m3/analysis/business.json",
+    "note": ""
+  },
+  "hours_per_million": {
+    "value": 6.2,
+    "display": "6.2",
+    "source": "results/m3/analysis/business.json:throughput",
+    "note": ""
+  },
+  "mean_bytes": {
+    "value": 95.3,
+    "display": "95",
+    "source": "results/m3/analysis/business.json",
+    "note": ""
+  },
+  "ep1_count": {
+    "value": 69,
+    "display": "69",
+    "source": "results/m3/analysis/error_patterns.csv",
+    "note": ""
+  },
+  "ep1_share": {
+    "value": 0.2117,
+    "display": "21.2%",
+    "source": "results/m3/analysis/error_patterns.csv",
+    "note": ""
+  },
+  "ep1_pop": {
+    "value": 326,
+    "display": "326",
+    "source": "results/m3/analysis/error_patterns.csv",
+    "note": ""
+  },
+  "ep2_count": {
+    "value": 53,
+    "display": "53",
+    "source": "results/m3/analysis/error_patterns.csv",
+    "note": ""
+  },
+  "ep2_share": {
+    "value": 0.1626,
+    "display": "16.3%",
+    "source": "results/m3/analysis/error_patterns.csv",
+    "note": ""
+  },
+  "ep2_pop": {
+    "value": 326,
+    "display": "326",
+    "source": "results/m3/analysis/error_patterns.csv",
+    "note": ""
+  },
+  "ep3_count": {
+    "value": 12,
+    "display": "12",
+    "source": "results/m3/analysis/error_patterns.csv",
+    "note": ""
+  },
+  "ep3_share": {
+    "value": 0.0561,
+    "display": "5.6%",
+    "source": "results/m3/analysis/error_patterns.csv",
+    "note": ""
+  },
+  "ep3_pop": {
+    "value": 214,
+    "display": "214",
+    "source": "results/m3/analysis/error_patterns.csv",
+    "note": ""
+  },
+  "ep4_count": {
+    "value": 202,
+    "display": "202",
+    "source": "results/m3/analysis/error_patterns.csv",
+    "note": ""
+  },
+  "ep4_share": {
+    "value": 0.9439,
+    "display": "94.4%",
+    "source": "results/m3/analysis/error_patterns.csv",
+    "note": ""
+  },
+  "ep4_pop": {
+    "value": 214,
+    "display": "214",
+    "source": "results/m3/analysis/error_patterns.csv",
+    "note": ""
+  },
+  "ep5_count": {
+    "value": 6,
+    "display": "6",
+    "source": "results/m3/analysis/error_patterns.csv",
+    "note": ""
+  },
+  "ep5_share": {
+    "value": 0.0923,
+    "display": "9.2%",
+    "source": "results/m3/analysis/error_patterns.csv",
+    "note": ""
+  },
+  "ep5_pop": {
+    "value": 65,
+    "display": "65",
+    "source": "results/m3/analysis/error_patterns.csv",
+    "note": ""
+  },
+  "ep6_count": {
+    "value": 59,
+    "display": "59",
+    "source": "results/m3/analysis/error_patterns.csv",
+    "note": ""
+  },
+  "ep6_share": {
+    "value": 0.9077,
+    "display": "90.8%",
+    "source": "results/m3/analysis/error_patterns.csv",
+    "note": ""
+  },
+  "ep6_pop": {
+    "value": 65,
+    "display": "65",
+    "source": "results/m3/analysis/error_patterns.csv",
+    "note": ""
+  },
+  "ep7_count": {
+    "value": 41,
+    "display": "41",
+    "source": "results/m3/analysis/error_patterns.csv",
+    "note": ""
+  },
+  "ep7_share": {
+    "value": 0.4505,
+    "display": "45.1%",
+    "source": "results/m3/analysis/error_patterns.csv",
+    "note": ""
+  },
+  "ep7_pop": {
+    "value": 91,
+    "display": "91",
+    "source": "results/m3/analysis/error_patterns.csv",
+    "note": ""
+  },
+  "ex_record_id": {
+    "value": "B77_test_02180",
+    "display": "B77_test_02180",
+    "source": "results/m3/analysis/output_record_example.json:record_id",
+    "note": ""
+  },
+  "ex_sanitized_text": {
+    "value": "My email is [REDACTED]. How come I'm not allowed to transfer funds right now? I just keep getting an error message.",
+    "display": "My email is [REDACTED]. How come I'm not allowed to transfer funds right now? I just keep getting an error message.",
+    "source": "results/m3/analysis/output_record_example.json:sanitized_text",
+    "note": ""
+  },
+  "ex_method": {
+    "value": "generic",
+    "display": "generic",
+    "source": "results/m3/analysis/output_record_example.json:method",
+    "note": ""
+  },
+  "ex_residual_pii_check": {
+    "value": "PASS",
+    "display": "PASS",
+    "source": "results/m3/analysis/output_record_example.json:residual_pii_check",
+    "note": ""
+  },
+  "ex_predicted_intent": {
+    "value": "beneficiary_not_allowed",
+    "display": "beneficiary_not_allowed",
+    "source": "results/m3/analysis/output_record_example.json:predicted_intent",
+    "note": ""
+  },
+  "ex_route": {
+    "value": "auto",
+    "display": "auto",
+    "source": "results/m3/analysis/output_record_example.json:route",
+    "note": ""
+  },
+  "ex_text_short": {
+    "value": "My email is [REDACTED]. How come I'm not allowed to transfer funds right now? I just keep getting an error message.",
+    "display": "My email is [REDACTED]...",
+    "source": "results/m3/analysis/output_record_example.json:sanitized_text",
+    "note": "first 22 characters"
+  },
+  "ex_confidence": {
+    "value": 0.96,
+    "display": "0.96",
+    "source": "results/m3/analysis/output_record_example.json",
+    "note": ""
+  },
+  "ex_entity": {
+    "value": {
+      "type": "EMAIL",
+      "start": 12,
+      "end": 36
+    },
+    "display": "{\"type\": \"EMAIL\", \"start\": 12, \"end\": 36}",
+    "source": "results/m3/analysis/output_record_example.json:entities[0]",
+    "note": ""
+  },
+  "ex_entity_type": {
+    "value": "EMAIL",
+    "display": "EMAIL",
+    "source": "results/m3/analysis/output_record_example.json:entities[0].type",
+    "note": ""
+  },
+  "ex_entity_start": {
+    "value": 12,
+    "display": "12",
+    "source": "results/m3/analysis/output_record_example.json:entities[0].start",
+    "note": ""
+  },
+  "ex_entity_end": {
+    "value": 36,
+    "display": "36",
+    "source": "results/m3/analysis/output_record_example.json:entities[0].end",
+    "note": ""
+  },
+  "ex_top2": {
+    "value": "failed_transfer",
+    "display": "failed_transfer",
+    "source": "results/m3/analysis/output_record_example.json:top3",
+    "note": ""
+  },
+  "m2ex_record_id": {
+    "value": "B77_train_00005",
+    "display": "B77_train_00005",
+    "source": "data/evidence_summary.json:sample_record.injection.record_id",
+    "note": ""
+  },
+  "m2ex_pii_type": {
+    "value": "EMAIL",
+    "display": "EMAIL",
+    "source": "data/evidence_summary.json:sample_record.injection.pii_type",
+    "note": ""
+  },
+  "m2ex_pii_value": {
+    "value": "davisstephanie@example.com",
+    "display": "davisstephanie@example.com",
+    "source": "data/evidence_summary.json:sample_record.injection.pii_value",
+    "note": ""
+  },
+  "m2ex_start_char": {
+    "value": 46,
+    "display": "46",
+    "source": "data/evidence_summary.json:sample_record.injection.start_char",
+    "note": ""
+  },
+  "m2ex_end_char": {
+    "value": 72,
+    "display": "72",
+    "source": "data/evidence_summary.json:sample_record.injection.end_char",
+    "note": ""
+  },
+  "m2ex_template_id": {
+    "value": "suffix",
+    "display": "suffix",
+    "source": "data/evidence_summary.json:sample_record.injection.template_id",
+    "note": ""
+  },
+  "m2ex_seed": {
+    "value": 553,
+    "display": "553",
+    "source": "data/evidence_summary.json:sample_record.injection.seed",
+    "note": ""
+  },
+  "b77ex_category": {
+    "value": "card_arrival",
+    "display": "card_arrival",
+    "source": "data/banking_records.jsonl:B77_train_00000.category",
+    "note": ""
+  },
+  "b77ex_split": {
+    "value": "train",
+    "display": "train",
+    "source": "data/banking_records.jsonl:B77_train_00000.split",
+    "note": ""
+  },
+  "b77ex_source_row": {
+    "value": 0,
+    "display": "0",
+    "source": "data/banking_records.jsonl:B77_train_00000.source_row",
+    "note": ""
+  },
+  "b77ex_source_file": {
+    "value": "train.csv",
+    "display": "train.csv",
+    "source": "data/banking_records.jsonl:B77_train_00000.source_file",
+    "note": ""
+  },
+  "b77ex_acquired_date": {
+    "value": "2026-10-03",
+    "display": "2026-10-03",
+    "source": "data/banking_records.jsonl:B77_train_00000.acquired_date",
+    "note": ""
+  },
+  "b77ex_char_count": {
+    "value": 30,
+    "display": "30",
+    "source": "data/banking_records.jsonl:B77_train_00000.char_count",
+    "note": ""
+  },
+  "chex_id": {
+    "value": "CH_0106",
+    "display": "CH_0106",
+    "source": "data/m3/challenge_set.jsonl:CH_0106",
+    "note": ""
+  },
+  "chex_subset": {
+    "value": "challenge_dev",
+    "display": "challenge_dev",
+    "source": "data/m3/challenge_set.jsonl:CH_0106",
+    "note": ""
+  },
+  "chex_text": {
+    "value": "Reply to kofi+alerts@example.net please. Tell me how to verify a top up.",
+    "display": "Reply to kofi+alerts@example.net please. Tell me how to verify a top up.",
+    "source": "data/m3/challenge_set.jsonl:CH_0106",
+    "note": ""
+  },
+  "chex_type": {
+    "value": "EMAIL",
+    "display": "EMAIL",
+    "source": "data/m3/challenge_set.jsonl:CH_0106",
+    "note": ""
+  },
+  "chex_start": {
+    "value": 9,
+    "display": "9",
+    "source": "data/m3/challenge_set.jsonl:CH_0106",
+    "note": ""
+  },
+  "chex_end": {
+    "value": 32,
+    "display": "32",
+    "source": "data/m3/challenge_set.jsonl:CH_0106",
+    "note": ""
+  },
+  "chex_value": {
+    "value": "kofi+alerts@example.net",
+    "display": "kofi+alerts@example.net",
+    "source": "data/m3/challenge_set.jsonl:CH_0106",
+    "note": ""
+  },
+  "chex_format_tag": {
+    "value": "plus_email",
+    "display": "plus_email",
+    "source": "data/m3/challenge_set.jsonl:CH_0106",
+    "note": ""
+  },
+  "chex_carrier": {
+    "value": "B77_train_07787",
+    "display": "B77_train_07787",
+    "source": "data/m3/challenge_set.jsonl:CH_0106",
+    "note": ""
+  },
+  "chex_template": {
+    "value": "Reply to {v} please.",
+    "display": "Reply to {v} please.",
+    "source": "data/m3/challenge_set.jsonl:CH_0106",
+    "note": ""
+  },
+  "chex_text_short": {
+    "value": "Reply to kofi+alerts@example.net please. Tell me how to verify a top up.",
+    "display": "Reply to kofi+alerts@exa...",
+    "source": "data/m3/challenge_set.jsonl:CH_0106",
+    "note": ""
+  },
+  "thr_T1": {
+    "value": true,
+    "display": "PASS",
+    "source": "derived from deck_numbers + results/m3/preregistration.md",
+    "note": ""
+  },
+  "thr_T2": {
+    "value": true,
+    "display": "PASS",
+    "source": "derived from deck_numbers + results/m3/preregistration.md",
+    "note": ""
+  },
+  "thr_T3": {
+    "value": true,
+    "display": "PASS",
+    "source": "derived from deck_numbers + results/m3/preregistration.md",
+    "note": ""
+  },
+  "thr_T4": {
+    "value": true,
+    "display": "PASS",
+    "source": "derived from deck_numbers + results/m3/preregistration.md",
+    "note": ""
+  },
+  "thr_T5": {
+    "value": true,
+    "display": "PASS",
+    "source": "derived from deck_numbers + results/m3/preregistration.md",
+    "note": ""
+  },
+  "thr_T6": {
+    "value": true,
+    "display": "PASS",
+    "source": "derived from deck_numbers + results/m3/preregistration.md",
+    "note": ""
+  },
+  "thr_T7": {
+    "value": true,
+    "display": "PASS",
+    "source": "derived from deck_numbers + results/m3/preregistration.md",
+    "note": ""
+  },
+  "thr_pass_count": {
+    "value": 7,
+    "display": "7",
+    "source": "derived",
+    "note": ""
+  },
+  "_conventions": {
+    "value": null,
+    "display": "Macro-F1: 3 decimals; rates: % with 1 decimal (leak rates 2); differences: signed pp with 1 decimal; counts: thousands separators",
+    "source": "m3/analysis/numbers.py",
+    "note": ""
+  }
+}

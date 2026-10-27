@@ -1,0 +1,115 @@
+{
+  "misroutes_per_1000": {
+    "frozen_C0": {
+      "value": 83.4,
+      "added_vs_raw": -22.4,
+      "formula": "(1 - test accuracy) x 1,000"
+    },
+    "frozen_C1": {
+      "value": 105.8,
+      "added_vs_raw": 0.0,
+      "formula": "(1 - test accuracy) x 1,000"
+    },
+    "frozen_C2": {
+      "value": 96.8,
+      "added_vs_raw": -9.1,
+      "formula": "(1 - test accuracy) x 1,000"
+    },
+    "frozen_C3": {
+      "value": 147.7,
+      "added_vs_raw": 41.9,
+      "formula": "(1 - test accuracy) x 1,000"
+    },
+    "frozen_C4": {
+      "value": 99.7,
+      "added_vs_raw": -6.2,
+      "formula": "(1 - test accuracy) x 1,000"
+    },
+    "frozen_D2": {
+      "value": 104.9,
+      "added_vs_raw": -1.0,
+      "formula": "(1 - test accuracy) x 1,000"
+    },
+    "frozen_D3": {
+      "value": 161.0,
+      "added_vs_raw": 55.2,
+      "formula": "(1 - test accuracy) x 1,000"
+    },
+    "frozen_D4": {
+      "value": 111.4,
+      "added_vs_raw": 5.5,
+      "formula": "(1 - test accuracy) x 1,000"
+    },
+    "retrained_C0": {
+      "value": 73.1,
+      "added_vs_raw": -32.8,
+      "formula": "(1 - test accuracy) x 1,000"
+    },
+    "retrained_C1": {
+      "value": 105.8,
+      "added_vs_raw": 0.0,
+      "formula": "(1 - test accuracy) x 1,000"
+    },
+    "retrained_C2": {
+      "value": 81.2,
+      "added_vs_raw": -24.7,
+      "formula": "(1 - test accuracy) x 1,000"
+    },
+    "retrained_C3": {
+      "value": 83.4,
+      "added_vs_raw": -22.4,
+      "formula": "(1 - test accuracy) x 1,000"
+    },
+    "retrained_C4": {
+      "value": 86.0,
+      "added_vs_raw": -19.8,
+      "formula": "(1 - test accuracy) x 1,000"
+    },
+    "retrained_D2": {
+      "value": 89.9,
+      "added_vs_raw": -15.9,
+      "formula": "(1 - test accuracy) x 1,000"
+    },
+    "retrained_D3": {
+      "value": 95.8,
+      "added_vs_raw": -10.1,
+      "formula": "(1 - test accuracy) x 1,000"
+    },
+    "retrained_D4": {
+      "value": 97.7,
+      "added_vs_raw": -8.1,
+      "formula": "(1 - test accuracy) x 1,000"
+    }
+  },
+  "assumptions": [
+    "accuracy and leak rates measured on the BANKING77 test split with synthetic PII",
+    "throughput measured on one PC at batch size 1; batching would raise it",
+    "no electricity, hardware or staff costs included"
+  ],
+  "leaks_per_10000": {
+    "V1": 26.0,
+    "V2": 0.0,
+    "formula": "residual leak rate on the 3,080 test ledger records x 10,000"
+  },
+  "over_redactions_per_1000_clean": {
+    "V1": 29.9,
+    "V2": 29.5,
+    "formula": "share of clean test queries with a target-type detection x 1,000"
+  },
+  "throughput": {
+    "records_per_hour_end_to_end": 160929,
+    "hours_per_million_records": 6.2,
+    "median_ms_end_to_end": 21.202,
+    "p95_ms_end_to_end": 30.181,
+    "device": "CPU (13th Gen Intel(R) Core(TM) i7-13700KF), batch 1, one process",
+    "formula": "3,600,000 ms / mean end-to-end ms per record"
+  },
+  "mean_utf8_bytes_per_record": 95.3,
+  "local_api_cost_usd": {
+    "value": 0,
+    "note": "runs on hardware already owned; electricity not estimated"
+  },
+  "managed_service_comparison": {
+    "note": "usage-based pricing per GB inspected/transformed; no dollar figure shown"
+  }
+}
