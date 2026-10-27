@@ -299,6 +299,12 @@
     "source": "results/m3/data/token_lengths.csv",
     "note": "largest p99.9 token count over conditions"
   },
+  "trainval_over_maxlen": {
+    "value": 4,
+    "display": "4",
+    "source": "results/m3/data/token_lengths.csv:over_96",
+    "note": "most train+val inputs above max_len in any one condition"
+  },
   "tokens_max": {
     "value": 117,
     "display": "117",
@@ -1116,14 +1122,14 @@
     "note": ""
   },
   "gap_b2_b1": {
-    "value": 0.02507999999999999,
+    "value": 0.025000000000000022,
     "display": "2.5 pp",
     "source": "derived: e1_b2_macro_f1 - e1_b1_macro_f1",
     "note": "unsigned gap in validation Macro-F1"
   },
   "gap_b2_t1": {
-    "value": 0.1541349999999999,
-    "display": "15.4 pp",
+    "value": 0.15500000000000003,
+    "display": "15.5 pp",
     "source": "derived: e1_b2_macro_f1 - e1_t1_macro_f1",
     "note": "unsigned gap in validation Macro-F1"
   },
@@ -1144,6 +1150,30 @@
     "display": "10",
     "source": "configs/frozen_model.yaml",
     "note": ""
+  },
+  "wall_e1": {
+    "value": 305.0,
+    "display": "5.1 min",
+    "source": "results/m3/runs/*/manifest.json:wall_seconds",
+    "note": "summed wall time per stage"
+  },
+  "wall_e2": {
+    "value": 80.89999999999999,
+    "display": "1.3 min",
+    "source": "results/m3/runs/*/manifest.json:wall_seconds",
+    "note": "summed wall time per stage"
+  },
+  "wall_e3": {
+    "value": 7.8,
+    "display": "0.1 min",
+    "source": "results/m3/runs/*/manifest.json:wall_seconds",
+    "note": "summed wall time per stage"
+  },
+  "wall_e4": {
+    "value": 35.199999999999996,
+    "display": "0.6 min",
+    "source": "results/m3/runs/*/manifest.json:wall_seconds",
+    "note": "summed wall time per stage"
   },
   "n_test_evals": {
     "value": 15,

@@ -54,14 +54,29 @@ Environment: Python 3.12 for modeling (`requirements-m3.txt`; PyTorch CPU build 
 an AMD Radeon RX 7900 XTX for training) and the detector environments in `requirements-presidio-m3.txt`.
 Device choice and timings are in `results/m3/env/`.
 
-Reproduce (from the repository root, in the matching environment):
+Reproduce (from the repository root; detector steps in the detector environment, the rest in `.venv-m3`):
 
 ```bash
-python -m m3.data.splits
-python -m m3.detector.run_detector --all          # add --engine trf for the selected detector
-python -m m3.data.build_conditions
-python -m m3.run_experiments --all
-python -m m3.analysis.numbers                     # after evaluate, risk, error_analysis, business, figures
+python -m m3.data.splits                              # train/validation split
+python -m m3.detector.challenge_set                   # non-Faker challenge set
+python -m m3.detector.run_detector --all              # Presidio lg (V0, V1)
+python -m m3.detector.run_detector --all --engine trf # Presidio trf (V2)
+python -m m3.detector.hf_ner                          # NER add-on (V3)
+python -m m3.detector.evaluate --final V2             # variant metrics, selection inputs, final scores
+python -m m3.data.build_conditions                    # eight text conditions
+python -m m3.data.token_lengths
+python -m m3.data.review_gate
+python -m m3.run_experiments --stage e1               # model comparison
+python -m m3.latency --part classifiers               # CPU latency (also --part detector, --part combine)
+python -m m3.models.select                            # pre-registered selection, frozen config
+python -m m3.run_experiments --all                    # all frozen-model experiments
+python -m m3.analysis.evaluate
+python -m m3.analysis.risk
+python -m m3.analysis.error_analysis
+python -m m3.analysis.business
+python -m m3.analysis.figures
+python -m m3.analysis.example_record
+python -m m3.analysis.numbers                         # results/m3/deck_numbers.json
 python -m pytest m3/tests -q
 ```
 
@@ -73,6 +88,11 @@ Where results live:
   frozen configuration and every test-set evaluation.
 - `results/m3/analysis/`, `results/m3/figures/`, `results/m3/latency.json` — tables, findings, figures, timings.
 - `results/m3/preregistration.md` — research questions and thresholds fixed before testing.
+
+All M3 work is on branch `m3`. Older material from M2 is kept unchanged: `evidence/` holds the M2 Presidio
+pilot (the final configuration is the `*_v2` files and `address_recognizer.py`), `docs/EVIDENCE_AUDIT.md`
+and `docs/PRESENTATION_EVIDENCE_CROSSWALK.md` describe the M2 deck, and
+`.github/workflows/build-evidence-data.yml` rebuilds the M2 data snapshot when the M2 scripts change.
 
 `docs/M3_EVIDENCE_CROSSWALK.md` maps each slide of the M3 deck to the files behind its numbers, and
 `docs/M3_REFERENCES_VERIFIED.md` records how each cited source was checked.

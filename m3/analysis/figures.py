@@ -91,7 +91,7 @@ def fig_main_results():
     allv = [float(r["macro_f1_ci_low"]) for r in rows.values() if r["protocol"] in ("frozen", "retrained")
             and r["condition"] in conds]
     ax.set_ylim(max(0, min(allv) - 0.03), min(1.0, max(float(r["macro_f1_ci_high"]) for r in rows.values()) + 0.008))
-    ax.set_xticks(x, [COND[c] for c in conds])
+    ax.set_xticks(x, ["Raw\nC1", "No contact\nC0", "Delete\nC2", "Generic\nC3", "Typed\nC4"])
     ax.set_ylabel("Test Macro-F1 (axis does not start at 0)")
     ax.legend(loc="lower center", frameon=False, ncol=2, bbox_to_anchor=(0.5, 1.0), handlelength=1.4,
               columnspacing=1.0, fontsize=16)

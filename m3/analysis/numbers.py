@@ -89,6 +89,9 @@ def splits_and_data():
     tl = list(csv.DictReader(open(RESULTS / "data" / "token_lengths.csv", encoding="utf-8")))
     mx = max(float(r["p99_9"]) for r in tl if r["tokenizer"] == "distilbert-base-uncased" and r["part"] == "train+val")
     put("tokens_p999_max", mx, f"{mx:.0f}", "results/m3/data/token_lengths.csv", "largest p99.9 token count over conditions")
+    over = max(int(r["over_96"]) for r in tl if r["tokenizer"] == "distilbert-base-uncased" and r["part"] == "train+val")
+    cnt("trainval_over_maxlen", over, "results/m3/data/token_lengths.csv:over_96",
+        "most train+val inputs above max_len in any one condition")
     tmax = max(int(r["max"]) for r in tl if r["tokenizer"] == "distilbert-base-uncased")
     cnt("tokens_max", tmax, "results/m3/data/token_lengths.csv", "longest input in tokens, any condition/split")
     ch = read_jsonl(DATA_M3 / "challenge_set.jsonl")
@@ -185,12 +188,19 @@ def models():
             dpp("t1_last_epoch_gain", float(curve[-1]["val_macro_f1"]) - float(curve[-2]["val_macro_f1"]),
                 f"results/m3/runs/{d.name}/train_curve.csv", "val Macro-F1 gain in the last epoch")
     for k, other in (("gap_b2_b1", "e1_b1_macro_f1"), ("gap_b2_t1", "e1_t1_macro_f1")):
-        g = N["e1_b2_macro_f1"]["value"] - N[other]["value"]
+        g = round(N["e1_b2_macro_f1"]["value"], 3) - round(N[other]["value"], 3)  # matches the 3-decimal values shown
         put(k, g, f"{abs(g) * 100:.1f} pp", f"derived: e1_b2_macro_f1 - {other}", "unsigned gap in validation Macro-F1")
     put("speedup_b1_vs_b2", N["e1_b2_ms"]["value"] / N["e1_b1_ms"]["value"],
         f"{N['e1_b2_ms']['value'] / N['e1_b1_ms']['value']:.0f}x", "derived: median ms b2 / b1")
     put("frozen_C", fz["model"].get("params", {}).get("C"), str(fz["model"].get("params", {}).get("C")), "configs/frozen_model.yaml")
     put("b1_params_C", fz["cross_check_model"]["params"]["C"], str(fz["cross_check_model"]["params"]["C"]), "configs/frozen_model.yaml")
+    walls = {}
+    for d in (RESULTS / "runs").glob("*/manifest.json"):
+        man = read_json(d)
+        st = {"e2a": "e2", "e2b": "e2", "e2c": "e4", "e2d": "e4", "e3c": "e3"}.get(man["stage"], man["stage"])
+        walls[st] = walls.get(st, 0) + man["wall_seconds"]
+    for st, w in sorted(walls.items()):
+        put(f"wall_{st}", w, f"{w / 60:.1f} min", "results/m3/runs/*/manifest.json:wall_seconds", "summed wall time per stage")
     log = list(csv.DictReader(open(RESULTS / "test_eval_log.csv", encoding="utf-8")))
     cnt("n_test_evals", sum(1 for r in log if r["run_id"] != "FROZEN_CONFIG_REGISTERED"), "results/m3/test_eval_log.csv")
     cnt("n_runs", len(list((RESULTS / "runs").glob("*/metrics.json"))), "results/m3/runs/*/metrics.json")
