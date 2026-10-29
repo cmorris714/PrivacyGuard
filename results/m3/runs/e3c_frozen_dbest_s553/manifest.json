@@ -1,0 +1,41 @@
+{
+  "run_id": "e3c_frozen_dbest_s553",
+  "stage": "e3c",
+  "config": {
+    "id": "e3c_frozen_dbest_s553",
+    "stage": "e3c",
+    "model": "frozen",
+    "train": "D3",
+    "test": [
+      "D3"
+    ],
+    "seed": 553,
+    "frozen_config_sha256": "f8da789dac479ca3dc9fa067c63f30bc695add30facf567ee014b152f4652ec8",
+    "model_cfg": {
+      "family": "embed_clf",
+      "encoder": "sentence-transformers/all-MiniLM-L6-v2",
+      "params": {
+        "head": "logreg",
+        "C": 10
+      },
+      "seed": 553
+    },
+    "hash": "a3426acacf5f"
+  },
+  "config_hash": "a3426acacf5f",
+  "seed": 553,
+  "device": "cuda",
+  "device_name": "AMD Radeon RX 7900 XTX",
+  "versions": {
+    "python": "3.12.16",
+    "numpy": "2.5.4",
+    "scikit-learn": "1.9.1",
+    "torch": "2.9.1+rocm7.2.1",
+    "transformers": "5.21.0",
+    "sentence-transformers": "6.2.0"
+  },
+  "git_commit": "9a0e46cea1571bb5796c8d0811edf5702afbe3b0",
+  "start_utc": "2026-10-27T22:09:41+00:00",
+  "end_utc": "2026-10-27T22:09:49+00:00",
+  "wall_seconds": 7.8
+}

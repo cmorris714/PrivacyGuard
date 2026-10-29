@@ -1,0 +1,5 @@
+variant,n_ledger,detection_recall,full_span_recall,residual_leak_rate,residual_leaks,partial_leaks,person_detection_recall,person_residual_leaks,over_redaction_rate,challenge_dev_detection_recall,challenge_dev_leak_rate,challenge_dev_negative_fp_rate,median_ms,p95_ms
+V0,9992,0.8287,0.7349,0.0957,956,1624,0.986,24,0.0323,0.8718,0.0705,0.0938,5.89,9.8
+V1,9992,0.9965,0.9892,0.0024,24,21,0.986,24,0.0323,0.891,0.0577,0.0938,5.89,9.8
+V2,9992,1.0,0.9935,0.0,0,18,1.0,0,0.0308,0.9936,0.0064,0.125,17.59,44.25
+V3,9992,1.0,0.9935,0.0,0,15,1.0,0,0.0332,0.9295,0.0385,0.0938,20.62,249.89

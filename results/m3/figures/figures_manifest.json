@@ -1,0 +1,37 @@
+{
+  "fig_model_tradeoff.png": {
+    "width_in": 6.0,
+    "height_in": 3.9,
+    "caption": "Exp 1: validation Macro-F1 vs CPU latency (C1 raw)"
+  },
+  "fig_main_results.png": {
+    "width_in": 7.5,
+    "height_in": 4.2,
+    "caption": "Exp 2: test Macro-F1, frozen vs retrained, 95% CIs"
+  },
+  "fig_ablation.png": {
+    "width_in": 6.0,
+    "height_in": 3.4,
+    "caption": "Exp 4a: removing the contact sentence (C0 vs C1), test set"
+  },
+  "fig_detector.png": {
+    "width_in": 6.0,
+    "height_in": 3.6,
+    "caption": "Exp 3: held-out non-Faker recall, V1 vs selected detector"
+  },
+  "fig_small_intents.png": {
+    "width_in": 12.3,
+    "height_in": 4.4,
+    "caption": "Per-intent test recall for the 10 smallest training intents (n = training examples)"
+  },
+  "fig_risk_coverage.png": {
+    "width_in": 5.6,
+    "height_in": 3.4,
+    "caption": "Risk-coverage on test: precision vs auto-routed share"
+  },
+  "fig_train_curve.png": {
+    "width_in": 6.0,
+    "height_in": 3.4,
+    "caption": "Exp 1 DistilBERT (lr 2e-5): loss per epoch with validation Macro-F1 labelled; still improving at the 4-epoch cap"
+  }
+}

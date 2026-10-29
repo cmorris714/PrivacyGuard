@@ -1,0 +1,30 @@
+{
+  "run_id": "e2b_frozen_c0_s553",
+  "config_hash": "f0d56582b303",
+  "val": {
+    "C0": {
+      "n": 1999,
+      "accuracy": 0.922961,
+      "macro_precision": 0.929105,
+      "macro_recall": 0.922131,
+      "macro_f1": 0.924068
+    }
+  },
+  "test": {
+    "C0": {
+      "n": 3080,
+      "accuracy": 0.926948,
+      "macro_precision": 0.929771,
+      "macro_recall": 0.926948,
+      "macro_f1": 0.92676,
+      "predict_seconds": 0.72
+    }
+  },
+  "selected_params": {
+    "head": "logreg",
+    "C": 10
+  },
+  "train_seconds": 26.7,
+  "n_train": 7993,
+  "n_val": 1999
+}

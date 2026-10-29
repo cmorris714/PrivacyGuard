@@ -1,0 +1,68 @@
+{
+  "target_precision": 0.98,
+  "tau": 0.637,
+  "chosen_on": "e2a_frozen_c1_s553 validation C1",
+  "val_coverage": 0.7789,
+  "val_precision": 0.9801,
+  "test": {
+    "C0": {
+      "coverage": 0.8662,
+      "auto_precision": 0.9674,
+      "review_queue_share": 0.1338,
+      "overall_accuracy": 0.9166
+    },
+    "C1": {
+      "coverage": 0.7698,
+      "auto_precision": 0.9734,
+      "review_queue_share": 0.2302,
+      "overall_accuracy": 0.8942
+    },
+    "C2": {
+      "coverage": 0.8081,
+      "auto_precision": 0.9695,
+      "review_queue_share": 0.1919,
+      "overall_accuracy": 0.9032
+    },
+    "C3": {
+      "coverage": 0.6786,
+      "auto_precision": 0.9627,
+      "review_queue_share": 0.3214,
+      "overall_accuracy": 0.8523
+    },
+    "C4": {
+      "coverage": 0.7769,
+      "auto_precision": 0.9749,
+      "review_queue_share": 0.2231,
+      "overall_accuracy": 0.9003
+    },
+    "D2": {
+      "coverage": 0.7958,
+      "auto_precision": 0.9674,
+      "review_queue_share": 0.2042,
+      "overall_accuracy": 0.8951
+    },
+    "D3": {
+      "coverage": 0.6656,
+      "auto_precision": 0.9551,
+      "review_queue_share": 0.3344,
+      "overall_accuracy": 0.839
+    },
+    "D4": {
+      "coverage": 0.7627,
+      "auto_precision": 0.974,
+      "review_queue_share": 0.2373,
+      "overall_accuracy": 0.8886
+    }
+  },
+  "final_pipeline": {
+    "run": "e2b_frozen_c3_s553",
+    "condition": "D3",
+    "n": 3080,
+    "n_auto": 2400,
+    "n_auto_correct": 2350,
+    "coverage": 0.7792,
+    "auto_precision": 0.9792,
+    "review_queue_share": 0.2208,
+    "overall_accuracy": 0.9042
+  }
+}

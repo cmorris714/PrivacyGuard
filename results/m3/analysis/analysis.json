@@ -1,0 +1,181 @@
+{
+  "protocols": {
+    "frozen": {
+      "model": "MiniLM+clf",
+      "conds": {
+        "C0": [
+          "e2a_frozen_c1_s553",
+          "C0"
+        ],
+        "C1": [
+          "e2a_frozen_c1_s553",
+          "C1"
+        ],
+        "C2": [
+          "e2a_frozen_c1_s553",
+          "C2"
+        ],
+        "C3": [
+          "e2a_frozen_c1_s553",
+          "C3"
+        ],
+        "C4": [
+          "e2a_frozen_c1_s553",
+          "C4"
+        ],
+        "D2": [
+          "e2a_frozen_c1_s553",
+          "D2"
+        ],
+        "D3": [
+          "e2a_frozen_c1_s553",
+          "D3"
+        ],
+        "D4": [
+          "e2a_frozen_c1_s553",
+          "D4"
+        ]
+      }
+    },
+    "retrained": {
+      "model": "MiniLM+clf",
+      "conds": {
+        "C1": [
+          "e2a_frozen_c1_s553",
+          "C1"
+        ],
+        "C0": [
+          "e2b_frozen_c0_s553",
+          "C0"
+        ],
+        "C2": [
+          "e2b_frozen_c2_s553",
+          "C2"
+        ],
+        "C3": [
+          "e2b_frozen_c3_s553",
+          "C3"
+        ],
+        "C4": [
+          "e2b_frozen_c4_s553",
+          "C4"
+        ],
+        "D2": [
+          "e2b_frozen_c2_s553",
+          "D2"
+        ],
+        "D3": [
+          "e2b_frozen_c3_s553",
+          "D3"
+        ],
+        "D4": [
+          "e2b_frozen_c4_s553",
+          "D4"
+        ]
+      }
+    },
+    "frozen_tfidf": {
+      "model": "TF-IDF+SVM",
+      "conds": {
+        "C0": [
+          "e2c_tfidf_svm_c1_s553",
+          "C0"
+        ],
+        "C1": [
+          "e2c_tfidf_svm_c1_s553",
+          "C1"
+        ],
+        "C2": [
+          "e2c_tfidf_svm_c1_s553",
+          "C2"
+        ],
+        "C3": [
+          "e2c_tfidf_svm_c1_s553",
+          "C3"
+        ],
+        "C4": [
+          "e2c_tfidf_svm_c1_s553",
+          "C4"
+        ],
+        "D2": [
+          "e2c_tfidf_svm_c1_s553",
+          "D2"
+        ],
+        "D3": [
+          "e2c_tfidf_svm_c1_s553",
+          "D3"
+        ],
+        "D4": [
+          "e2c_tfidf_svm_c1_s553",
+          "D4"
+        ]
+      }
+    },
+    "retrained_tfidf": {
+      "model": "TF-IDF+SVM",
+      "conds": {
+        "C1": [
+          "e2c_tfidf_svm_c1_s553",
+          "C1"
+        ],
+        "C0": [
+          "e2c_tfidf_svm_c0_s553",
+          "C0"
+        ],
+        "C2": [
+          "e2c_tfidf_svm_c2_s553",
+          "C2"
+        ],
+        "C3": [
+          "e2c_tfidf_svm_c3_s553",
+          "C3"
+        ],
+        "C4": [
+          "e2c_tfidf_svm_c4_s553",
+          "C4"
+        ],
+        "D2": [
+          "e2c_tfidf_svm_c2_s553",
+          "D2"
+        ],
+        "D3": [
+          "e2c_tfidf_svm_c3_s553",
+          "D3"
+        ],
+        "D4": [
+          "e2c_tfidf_svm_c4_s553",
+          "D4"
+        ]
+      }
+    }
+  },
+  "best_method_retrained": "C3",
+  "smallest_intents": [
+    "contactless_not_working",
+    "virtual_card_not_working",
+    "card_acceptance",
+    "card_swallowed",
+    "lost_or_stolen_card",
+    "atm_support",
+    "compromised_card",
+    "receiving_money",
+    "get_disposable_virtual_card",
+    "getting_virtual_card"
+  ],
+  "seed_summary": [
+    {
+      "train_condition": "C1",
+      "n_seeds": 3,
+      "mean_macro_f1": 0.894374,
+      "std_macro_f1": 0.0
+    },
+    {
+      "train_condition": "C3",
+      "n_seeds": 3,
+      "mean_macro_f1": 0.916384,
+      "std_macro_f1": 0.0
+    }
+  ],
+  "n_bootstrap": 2000,
+  "seed": 553
+}

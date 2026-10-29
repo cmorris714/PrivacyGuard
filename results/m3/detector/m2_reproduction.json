@@ -1,0 +1,63 @@
+{
+  "description": "Presidio en_core_web_lg + address rule v2 on all 13,083 raw texts; leaks after masking with every returned span (M2 pilot behaviour)",
+  "expected_from_M2": {
+    "found_total": 13039,
+    "PERSON_found": 3191,
+    "PERSON_full_span": 3101,
+    "PERSON_complete_value_left": 32,
+    "ADDRESS_full_span": 3351
+  },
+  "result": {
+    "PERSON": {
+      "n": 3235,
+      "found": 3191,
+      "full_span": 3101,
+      "residual_leak": 32,
+      "partial_leak": 24,
+      "detection_recall": 0.9864,
+      "full_span_recall": 0.9586,
+      "residual_leak_rate": 0.0099
+    },
+    "EMAIL": {
+      "n": 3161,
+      "found": 3161,
+      "full_span": 3161,
+      "residual_leak": 0,
+      "partial_leak": 0,
+      "detection_recall": 1.0,
+      "full_span_recall": 1.0,
+      "residual_leak_rate": 0.0
+    },
+    "PHONE": {
+      "n": 3336,
+      "found": 3336,
+      "full_span": 3336,
+      "residual_leak": 0,
+      "partial_leak": 0,
+      "detection_recall": 1.0,
+      "full_span_recall": 1.0,
+      "residual_leak_rate": 0.0
+    },
+    "ADDRESS": {
+      "n": 3351,
+      "found": 3351,
+      "full_span": 3351,
+      "residual_leak": 0,
+      "partial_leak": 0,
+      "detection_recall": 1.0,
+      "full_span_recall": 1.0,
+      "residual_leak_rate": 0.0
+    },
+    "ALL": {
+      "n": 13083,
+      "found": 13039,
+      "full_span": 12949,
+      "residual_leak": 32,
+      "partial_leak": 24,
+      "detection_recall": 0.9966,
+      "full_span_recall": 0.9898,
+      "residual_leak_rate": 0.0024
+    }
+  },
+  "reproduced": true
+}

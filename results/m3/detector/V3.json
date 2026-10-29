@@ -1,0 +1,485 @@
+{
+  "variant": "V3",
+  "scope": "selection (train+val ledger, challenge_dev, clean train+val)",
+  "ledger": {
+    "PERSON": {
+      "n": 2506,
+      "found": 2506,
+      "full_span": 2441,
+      "residual_leak": 0,
+      "partial_leak": 15,
+      "detection_recall": 1.0,
+      "full_span_recall": 0.9741,
+      "residual_leak_rate": 0.0
+    },
+    "EMAIL": {
+      "n": 2422,
+      "found": 2422,
+      "full_span": 2422,
+      "residual_leak": 0,
+      "partial_leak": 0,
+      "detection_recall": 1.0,
+      "full_span_recall": 1.0,
+      "residual_leak_rate": 0.0
+    },
+    "PHONE": {
+      "n": 2523,
+      "found": 2523,
+      "full_span": 2523,
+      "residual_leak": 0,
+      "partial_leak": 0,
+      "detection_recall": 1.0,
+      "full_span_recall": 1.0,
+      "residual_leak_rate": 0.0
+    },
+    "ADDRESS": {
+      "n": 2541,
+      "found": 2541,
+      "full_span": 2541,
+      "residual_leak": 0,
+      "partial_leak": 0,
+      "detection_recall": 1.0,
+      "full_span_recall": 1.0,
+      "residual_leak_rate": 0.0
+    },
+    "ALL": {
+      "n": 9992,
+      "found": 9992,
+      "full_span": 9927,
+      "residual_leak": 0,
+      "partial_leak": 15,
+      "detection_recall": 1.0,
+      "full_span_recall": 0.9935,
+      "residual_leak_rate": 0.0
+    }
+  },
+  "over_redaction": {
+    "n": 9992,
+    "flagged": 332,
+    "over_redaction_rate": 0.0332,
+    "by_entity": {
+      "LOCATION": {
+        "flagged": 316,
+        "rate": 0.0316
+      },
+      "PERSON": {
+        "flagged": 18,
+        "rate": 0.0018
+      }
+    }
+  },
+  "challenge_dev": {
+    "by_type": {
+      "ADDRESS": {
+        "n": 44,
+        "found": 34,
+        "full_span": 4,
+        "residual_leak": 5,
+        "detection_recall": 0.7727,
+        "full_span_recall": 0.0909,
+        "residual_leak_rate": 0.1136
+      },
+      "ALL": {
+        "n": 156,
+        "found": 145,
+        "full_span": 111,
+        "residual_leak": 6,
+        "detection_recall": 0.9295,
+        "full_span_recall": 0.7115,
+        "residual_leak_rate": 0.0385
+      },
+      "EMAIL": {
+        "n": 32,
+        "found": 32,
+        "full_span": 32,
+        "residual_leak": 0,
+        "detection_recall": 1.0,
+        "full_span_recall": 1.0,
+        "residual_leak_rate": 0.0
+      },
+      "PERSON": {
+        "n": 48,
+        "found": 47,
+        "full_span": 43,
+        "residual_leak": 1,
+        "detection_recall": 0.9792,
+        "full_span_recall": 0.8958,
+        "residual_leak_rate": 0.0208
+      },
+      "PHONE": {
+        "n": 32,
+        "found": 32,
+        "full_span": 32,
+        "residual_leak": 0,
+        "detection_recall": 1.0,
+        "full_span_recall": 1.0,
+        "residual_leak_rate": 0.0
+      }
+    },
+    "by_format": {
+      "ADDRESS/ca_address": {
+        "n": 4,
+        "found": 4,
+        "full_span": 0,
+        "residual_leak": 0,
+        "detection_recall": 1.0,
+        "full_span_recall": 0.0,
+        "residual_leak_rate": 0.0
+      },
+      "ADDRESS/no_commas": {
+        "n": 4,
+        "found": 4,
+        "full_span": 4,
+        "residual_leak": 0,
+        "detection_recall": 1.0,
+        "full_span_recall": 1.0,
+        "residual_leak_rate": 0.0
+      },
+      "ADDRESS/no_zip": {
+        "n": 4,
+        "found": 4,
+        "full_span": 0,
+        "residual_leak": 0,
+        "detection_recall": 1.0,
+        "full_span_recall": 0.0,
+        "residual_leak_rate": 0.0
+      },
+      "ADDRESS/po_box": {
+        "n": 4,
+        "found": 2,
+        "full_span": 0,
+        "residual_leak": 1,
+        "detection_recall": 0.5,
+        "full_span_recall": 0.0,
+        "residual_leak_rate": 0.25
+      },
+      "ADDRESS/rural_route": {
+        "n": 4,
+        "found": 3,
+        "full_span": 0,
+        "residual_leak": 1,
+        "detection_recall": 0.75,
+        "full_span_recall": 0.0,
+        "residual_leak_rate": 0.25
+      },
+      "ADDRESS/split_in_at": {
+        "n": 4,
+        "found": 3,
+        "full_span": 0,
+        "residual_leak": 1,
+        "detection_recall": 0.75,
+        "full_span_recall": 0.0,
+        "residual_leak_rate": 0.25
+      },
+      "ADDRESS/state_lowercase": {
+        "n": 4,
+        "found": 3,
+        "full_span": 0,
+        "residual_leak": 0,
+        "detection_recall": 0.75,
+        "full_span_recall": 0.0,
+        "residual_leak_rate": 0.0
+      },
+      "ADDRESS/state_spelled": {
+        "n": 4,
+        "found": 4,
+        "full_span": 0,
+        "residual_leak": 0,
+        "detection_recall": 1.0,
+        "full_span_recall": 0.0,
+        "residual_leak_rate": 0.0
+      },
+      "ADDRESS/uk_address": {
+        "n": 4,
+        "found": 3,
+        "full_span": 0,
+        "residual_leak": 1,
+        "detection_recall": 0.75,
+        "full_span_recall": 0.0,
+        "residual_leak_rate": 0.25
+      },
+      "ADDRESS/unit_first": {
+        "n": 4,
+        "found": 1,
+        "full_span": 0,
+        "residual_leak": 1,
+        "detection_recall": 0.25,
+        "full_span_recall": 0.0,
+        "residual_leak_rate": 0.25
+      },
+      "ADDRESS/zip4": {
+        "n": 4,
+        "found": 3,
+        "full_span": 0,
+        "residual_leak": 0,
+        "detection_recall": 0.75,
+        "full_span_recall": 0.0,
+        "residual_leak_rate": 0.0
+      },
+      "EMAIL/digits_email": {
+        "n": 4,
+        "found": 4,
+        "full_span": 4,
+        "residual_leak": 0,
+        "detection_recall": 1.0,
+        "full_span_recall": 1.0,
+        "residual_leak_rate": 0.0
+      },
+      "EMAIL/dotted_email": {
+        "n": 4,
+        "found": 4,
+        "full_span": 4,
+        "residual_leak": 0,
+        "detection_recall": 1.0,
+        "full_span_recall": 1.0,
+        "residual_leak_rate": 0.0
+      },
+      "EMAIL/org_net_email": {
+        "n": 4,
+        "found": 4,
+        "full_span": 4,
+        "residual_leak": 0,
+        "detection_recall": 1.0,
+        "full_span_recall": 1.0,
+        "residual_leak_rate": 0.0
+      },
+      "EMAIL/paren_email": {
+        "n": 4,
+        "found": 4,
+        "full_span": 4,
+        "residual_leak": 0,
+        "detection_recall": 1.0,
+        "full_span_recall": 1.0,
+        "residual_leak_rate": 0.0
+      },
+      "EMAIL/plus_email": {
+        "n": 4,
+        "found": 4,
+        "full_span": 4,
+        "residual_leak": 0,
+        "detection_recall": 1.0,
+        "full_span_recall": 1.0,
+        "residual_leak_rate": 0.0
+      },
+      "EMAIL/punct_email": {
+        "n": 4,
+        "found": 4,
+        "full_span": 4,
+        "residual_leak": 0,
+        "detection_recall": 1.0,
+        "full_span_recall": 1.0,
+        "residual_leak_rate": 0.0
+      },
+      "EMAIL/subdomain_email": {
+        "n": 4,
+        "found": 4,
+        "full_span": 4,
+        "residual_leak": 0,
+        "detection_recall": 1.0,
+        "full_span_recall": 1.0,
+        "residual_leak_rate": 0.0
+      },
+      "EMAIL/uppercase_email": {
+        "n": 4,
+        "found": 4,
+        "full_span": 4,
+        "residual_leak": 0,
+        "detection_recall": 1.0,
+        "full_span_recall": 1.0,
+        "residual_leak_rate": 0.0
+      },
+      "PERSON/arabic": {
+        "n": 4,
+        "found": 4,
+        "full_span": 4,
+        "residual_leak": 0,
+        "detection_recall": 1.0,
+        "full_span_recall": 1.0,
+        "residual_leak_rate": 0.0
+      },
+      "PERSON/east_asian": {
+        "n": 4,
+        "found": 4,
+        "full_span": 4,
+        "residual_leak": 0,
+        "detection_recall": 1.0,
+        "full_span_recall": 1.0,
+        "residual_leak_rate": 0.0
+      },
+      "PERSON/first_name_only": {
+        "n": 4,
+        "found": 4,
+        "full_span": 4,
+        "residual_leak": 0,
+        "detection_recall": 1.0,
+        "full_span_recall": 1.0,
+        "residual_leak_rate": 0.0
+      },
+      "PERSON/hispanic_accent": {
+        "n": 4,
+        "found": 4,
+        "full_span": 3,
+        "residual_leak": 0,
+        "detection_recall": 1.0,
+        "full_span_recall": 0.75,
+        "residual_leak_rate": 0.0
+      },
+      "PERSON/irish": {
+        "n": 4,
+        "found": 4,
+        "full_span": 3,
+        "residual_leak": 0,
+        "detection_recall": 1.0,
+        "full_span_recall": 0.75,
+        "residual_leak_rate": 0.0
+      },
+      "PERSON/lowercase_name": {
+        "n": 4,
+        "found": 3,
+        "full_span": 3,
+        "residual_leak": 1,
+        "detection_recall": 0.75,
+        "full_span_recall": 0.75,
+        "residual_leak_rate": 0.25
+      },
+      "PERSON/name_is_word": {
+        "n": 4,
+        "found": 4,
+        "full_span": 4,
+        "residual_leak": 0,
+        "detection_recall": 1.0,
+        "full_span_recall": 1.0,
+        "residual_leak_rate": 0.0
+      },
+      "PERSON/slavic": {
+        "n": 4,
+        "found": 4,
+        "full_span": 4,
+        "residual_leak": 0,
+        "detection_recall": 1.0,
+        "full_span_recall": 1.0,
+        "residual_leak_rate": 0.0
+      },
+      "PERSON/south_asian": {
+        "n": 4,
+        "found": 4,
+        "full_span": 4,
+        "residual_leak": 0,
+        "detection_recall": 1.0,
+        "full_span_recall": 1.0,
+        "residual_leak_rate": 0.0
+      },
+      "PERSON/title_name": {
+        "n": 4,
+        "found": 4,
+        "full_span": 4,
+        "residual_leak": 0,
+        "detection_recall": 1.0,
+        "full_span_recall": 1.0,
+        "residual_leak_rate": 0.0
+      },
+      "PERSON/vietnamese": {
+        "n": 4,
+        "found": 4,
+        "full_span": 3,
+        "residual_leak": 0,
+        "detection_recall": 1.0,
+        "full_span_recall": 0.75,
+        "residual_leak_rate": 0.0
+      },
+      "PERSON/west_african": {
+        "n": 4,
+        "found": 4,
+        "full_span": 3,
+        "residual_leak": 0,
+        "detection_recall": 1.0,
+        "full_span_recall": 0.75,
+        "residual_leak_rate": 0.0
+      },
+      "PHONE/au_phone": {
+        "n": 4,
+        "found": 4,
+        "full_span": 4,
+        "residual_leak": 0,
+        "detection_recall": 1.0,
+        "full_span_recall": 1.0,
+        "residual_leak_rate": 0.0
+      },
+      "PHONE/dot_phone": {
+        "n": 4,
+        "found": 4,
+        "full_span": 4,
+        "residual_leak": 0,
+        "detection_recall": 1.0,
+        "full_span_recall": 1.0,
+        "residual_leak_rate": 0.0
+      },
+      "PHONE/ext_phone": {
+        "n": 4,
+        "found": 4,
+        "full_span": 4,
+        "residual_leak": 0,
+        "detection_recall": 1.0,
+        "full_span_recall": 1.0,
+        "residual_leak_rate": 0.0
+      },
+      "PHONE/intl_phone": {
+        "n": 4,
+        "found": 4,
+        "full_span": 4,
+        "residual_leak": 0,
+        "detection_recall": 1.0,
+        "full_span_recall": 1.0,
+        "residual_leak_rate": 0.0
+      },
+      "PHONE/nosep_phone": {
+        "n": 4,
+        "found": 4,
+        "full_span": 4,
+        "residual_leak": 0,
+        "detection_recall": 1.0,
+        "full_span_recall": 1.0,
+        "residual_leak_rate": 0.0
+      },
+      "PHONE/paren_phone": {
+        "n": 4,
+        "found": 4,
+        "full_span": 4,
+        "residual_leak": 0,
+        "detection_recall": 1.0,
+        "full_span_recall": 1.0,
+        "residual_leak_rate": 0.0
+      },
+      "PHONE/space_phone": {
+        "n": 4,
+        "found": 4,
+        "full_span": 4,
+        "residual_leak": 0,
+        "detection_recall": 1.0,
+        "full_span_recall": 1.0,
+        "residual_leak_rate": 0.0
+      },
+      "PHONE/uk_phone": {
+        "n": 4,
+        "found": 4,
+        "full_span": 4,
+        "residual_leak": 0,
+        "detection_recall": 1.0,
+        "full_span_recall": 1.0,
+        "residual_leak_rate": 0.0
+      }
+    },
+    "negatives": {
+      "n": 32,
+      "flagged": 3,
+      "false_positive_rate": 0.0938
+    }
+  },
+  "latency": {
+    "n": 9992,
+    "median_ms": 20.62,
+    "p95_ms": 249.89,
+    "mean_ms": 40.56
+  },
+  "mask_ms_per_record": 0.0043
+}

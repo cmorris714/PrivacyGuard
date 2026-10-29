@@ -1,0 +1,45 @@
+record_id,value,placement,covering_spans,left_after_all_span_mask,left_after_target_span_mask
+B77_test_00540,Alison Simmons,suffix,none,True,True
+B77_test_00920,Bianca Stuart,suffix,none,True,True
+B77_test_00980,Tiffany Ruiz,suffix,none,True,True
+B77_test_01525,Autumn Davidson,suffix,none,True,True
+B77_test_01802,Morgan Jackson,suffix,none,True,True
+B77_test_01817,Savannah Thompson,suffix,none,True,True
+B77_test_02103,Mercedes Edwards,suffix,none,True,True
+B77_test_02521,Tyler York,prefix,LOCATION:Tyler York,False,False
+B77_test_03019,Daniel Cross,prefix,none,True,True
+B77_train_00064,Sydney Henry,suffix,LOCATION:Sydney Henry,False,False
+B77_train_00179,Shannon Mills,prefix,LOCATION:Shannon Mills,False,False
+B77_train_00478,Savannah Maldonado,suffix,LOCATION:Savannah Maldonado,False,False
+B77_train_00812,Brittany Morris,prefix,none,True,True
+B77_train_01093,Tiffany Brown MD,suffix,none,True,True
+B77_train_01360,Tiffany Mcdonald,prefix,none,True,True
+B77_train_01403,Mitchell Gamble,suffix,none,True,True
+B77_train_01437,Cynthia Cross,suffix,none,True,True
+B77_train_01474,Amber Klein,suffix,none,True,True
+B77_train_01652,Bryan Wood,prefix,none,True,True
+B77_train_02133,Troy Avila,prefix,LOCATION:Troy Avila,False,False
+B77_train_02363,Amber Jones,suffix,none,True,True
+B77_train_03150,Jessica Little,suffix,none,True,True
+B77_train_03187,Amber Moore,suffix,none,True,True
+B77_train_03205,Kimberly York,suffix,LOCATION:Kimberly York,False,False
+B77_train_03940,Tiffany Wilson,suffix,none,True,True
+B77_train_04048,April Hood,suffix,none,True,True
+B77_train_04148,Autumn Freeman,prefix,none,True,True
+B77_train_04183,Sierra May,prefix,none,True,True
+B77_train_04890,Mason Payne,suffix,none,True,True
+B77_train_05064,Nathan Greene,prefix,none,True,True
+B77_train_05131,Chase Peters,prefix,none,True,True
+B77_train_05708,Crystal Curtis,prefix,none,True,True
+B77_train_05895,Eddie Morris,suffix,none,True,True
+B77_train_05908,Morgan Miller,suffix,none,True,True
+B77_train_06316,Justin Morgan,prefix,none,True,True
+B77_train_06674,Sydney Smith,prefix,LOCATION:Sydney Smith,False,False
+B77_train_07025,Tiffany Potter,suffix,none,True,True
+B77_train_07289,Mackenzie Green,prefix,LOCATION:Mackenzie Green,False,False
+B77_train_07498,Sydney Dyer,prefix,LOCATION:Sydney Dyer,False,False
+B77_train_08963,Bethany Brooks,prefix,LOCATION:Bethany Brooks,False,False
+B77_train_09155,Savannah Smith,suffix,LOCATION:Savannah Smith,False,False
+B77_train_09156,Tiffany Griffin,suffix,none,True,True
+B77_train_09166,Jose Lynch,suffix,LOCATION:Jose Lynch,False,False
+B77_train_09387,Kelly Hancock,prefix,none,True,True

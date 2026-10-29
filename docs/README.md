@@ -12,7 +12,7 @@ The data files are a frozen October 3, 2026 snapshot used by the presentation.
 - `data/eligibility.jsonl` — training eligibility after duplicate/overlap controls; official test is retained.
 - `data/profile.json` — computed data-quality counts used on the M2 slides.
 - `data/review_samples.jsonl` — four versions for the 24 records selected for the M3 human gate.
-- `data/human_review_24.csv` — one row per human-gate record; status is intentionally `PENDING_M3_SIGNOFF` because the deck says sign-off occurs in M3.
+- `data/human_review_24.csv` — one row per human-gate record; all 24 records are `APPROVED` (reviewer Carson Morris, 2026-10-04).
 - `data/evidence_summary.json` — compact verified totals and the exact sample shown in the presentation.
 - `data/source_manifest.json` — raw-source URLs, byte counts, SHA-256 hashes, generator settings, and hashes of derived evidence files.
 

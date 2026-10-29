@@ -1,0 +1,87 @@
+{
+  "records": 500,
+  "warmup_calls": 3,
+  "sample": "500 validation records, seed 553",
+  "device": "CPU",
+  "cpu": "13th Gen Intel(R) Core(TM) i7-13700KF",
+  "torch_threads": 12,
+  "detector": {
+    "variant": "V2",
+    "engine": "trf",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+    "logical_cpus": 24,
+    "batch1": {
+      "n": 500,
+      "median_ms": 16.868,
+      "p95_ms": 24.075,
+      "mean_ms": 17.78
+    },
+    "batch64_ms_per_record": 17.228,
+    "records_per_hour": 208964
+  },
+  "classifiers": {
+    "e1_distilbert_lr2e-05_c1_s553": {
+      "family": "transformer",
+      "n_parameters": 67012685,
+      "batch1": {
+        "n": 500,
+        "median_ms": 7.739,
+        "p95_ms": 11.002,
+        "mean_ms": 8.155
+      },
+      "batch64_ms_per_record": 10.243,
+      "records_per_hour_batch64": 351476
+    },
+    "e1_minilm_clf_c1_s553": {
+      "family": "embed_clf",
+      "n_parameters": 22742861,
+      "batch1": {
+        "n": 500,
+        "median_ms": 4.09,
+        "p95_ms": 6.164,
+        "mean_ms": 4.591
+      },
+      "batch64_ms_per_record": 2.821,
+      "records_per_hour_batch64": 1275977
+    },
+    "e1_tfidf_svm_c1_s553": {
+      "family": "tfidf_svm",
+      "n_parameters": 4088315,
+      "batch1": {
+        "n": 500,
+        "median_ms": 0.37,
+        "p95_ms": 0.52,
+        "mean_ms": 0.392
+      },
+      "batch64_ms_per_record": 0.02,
+      "records_per_hour_batch64": 182282172
+    }
+  },
+  "pipeline": {
+    "e1_distilbert_lr2e-05_c1_s553": {
+      "n": 500,
+      "median_ms": 24.904,
+      "p95_ms": 35.897,
+      "mean_ms": 25.935,
+      "records_per_hour_batch1": 138808,
+      "note": "per-record sum of detector (analyze + mask) and classifier times"
+    },
+    "e1_minilm_clf_c1_s553": {
+      "n": 500,
+      "median_ms": 21.202,
+      "p95_ms": 30.181,
+      "mean_ms": 22.37,
+      "records_per_hour_batch1": 160929,
+      "note": "per-record sum of detector (analyze + mask) and classifier times"
+    },
+    "e1_tfidf_svm_c1_s553": {
+      "n": 500,
+      "median_ms": 17.237,
+      "p95_ms": 24.463,
+      "mean_ms": 18.171,
+      "records_per_hour_batch1": 198117,
+      "note": "per-record sum of detector (analyze + mask) and classifier times"
+    }
+  }
+}

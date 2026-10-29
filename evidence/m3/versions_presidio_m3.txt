@@ -1,0 +1,24 @@
+# Detector environments used in M3 (pip freeze excerpts, 2026-10-27)
+## .venv-presidio-m3 (Python 3.11.3; V0, V1)
+presidio_analyzer==2.2.364
+spacy==3.8.16
+spacy-legacy==3.0.12
+spacy-loggers==1.0.5
+en_core_web_lg==3.8.0
+
+## .venv-presidio-trf (Python 3.12; V2)
+curated-tokenizers==0.0.10
+curated-transformers==0.1.1
+presidio_analyzer==2.2.364
+spacy==3.8.16
+spacy-alignments==0.9.3
+spacy-curated-transformers==0.3.1
+spacy-legacy==3.0.12
+spacy-loggers==1.0.5
+spacy-transformers==1.3.9
+torch==2.14.1+cpu
+transformers==4.49.0
+en_core_web_trf==3.8.0
+
+## .venv-m3 (Python 3.12; V3 PERSON add-on)
+dslim/bert-base-NER via transformers==5.21.0, torch==2.14.1+cpu

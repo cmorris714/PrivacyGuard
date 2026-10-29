@@ -1,0 +1,23 @@
+{
+  "record_id": "B77_test_02180",
+  "sanitized_text": "My email is [REDACTED]. How come I'm not allowed to transfer funds right now? I just keep getting an error message.",
+  "method": "generic",
+  "entities": [
+    {
+      "type": "EMAIL",
+      "start": 12,
+      "end": 36
+    }
+  ],
+  "residual_pii_check": "PASS",
+  "predicted_intent": "beneficiary_not_allowed",
+  "confidence": 0.96,
+  "top3": [
+    "beneficiary_not_allowed",
+    "failed_transfer",
+    "declined_cash_withdrawal"
+  ],
+  "route": "auto",
+  "model_version": "e1_minilm_clf+retrained_C3",
+  "detector_version": "V2 (Presidio 2.2.364)"
+}

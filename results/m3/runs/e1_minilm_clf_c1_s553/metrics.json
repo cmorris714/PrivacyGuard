@@ -1,0 +1,21 @@
+{
+  "run_id": "e1_minilm_clf_c1_s553",
+  "config_hash": "52c9371a5c6f",
+  "val": {
+    "C1": {
+      "n": 1999,
+      "accuracy": 0.901951,
+      "macro_precision": 0.911768,
+      "macro_recall": 0.900737,
+      "macro_f1": 0.903627
+    }
+  },
+  "test": {},
+  "selected_params": {
+    "head": "logreg",
+    "C": 10
+  },
+  "train_seconds": 130.7,
+  "n_train": 7993,
+  "n_val": 1999
+}

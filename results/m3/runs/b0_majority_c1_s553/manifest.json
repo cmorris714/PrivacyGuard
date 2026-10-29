@@ -1,0 +1,33 @@
+{
+  "run_id": "b0_majority_c1_s553",
+  "stage": "b0",
+  "config": {
+    "id": "b0_majority_c1_s553",
+    "stage": "b0",
+    "model": "b0",
+    "train": "C1",
+    "seed": 553,
+    "model_cfg": {
+      "family": "majority",
+      "seed": 553
+    },
+    "test": [],
+    "hash": "21a4cf70d270"
+  },
+  "config_hash": "21a4cf70d270",
+  "seed": 553,
+  "device": "cpu",
+  "device_name": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+  "versions": {
+    "python": "3.12.16",
+    "numpy": "2.5.4",
+    "scikit-learn": "1.9.1",
+    "torch": "2.14.1+cpu",
+    "transformers": "5.21.0",
+    "sentence-transformers": "6.2.0"
+  },
+  "git_commit": "c0de9f05bc260202dba00a78a865ae9758c70fdb",
+  "start_utc": "2026-10-29T03:06:27+00:00",
+  "end_utc": "2026-10-29T03:06:27+00:00",
+  "wall_seconds": 0.1
+}

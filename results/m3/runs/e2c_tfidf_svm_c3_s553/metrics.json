@@ -1,0 +1,44 @@
+{
+  "run_id": "e2c_tfidf_svm_c3_s553",
+  "config_hash": "4b56cc632635",
+  "val": {
+    "C3": {
+      "n": 1999,
+      "accuracy": 0.882441,
+      "macro_precision": 0.883767,
+      "macro_recall": 0.880349,
+      "macro_f1": 0.879973
+    }
+  },
+  "test": {
+    "C3": {
+      "n": 3080,
+      "accuracy": 0.881494,
+      "macro_precision": 0.885679,
+      "macro_recall": 0.881494,
+      "macro_f1": 0.881876,
+      "predict_seconds": 0.04
+    },
+    "D3": {
+      "n": 3080,
+      "accuracy": 0.877922,
+      "macro_precision": 0.882261,
+      "macro_recall": 0.877922,
+      "macro_f1": 0.878324,
+      "predict_seconds": 0.04
+    }
+  },
+  "selected_params": {
+    "analyzer": "word",
+    "ngram": [
+      1,
+      2
+    ],
+    "C": 10,
+    "min_df": 1,
+    "class_weight": "balanced"
+  },
+  "train_seconds": 0.6,
+  "n_train": 7993,
+  "n_val": 1999
+}

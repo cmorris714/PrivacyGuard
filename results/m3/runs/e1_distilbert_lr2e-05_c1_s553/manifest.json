@@ -1,0 +1,41 @@
+{
+  "run_id": "e1_distilbert_lr2e-05_c1_s553",
+  "stage": "e1",
+  "config": {
+    "id": "e1_distilbert_lr2e-05_c1_s553",
+    "stage": "e1",
+    "model": "t1",
+    "train": "C1",
+    "seed": 553,
+    "model_cfg": {
+      "family": "transformer",
+      "model_id": "distilbert-base-uncased",
+      "lr": 2e-05,
+      "batch_size": 32,
+      "max_epochs": 4,
+      "patience": 1,
+      "weight_decay": 0.01,
+      "warmup_ratio": 0.1,
+      "max_len": 96,
+      "seed": 553
+    },
+    "test": [],
+    "hash": "b2287a3dbc75"
+  },
+  "config_hash": "b2287a3dbc75",
+  "seed": 553,
+  "device": "cuda",
+  "device_name": "AMD Radeon RX 7900 XTX",
+  "versions": {
+    "python": "3.12.16",
+    "numpy": "2.5.4",
+    "scikit-learn": "1.9.1",
+    "torch": "2.9.1+rocm7.2.1",
+    "transformers": "5.21.0",
+    "sentence-transformers": "6.2.0"
+  },
+  "git_commit": "9a0e46cea1571bb5796c8d0811edf5702afbe3b0",
+  "start_utc": "2026-10-27T22:05:38+00:00",
+  "end_utc": "2026-10-27T22:07:08+00:00",
+  "wall_seconds": 90.6
+}

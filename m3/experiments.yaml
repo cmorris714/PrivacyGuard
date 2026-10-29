@@ -1,0 +1,61 @@
+# Every M3 classifier run. Resolved and executed by m3/run_experiments.py.
+# Conditions: C0 original, C1 raw, C2 delete, C3 generic, C4 typed (recorded spans),
+#             D2/D3/D4 delete/generic/typed with the selected detector's spans.
+# "frozen" = the selected Exp 1 model (configs/frozen_model.yaml); "b1_frozen" = B1 with its Exp 1 grid choice.
+# Test-set conditions are evaluated only by runs of frozen configurations.
+
+seed: 553
+
+models:
+  b0:
+    family: majority
+  b1:
+    family: tfidf_svm
+  b2:
+    family: embed_clf
+    encoder: sentence-transformers/all-MiniLM-L6-v2
+  t1:
+    family: transformer
+    model_id: distilbert-base-uncased
+    lr: 2.0e-5
+    batch_size: 32
+    max_epochs: 4
+    patience: 1
+    weight_decay: 0.01
+    warmup_ratio: 0.1
+    max_len: from_token_lengths   # results/m3/data/max_len.json
+
+runs:
+  # Exp 1: model comparison on the C1 raw validation split
+  - {id: e1_tfidf_svm_c1_s553, stage: e1, model: b1, train: C1}
+  - {id: e1_minilm_clf_c1_s553, stage: e1, model: b2, train: C1}
+  - {id: e1_distilbert_lr2e-05_c1_s553, stage: e1, model: t1, train: C1}
+
+  # B0: majority-class floor on the C1 raw validation split (reference only; not a selection candidate, no test data)
+  - {id: b0_majority_c1_s553, stage: b0, model: b0, train: C1}
+
+  # Exp 2a + 3b(i): the frozen C1 model on every test condition (no retraining)
+  - {id: e2a_frozen_c1_s553, stage: e2a, model: frozen, train: C1, reuse: selected_e1_run,
+     test: [C0, C1, C2, C3, C4, D2, D3, D4]}
+
+  # Exp 2b + 3b(ii) + 4a: matched retraining with frozen hyperparameters
+  - {id: e2b_frozen_c0_s553, stage: e2b, model: frozen, train: C0, test: [C0]}
+  - {id: e2b_frozen_c2_s553, stage: e2b, model: frozen, train: C2, test: [C2, D2]}
+  - {id: e2b_frozen_c3_s553, stage: e2b, model: frozen, train: C3, test: [C3, D3]}
+  - {id: e2b_frozen_c4_s553, stage: e2b, model: frozen, train: C4, test: [C4, D4]}
+
+  # Exp 2c: cross-model check with TF-IDF + LinearSVC (grid choice from Exp 1, no re-tuning)
+  - {id: e2c_tfidf_svm_c1_s553, stage: e2c, model: b1_frozen, train: C1, test: [C0, C1, C2, C3, C4, D2, D3, D4]}
+  - {id: e2c_tfidf_svm_c0_s553, stage: e2c, model: b1_frozen, train: C0, test: [C0]}
+  - {id: e2c_tfidf_svm_c2_s553, stage: e2c, model: b1_frozen, train: C2, test: [C2, D2]}
+  - {id: e2c_tfidf_svm_c3_s553, stage: e2c, model: b1_frozen, train: C3, test: [C3, D3]}
+  - {id: e2c_tfidf_svm_c4_s553, stage: e2c, model: b1_frozen, train: C4, test: [C4, D4]}
+
+  # Exp 3c: realistic pipeline, training text also sanitized by the detector (best 2b method by validation)
+  - {id: e3c_frozen_dbest_s553, stage: e3c, model: frozen, train: D_best, test: [D_best]}
+
+  # Exp 2d: extra seeds for the frozen model on C1 and on the best sanitized condition (by validation)
+  - {id: e2d_frozen_c1_s554, stage: e2d, model: frozen, train: C1, seed: 554, test: [C1]}
+  - {id: e2d_frozen_c1_s555, stage: e2d, model: frozen, train: C1, seed: 555, test: [C1]}
+  - {id: e2d_frozen_cbest_s554, stage: e2d, model: frozen, train: C_best, seed: 554, test: [C_best]}
+  - {id: e2d_frozen_cbest_s555, stage: e2d, model: frozen, train: C_best, seed: 555, test: [C_best]}

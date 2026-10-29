@@ -1,0 +1,27 @@
+[
+  {
+    "head": "logreg",
+    "C": 1,
+    "val_macro_f1": 0.871514
+  },
+  {
+    "head": "logreg",
+    "C": 10,
+    "val_macro_f1": 0.903627
+  },
+  {
+    "head": "logreg",
+    "C": 100,
+    "val_macro_f1": 0.895489
+  },
+  {
+    "head": "mlp",
+    "alpha": 0.0001,
+    "val_macro_f1": 0.896578
+  },
+  {
+    "head": "mlp",
+    "alpha": 0.001,
+    "val_macro_f1": 0.897214
+  }
+]
