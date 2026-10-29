@@ -51,6 +51,18 @@ def main():
             rows.append({"condition": c, "coverage": round(float(cv[j]), 4), "precision": round(float(pr[j]), 4),
                          "threshold": round(float(t[j]), 4)})
     from m3.common import write_json
+    # Final pipeline (selected detector + generic masking + classifier retrained on generic text) at the same
+    # threshold. Descriptive only: tau is not re-tuned on test.
+    run, cond = P["retrained"]["conds"]["D3"]
+    ids, gold, pred, cf = load(run, cond, labels)
+    auto = cf >= tau
+    ok = pred == gold
+    res["final_pipeline"] = {"run": run, "condition": cond, "n": int(len(gold)), "n_auto": int(auto.sum()),
+                             "n_auto_correct": int((auto & ok).sum()),
+                             "coverage": round(float(auto.mean()), 4),
+                             "auto_precision": round(float(ok[auto].mean()), 4),
+                             "review_queue_share": round(float(1 - auto.mean()), 4),
+                             "overall_accuracy": round(float(ok.mean()), 4)}
     write_json(OUT / "risk_coverage.json", res)
     with open(OUT / "risk_curve.csv", "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=list(rows[0]), lineterminator="\n")

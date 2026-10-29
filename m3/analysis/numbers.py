@@ -32,6 +32,11 @@ def pct(key, v, src, note="", nd=1):
     put(key, v, f"{v * 100:.{nd}f}%", src, note)
 
 
+def exact(d, num, den, rate):
+    """Recompute a rate from its counts when they are stored (the JSON rate is pre-rounded to 4 decimals)."""
+    return d[num] / d[den] if d.get(den) else d[rate]
+
+
 def f1(key, v, src, note=""):
     put(key, v, f"{v:.3f}", src, note)
 
@@ -133,8 +138,8 @@ def detector():
         pct(f"{v}_sel_full", d["ledger"]["ALL"]["full_span_recall"], f"results/m3/detector/{v}.json:ledger.ALL")
         pct(f"{v}_sel_leak", d["ledger"]["ALL"]["residual_leak_rate"], f"results/m3/detector/{v}.json:ledger.ALL", nd=2)
         cnt(f"{v}_sel_leaks", d["ledger"]["ALL"]["residual_leak"], f"results/m3/detector/{v}.json:ledger.ALL")
-        pct(f"{v}_sel_over", d["over_redaction"]["over_redaction_rate"], f"results/m3/detector/{v}.json:over_redaction")
-        pct(f"{v}_dev_recall", d["challenge_dev"]["by_type"]["ALL"]["detection_recall"], f"results/m3/detector/{v}.json:challenge_dev")
+        pct(f"{v}_sel_over", exact(d["over_redaction"], "flagged", "n", "over_redaction_rate"), f"results/m3/detector/{v}.json:over_redaction")
+        pct(f"{v}_dev_recall", exact(d["challenge_dev"]["by_type"]["ALL"], "found", "n", "detection_recall"), f"results/m3/detector/{v}.json:challenge_dev")
         ms(f"{v}_median_ms", d["latency"]["median_ms"], f"results/m3/detector/{v}.json:latency")
     cnt("n_trainval_ledger", read_json(DET / "V1.json")["ledger"]["ALL"]["n"], "results/m3/detector/V1.json")
     for v in ("V1", sel):
@@ -151,11 +156,11 @@ def detector():
             pct(f"{v}_test_recall_{ty}", t[ty]["detection_recall"], src + f":ledger_test.{ty}")
         cnt(f"{v}_all_leaks", a["ALL"]["residual_leak"], src + ":ledger_all_13083.ALL")
         pct(f"{v}_all_recall", a["ALL"]["detection_recall"], src + ":ledger_all_13083.ALL")
-        pct(f"{v}_test_over", d["over_redaction_test"]["over_redaction_rate"], src + ":over_redaction_test")
+        pct(f"{v}_test_over", exact(d["over_redaction_test"], "flagged", "n", "over_redaction_rate"), src + ":over_redaction_test")
         h = d["challenge_heldout"]
-        pct(f"{v}_held_recall", h["by_type"]["ALL"]["detection_recall"], src + ":challenge_heldout.by_type.ALL")
+        pct(f"{v}_held_recall", exact(h["by_type"]["ALL"], "found", "n", "detection_recall"), src + ":challenge_heldout.by_type.ALL")
         pct(f"{v}_held_leak", h["by_type"]["ALL"]["residual_leak_rate"], src + ":challenge_heldout.by_type.ALL")
-        pct(f"{v}_held_neg_fp", h["negatives"]["false_positive_rate"], src + ":challenge_heldout.negatives")
+        pct(f"{v}_held_neg_fp", exact(h["negatives"], "flagged", "n", "false_positive_rate"), src + ":challenge_heldout.negatives")
         for ty in ("PERSON", "EMAIL", "PHONE", "ADDRESS"):
             pct(f"{v}_held_recall_{ty}", h["by_type"][ty]["detection_recall"], src + f":challenge_heldout.by_type.{ty}")
         ms(f"{v}_all_median_ms", d["latency_all"]["median_ms"], src + ":latency_all")
@@ -192,7 +197,7 @@ def models():
     f1("b0_accuracy", v["accuracy"], b0 + ":val.C1.accuracy", "majority-class floor")
     put("b0_macro_f1", v["macro_f1"], f"{v['macro_f1']:.4f}", b0 + ":val.C1.macro_f1", "majority-class floor")
     for k, other in (("gap_b2_b1", "e1_b1_macro_f1"), ("gap_b2_t1", "e1_t1_macro_f1")):
-        g = round(N["e1_b2_macro_f1"]["value"], 3) - round(N[other]["value"], 3)  # matches the 3-decimal values shown
+        g = N["e1_b2_macro_f1"]["value"] - N[other]["value"]  # unrounded scores, rounded once for display
         put(k, g, f"{abs(g) * 100:.1f} pp", f"derived: e1_b2_macro_f1 - {other}", "unsigned gap in validation Macro-F1")
     put("speedup_b1_vs_b2", N["e1_b2_ms"]["value"] / N["e1_b1_ms"]["value"],
         f"{N['e1_b2_ms']['value'] / N['e1_b1_ms']['value']:.0f}x", "derived: median ms b2 / b1")
@@ -298,6 +303,16 @@ def experiments():
     # risk-coverage
     rc = read_json(AN / "risk_coverage.json")
     put("tau", rc["tau"], f"{rc['tau']:.2f}", "results/m3/analysis/risk_coverage.json:tau")
+    put("tau_exact", rc["tau"], f"{rc['tau']:.3f}", "results/m3/analysis/risk_coverage.json:tau")
+    fp = rc.get("final_pipeline")
+    if fp:
+        src = "results/m3/analysis/risk_coverage.json:final_pipeline"
+        note = "detector + generic masking + retrained classifier, same threshold, test"
+        cnt("rc_final_n_auto", fp["n_auto"], src, note)
+        cnt("rc_final_n_auto_correct", fp["n_auto_correct"], src, note)
+        pct("rc_final_cov", fp["n_auto"] / fp["n"], src, note)
+        pct("rc_final_prec", fp["n_auto_correct"] / fp["n_auto"], src, note)
+        pct("rc_final_queue", 1 - fp["n_auto"] / fp["n"], src, note)
     for c in ("C1", best, "D" + best[1]):
         t = rc["test"].get(c)
         if t:

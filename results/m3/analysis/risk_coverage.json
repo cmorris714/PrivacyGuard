@@ -53,5 +53,16 @@
       "review_queue_share": 0.2373,
       "overall_accuracy": 0.8886
     }
+  },
+  "final_pipeline": {
+    "run": "e2b_frozen_c3_s553",
+    "condition": "D3",
+    "n": 3080,
+    "n_auto": 2400,
+    "n_auto_correct": 2350,
+    "coverage": 0.7792,
+    "auto_precision": 0.9792,
+    "review_queue_share": 0.2208,
+    "overall_accuracy": 0.9042
   }
 }

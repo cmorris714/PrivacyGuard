@@ -57,6 +57,8 @@ def fig_model_tradeoff():
         ax.annotate(f"{name}\n{f1:.3f}", (ms, f1), textcoords="offset points", xytext=(0, 12), ha="center",
                     va="bottom", fontsize=16, color=TEXT)
     ax.set_xscale("log")
+    ax.set_xticks([0.3, 1, 3, 10], ["0.3", "1", "3", "10"])  # plain labels; log-format exponents render below 16 pt
+    ax.minorticks_off()
     ax.set_xlabel("Median ms per query (CPU, batch 1, log scale)")
     ax.set_ylabel("Validation Macro-F1")
     lo = min(p[2] for p in pts)
@@ -186,7 +188,7 @@ def fig_risk_coverage():
                 marker=mk, markersize=5, linewidth=2, label=f"{COND[c]} (frozen model)")
     t = rc["test"]["C1"]
     ax.scatter([t["coverage"] * 100], [t["auto_precision"] * 100], s=120, color=DARK, zorder=4, marker="D",
-               label=f"Threshold tau = {rc['tau']:.2f} (raw)")
+               label=f"Confidence threshold = {rc['tau']:.2f} (raw)")
     ax.set_xlabel("Auto-routed share (%)")
     ax.set_ylabel("Precision (%)")
     ax.legend(loc="lower left", frameon=False)

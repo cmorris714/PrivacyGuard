@@ -474,13 +474,13 @@
     "note": ""
   },
   "V0_sel_over": {
-    "value": 0.0323,
+    "value": 0.03232586068855084,
     "display": "3.2%",
     "source": "results/m3/detector/V0.json:over_redaction",
     "note": ""
   },
   "V0_dev_recall": {
-    "value": 0.8718,
+    "value": 0.8717948717948718,
     "display": "87.2%",
     "source": "results/m3/detector/V0.json:challenge_dev",
     "note": ""
@@ -516,13 +516,13 @@
     "note": ""
   },
   "V1_sel_over": {
-    "value": 0.0323,
+    "value": 0.03232586068855084,
     "display": "3.2%",
     "source": "results/m3/detector/V1.json:over_redaction",
     "note": ""
   },
   "V1_dev_recall": {
-    "value": 0.891,
+    "value": 0.8910256410256411,
     "display": "89.1%",
     "source": "results/m3/detector/V1.json:challenge_dev",
     "note": ""
@@ -558,13 +558,13 @@
     "note": ""
   },
   "V2_sel_over": {
-    "value": 0.0308,
+    "value": 0.030824659727782224,
     "display": "3.1%",
     "source": "results/m3/detector/V2.json:over_redaction",
     "note": ""
   },
   "V2_dev_recall": {
-    "value": 0.9936,
+    "value": 0.9935897435897436,
     "display": "99.4%",
     "source": "results/m3/detector/V2.json:challenge_dev",
     "note": ""
@@ -600,14 +600,14 @@
     "note": ""
   },
   "V3_sel_over": {
-    "value": 0.0332,
+    "value": 0.03322658126501201,
     "display": "3.3%",
     "source": "results/m3/detector/V3.json:over_redaction",
     "note": ""
   },
   "V3_dev_recall": {
-    "value": 0.9295,
-    "display": "93.0%",
+    "value": 0.9294871794871795,
+    "display": "92.9%",
     "source": "results/m3/detector/V3.json:challenge_dev",
     "note": ""
   },
@@ -714,13 +714,13 @@
     "note": ""
   },
   "V1_test_over": {
-    "value": 0.0299,
+    "value": 0.02987012987012987,
     "display": "3.0%",
     "source": "results/m3/detector/final_V1.json:over_redaction_test",
     "note": ""
   },
   "V1_held_recall": {
-    "value": 0.891,
+    "value": 0.8910256410256411,
     "display": "89.1%",
     "source": "results/m3/detector/final_V1.json:challenge_heldout.by_type.ALL",
     "note": ""
@@ -732,7 +732,7 @@
     "note": ""
   },
   "V1_held_neg_fp": {
-    "value": 0.2812,
+    "value": 0.28125,
     "display": "28.1%",
     "source": "results/m3/detector/final_V1.json:challenge_heldout.negatives",
     "note": ""
@@ -858,13 +858,13 @@
     "note": ""
   },
   "V2_test_over": {
-    "value": 0.0295,
-    "display": "2.9%",
+    "value": 0.029545454545454545,
+    "display": "3.0%",
     "source": "results/m3/detector/final_V2.json:over_redaction_test",
     "note": ""
   },
   "V2_held_recall": {
-    "value": 0.9808,
+    "value": 0.9807692307692307,
     "display": "98.1%",
     "source": "results/m3/detector/final_V2.json:challenge_heldout.by_type.ALL",
     "note": ""
@@ -876,7 +876,7 @@
     "note": ""
   },
   "V2_held_neg_fp": {
-    "value": 0.2188,
+    "value": 0.21875,
     "display": "21.9%",
     "source": "results/m3/detector/final_V2.json:challenge_heldout.negatives",
     "note": ""
@@ -1134,14 +1134,14 @@
     "note": "majority-class floor"
   },
   "gap_b2_b1": {
-    "value": 0.025000000000000022,
+    "value": 0.02507999999999999,
     "display": "2.5 pp",
     "source": "derived: e1_b2_macro_f1 - e1_b1_macro_f1",
     "note": "unsigned gap in validation Macro-F1"
   },
   "gap_b2_t1": {
-    "value": 0.15500000000000003,
-    "display": "15.5 pp",
+    "value": 0.1541349999999999,
+    "display": "15.4 pp",
     "source": "derived: e1_b2_macro_f1 - e1_t1_macro_f1",
     "note": "unsigned gap in validation Macro-F1"
   },
@@ -2920,6 +2920,42 @@
     "display": "0.64",
     "source": "results/m3/analysis/risk_coverage.json:tau",
     "note": ""
+  },
+  "tau_exact": {
+    "value": 0.637,
+    "display": "0.637",
+    "source": "results/m3/analysis/risk_coverage.json:tau",
+    "note": ""
+  },
+  "rc_final_n_auto": {
+    "value": 2400,
+    "display": "2,400",
+    "source": "results/m3/analysis/risk_coverage.json:final_pipeline",
+    "note": "detector + generic masking + retrained classifier, same threshold, test"
+  },
+  "rc_final_n_auto_correct": {
+    "value": 2350,
+    "display": "2,350",
+    "source": "results/m3/analysis/risk_coverage.json:final_pipeline",
+    "note": "detector + generic masking + retrained classifier, same threshold, test"
+  },
+  "rc_final_cov": {
+    "value": 0.7792207792207793,
+    "display": "77.9%",
+    "source": "results/m3/analysis/risk_coverage.json:final_pipeline",
+    "note": "detector + generic masking + retrained classifier, same threshold, test"
+  },
+  "rc_final_prec": {
+    "value": 0.9791666666666666,
+    "display": "97.9%",
+    "source": "results/m3/analysis/risk_coverage.json:final_pipeline",
+    "note": "detector + generic masking + retrained classifier, same threshold, test"
+  },
+  "rc_final_queue": {
+    "value": 0.22077922077922074,
+    "display": "22.1%",
+    "source": "results/m3/analysis/risk_coverage.json:final_pipeline",
+    "note": "detector + generic masking + retrained classifier, same threshold, test"
   },
   "rc_cov_C1": {
     "value": 0.7698,
