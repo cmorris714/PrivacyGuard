@@ -1,0 +1,20 @@
+{
+  "run_id": "b0_majority_c1_s553",
+  "config_hash": "21a4cf70d270",
+  "val": {
+    "C1": {
+      "n": 1999,
+      "accuracy": 0.01901,
+      "macro_precision": 0.000247,
+      "macro_recall": 0.012987,
+      "macro_f1": 0.000485
+    }
+  },
+  "test": {},
+  "selected_params": {
+    "label_id": 16
+  },
+  "train_seconds": 0.0,
+  "n_train": 7993,
+  "n_val": 1999
+}

@@ -1121,6 +1121,18 @@
     "source": "results/m3/runs/e1_tfidf_svm_c1_s553/metrics.json",
     "note": ""
   },
+  "b0_accuracy": {
+    "value": 0.01901,
+    "display": "0.019",
+    "source": "results/m3/runs/b0_majority_c1_s553/metrics.json:val.C1.accuracy",
+    "note": "majority-class floor"
+  },
+  "b0_macro_f1": {
+    "value": 0.000485,
+    "display": "0.0005",
+    "source": "results/m3/runs/b0_majority_c1_s553/metrics.json:val.C1.macro_f1",
+    "note": "majority-class floor"
+  },
   "gap_b2_b1": {
     "value": 0.025000000000000022,
     "display": "2.5 pp",
@@ -1150,6 +1162,12 @@
     "display": "10",
     "source": "configs/frozen_model.yaml",
     "note": ""
+  },
+  "wall_b0": {
+    "value": 0.1,
+    "display": "0.0 min",
+    "source": "results/m3/runs/*/manifest.json:wall_seconds",
+    "note": "summed wall time per stage"
   },
   "wall_e1": {
     "value": 305.0,
@@ -1182,8 +1200,8 @@
     "note": ""
   },
   "n_runs": {
-    "value": 18,
-    "display": "18",
+    "value": 19,
+    "display": "19",
     "source": "results/m3/runs/*/metrics.json",
     "note": ""
   },

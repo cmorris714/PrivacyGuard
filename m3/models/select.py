@@ -66,7 +66,8 @@ def main():
               f"**Selected: {NAMES[chosen['family']]}** (`{chosen['run']}`), frozen to `configs/frozen_model.yaml` "
               f"(SHA-256 `{sha}`).", "",
               "Grid choices: " + "; ".join(f"{NAMES[r['family']]}: {r['params']}" for r in rows), "",
-              "Considered but not run (scope decision): majority-class baseline, TextCNN, BiLSTM, BERT-base, RoBERTa-base, "
+              "Majority-class floor: see results/m3/runs/b0_majority_c1_s553 (reference, not a selection candidate).", "",
+              "Considered but not run (scope decision): TextCNN, BiLSTM, BERT-base, RoBERTa-base, "
               "ModernBERT-base, zero-shot Qwen2.5 instruction model, a second DistilBERT learning rate (5e-5), all-mpnet-base-v2."]
     open(RESULTS / "selection.md", "w", encoding="utf-8", newline="\n").write("\n".join(lines) + "\n")
     print("selected", chosen["run"], sha[:12])

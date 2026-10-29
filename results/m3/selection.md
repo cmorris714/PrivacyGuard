@@ -14,4 +14,6 @@ Models within 0.5 pp: B2 MiniLM embeddings + classifier.
 
 Grid choices: T1 DistilBERT (fine-tuned): {'lr': 2e-05, 'best_epoch': 4}; B2 MiniLM embeddings + classifier: {'head': 'logreg', 'C': 10}; B1 TF-IDF + LinearSVC: {'analyzer': 'word', 'ngram': [1, 2], 'C': 10, 'min_df': 1, 'class_weight': 'balanced'}
 
-Considered but not run (scope decision): majority-class baseline, TextCNN, BiLSTM, BERT-base, RoBERTa-base, ModernBERT-base, zero-shot Qwen2.5 instruction model, a second DistilBERT learning rate (5e-5), all-mpnet-base-v2.
+Majority-class floor (B0, `b0_majority_c1_s553`, added 2026-10-28 as a reference, not a selection candidate): val accuracy 0.0190, Macro-F1 0.0005.
+
+Considered but not run (scope decision): TextCNN, BiLSTM, BERT-base, RoBERTa-base, ModernBERT-base, zero-shot Qwen2.5 instruction model, a second DistilBERT learning rate (5e-5), all-mpnet-base-v2.

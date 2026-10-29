@@ -36,6 +36,14 @@ def test_tfidf_svm_fixed_params():
     assert (m.predict_proba(["refund please"]).argmax(1) == 1).all()
 
 
+def test_majority_floor_predicts_most_frequent():
+    from m3.models.classifiers import N_LABELS, Majority
+    m = Majority({"seed": 553})
+    m.fit(["a", "b", "c"], np.array([5, 2, 5]), [], np.array([]))
+    p = m.predict_proba(["x", "y"])
+    assert p.shape == (2, N_LABELS) and (p.argmax(1) == 5).all() and np.allclose(p.sum(1), 1)
+
+
 def test_registry_ids_unique_and_test_only_for_frozen():
     spec = yaml.safe_load(open(ROOT / "m3" / "experiments.yaml", encoding="utf-8"))
     ids = [r["id"] for r in spec["runs"]]

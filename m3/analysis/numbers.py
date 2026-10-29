@@ -187,6 +187,10 @@ def models():
             f1("t1_epoch1_f1", float(curve[0]["val_macro_f1"]), f"results/m3/runs/{d.name}/train_curve.csv")
             dpp("t1_last_epoch_gain", float(curve[-1]["val_macro_f1"]) - float(curve[-2]["val_macro_f1"]),
                 f"results/m3/runs/{d.name}/train_curve.csv", "val Macro-F1 gain in the last epoch")
+    b0 = "results/m3/runs/b0_majority_c1_s553/metrics.json"
+    v = read_json(ROOT / b0)["val"]["C1"]
+    f1("b0_accuracy", v["accuracy"], b0 + ":val.C1.accuracy", "majority-class floor")
+    put("b0_macro_f1", v["macro_f1"], f"{v['macro_f1']:.4f}", b0 + ":val.C1.macro_f1", "majority-class floor")
     for k, other in (("gap_b2_b1", "e1_b1_macro_f1"), ("gap_b2_t1", "e1_t1_macro_f1")):
         g = round(N["e1_b2_macro_f1"]["value"], 3) - round(N[other]["value"], 3)  # matches the 3-decimal values shown
         put(k, g, f"{abs(g) * 100:.1f} pp", f"derived: e1_b2_macro_f1 - {other}", "unsigned gap in validation Macro-F1")

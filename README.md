@@ -67,6 +67,7 @@ python -m m3.data.build_conditions                    # eight text conditions
 python -m m3.data.token_lengths
 python -m m3.data.review_gate
 python -m m3.run_experiments --stage e1               # model comparison
+python -m m3.run_experiments --stage b0               # majority-class floor (validation only)
 python -m m3.latency --part classifiers               # CPU latency (also --part detector, --part combine)
 python -m m3.models.select                            # pre-registered selection, frozen config
 python -m m3.run_experiments --all                    # all frozen-model experiments
@@ -83,7 +84,7 @@ python -m pytest m3/tests -q
 Where results live:
 
 - `results/m3/detector/` — detector variants, selection rule and decision, metric definitions.
-- `results/m3/runs/<run_id>/` — manifest, metrics and predictions for each of the 18 runs.
+- `results/m3/runs/<run_id>/` — manifest, metrics and predictions for each of the 19 runs.
 - `results/m3/selection.md`, `configs/frozen_model.yaml`, `results/m3/test_eval_log.csv` — model choice,
   frozen configuration and every test-set evaluation.
 - `results/m3/analysis/`, `results/m3/figures/`, `results/m3/latency.json` — tables, findings, figures, timings.

@@ -1,5 +1,6 @@
-"""The three Exp 1 classifier families behind one interface.
+"""The Exp 1 classifier families behind one interface.
 
+  majority    B0  majority-class floor (always predicts the most frequent training intent)
   tfidf_svm   B1  TF-IDF + LinearSVC (grid search on the validation split via PredefinedSplit)
   embed_clf   B2  frozen sentence-transformers/all-MiniLM-L6-v2 embeddings + LogisticRegression or MLP
   transformer T1  fine-tuned distilbert-base-uncased (AdamW, linear warmup/decay, early stopping)
@@ -23,6 +24,32 @@ N_LABELS = 77
 def device():
     import torch
     return "cuda" if torch.cuda.is_available() else "cpu"
+
+
+# ---------------------------------------------------------------- B0
+class Majority:
+    """Reference floor with no parameters to tune: the most frequent training intent (ties -> lowest label id)."""
+
+    def __init__(self, cfg):
+        self.cfg = cfg
+        self.label = None
+
+    def fit(self, Xtr, ytr, Xva, yva):
+        self.label = int(np.bincount(ytr, minlength=N_LABELS).argmax())
+        return {"selected_params": {"label_id": self.label}}
+
+    def predict_proba(self, X):
+        p = np.zeros((len(X), N_LABELS))
+        p[:, self.label] = 1.0
+        return p
+
+    def save(self, d):
+        os.makedirs(d, exist_ok=True)
+        json.dump({"label_id": self.label}, open(os.path.join(d, "majority.json"), "w"))
+
+    def load(self, d):
+        self.label = json.load(open(os.path.join(d, "majority.json")))["label_id"]
+        return self
 
 
 # ---------------------------------------------------------------- B1
@@ -227,7 +254,7 @@ class Transformer:
         return self
 
 
-FAMILIES = {"tfidf_svm": TfidfSvm, "embed_clf": EmbedClf, "transformer": Transformer}
+FAMILIES = {"majority": Majority, "tfidf_svm": TfidfSvm, "embed_clf": EmbedClf, "transformer": Transformer}
 
 
 def build(cfg):
